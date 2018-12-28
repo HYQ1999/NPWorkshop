@@ -1,0 +1,6 @@
+framework module Pods_NPWorkshop {
+  umbrella header "Pods-NPWorkshop-umbrella.h"
+
+  export *
+  module * { export * }
+}

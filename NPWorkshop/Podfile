@@ -1,0 +1,4 @@
+use_frameworks!
+target 'NPWorkshop' do
+    pod 'MMDrawerController'
+end
