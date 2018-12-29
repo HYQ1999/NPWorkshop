@@ -16,6 +16,13 @@
 		0D95267621D6150A00367ADE /* NPWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95267521D6150A00367ADE /* NPWorkshopTests.swift */; };
 		0D95268121D6150A00367ADE /* NPWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */; };
 		36B7840BC24B5CB731B441F1 /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */; };
+		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
+		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
+		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
+		9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259421D7019400803D85 /* JiexiuViewController.swift */; };
+		9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259621D7019F00803D85 /* WeixiuViewController.swift */; };
+		9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259821D701AB00803D85 /* PeijianViewController.swift */; };
+		9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259A21D701B700803D85 /* ShaheViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,13 @@
 		0D95268221D6150A00367ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
+		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
+		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
+		9239259421D7019400803D85 /* JiexiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiexiuViewController.swift; sourceTree = "<group>"; };
+		9239259621D7019F00803D85 /* WeixiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeixiuViewController.swift; sourceTree = "<group>"; };
+		9239259821D701AB00803D85 /* PeijianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeijianViewController.swift; sourceTree = "<group>"; };
+		9239259A21D701B700803D85 /* ShaheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaheViewController.swift; sourceTree = "<group>"; };
 		E6316472C6A272C6F1C426B9 /* Pods-NPWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +120,13 @@
 		0D95265C21D614FB00367ADE /* NPWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				9239258F21D7015000803D85 /* ShaHe */,
+				9239258B21D6FA4200803D85 /* Peijian */,
+				9239258A21D6FA3400803D85 /* Weixiu */,
+				9239258921D6FA1E00803D85 /* Jiexiu */,
+				9239258821D6FA1700803D85 /* Zhidao */,
+				9239258721D6FA0E00803D85 /* Baoxiu */,
+				9239258621D6F98100803D85 /* Login */,
 				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
 				0D95265F21D614FB00367ADE /* ViewController.swift */,
 				0D95266121D614FB00367ADE /* Main.storyboard */,
@@ -150,6 +171,62 @@
 				842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9239258621D6F98100803D85 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9239258C21D6FDFC00803D85 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9239258721D6FA0E00803D85 /* Baoxiu */ = {
+			isa = PBXGroup;
+			children = (
+				9239259021D7017C00803D85 /* BaoxiuViewController.swift */,
+			);
+			path = Baoxiu;
+			sourceTree = "<group>";
+		};
+		9239258821D6FA1700803D85 /* Zhidao */ = {
+			isa = PBXGroup;
+			children = (
+				9239259221D7018800803D85 /* ZhidaoViewController.swift */,
+			);
+			path = Zhidao;
+			sourceTree = "<group>";
+		};
+		9239258921D6FA1E00803D85 /* Jiexiu */ = {
+			isa = PBXGroup;
+			children = (
+				9239259421D7019400803D85 /* JiexiuViewController.swift */,
+			);
+			path = Jiexiu;
+			sourceTree = "<group>";
+		};
+		9239258A21D6FA3400803D85 /* Weixiu */ = {
+			isa = PBXGroup;
+			children = (
+				9239259621D7019F00803D85 /* WeixiuViewController.swift */,
+			);
+			path = Weixiu;
+			sourceTree = "<group>";
+		};
+		9239258B21D6FA4200803D85 /* Peijian */ = {
+			isa = PBXGroup;
+			children = (
+				9239259821D701AB00803D85 /* PeijianViewController.swift */,
+			);
+			path = Peijian;
+			sourceTree = "<group>";
+		};
+		9239258F21D7015000803D85 /* ShaHe */ = {
+			isa = PBXGroup;
+			children = (
+				9239259A21D701B700803D85 /* ShaheViewController.swift */,
+			);
+			name = ShaHe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,9 +409,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */,
+				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
+				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
+				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
+				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
+				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
+				9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
