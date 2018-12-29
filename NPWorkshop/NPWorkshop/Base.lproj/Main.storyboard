@@ -77,6 +77,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReturnBack:" destination="hhh-xE-shS" eventType="editingDidEndOnExit" id="E9f-OT-fzo"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入你的密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBy-JS-Dnd">
                                 <rect key="frame" x="121" y="372" width="215" height="30"/>
@@ -86,6 +89,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReturnBack:" destination="hhh-xE-shS" eventType="editingDidEndOnExit" id="QAd-IG-Hz3"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHS-PV-DKR">
                                 <rect key="frame" x="70" y="491" width="274" height="42"/>
@@ -169,7 +175,6 @@
         <!--Item 1-->
         <scene sceneID="3m0-Zi-gUl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Njn-Es-WrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="AvL-DE-oEK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHn-Ny-Jxg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -179,6 +184,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="pud-wl-u5x"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njn-Es-WrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="67" y="-338"/>
         </scene>

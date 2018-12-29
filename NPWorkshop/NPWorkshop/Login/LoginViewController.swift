@@ -26,6 +26,10 @@ class LoginViewController: UIViewController {
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
     }
+    @IBAction func ReturnBack(_ sender: Any) {
+        username.resignFirstResponder()
+        password.resignFirstResponder()
+    }
     /*
     // MARK: - Navigation
 
