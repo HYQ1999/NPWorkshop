@@ -10,13 +10,22 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        username.borderStyle = UITextField.BorderStyle.none
+        username.clearButtonMode = .always
+        password.borderStyle = UITextField.BorderStyle.none
+        password.clearButtonMode = .always
+        password.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func viewclick(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 
