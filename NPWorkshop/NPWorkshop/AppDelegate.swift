@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import MMDrawerController
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//         let drawerController = MMDrawerController(center: UINavigationController(rootViewController: BXTableViewController()), leftDrawerViewController: UINavigationController(rootViewController: LeftViewController()))
+//        // 侧滑打开宽度
+//        drawerController!.maximumLeftDrawerWidth = 250
+//        // 打开侧滑手势
+//        drawerController!.openDrawerGestureModeMask = .all
+//        // 关闭侧滑手势
+//        drawerController!.closeDrawerGestureModeMask = .all
+//        
+//        self.window?.rootViewController = drawerController
         return true
     }
 

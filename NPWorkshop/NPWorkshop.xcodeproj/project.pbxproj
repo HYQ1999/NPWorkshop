@@ -23,6 +23,10 @@
 		9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259621D7019F00803D85 /* WeixiuViewController.swift */; };
 		9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259821D701AB00803D85 /* PeijianViewController.swift */; };
 		9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259A21D701B700803D85 /* ShaheViewController.swift */; };
+		9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259C21D71B4F00803D85 /* BXTableViewController.swift */; };
+		9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259E21D71D4100803D85 /* LeftViewController.swift */; };
+		923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923925A021D743F800803D85 /* DetailTableViewController.swift */; };
+		929CABCF21DC455F0072B2F1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CABCE21DC455F0072B2F1 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		9239259621D7019F00803D85 /* WeixiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeixiuViewController.swift; sourceTree = "<group>"; };
 		9239259821D701AB00803D85 /* PeijianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeijianViewController.swift; sourceTree = "<group>"; };
 		9239259A21D701B700803D85 /* ShaheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaheViewController.swift; sourceTree = "<group>"; };
+		9239259C21D71B4F00803D85 /* BXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXTableViewController.swift; sourceTree = "<group>"; };
+		9239259E21D71D4100803D85 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		923925A021D743F800803D85 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		929CABCE21DC455F0072B2F1 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E6316472C6A272C6F1C426B9 /* Pods-NPWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				9239259021D7017C00803D85 /* BaoxiuViewController.swift */,
+				9239259C21D71B4F00803D85 /* BXTableViewController.swift */,
+				9239259E21D71D4100803D85 /* LeftViewController.swift */,
+				923925A021D743F800803D85 /* DetailTableViewController.swift */,
+				929CABCE21DC455F0072B2F1 /* AddViewController.swift */,
 			);
 			path = Baoxiu;
 			sourceTree = "<group>";
@@ -411,12 +423,16 @@
 			files = (
 				9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
+				929CABCF21DC455F0072B2F1 /* AddViewController.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
+				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
+				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
+				9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
 				9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */,
 			);
