@@ -22,10 +22,14 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func login(_ sender: Any) {
+        self.performSegue(withIdentifier: "login", sender: self)
+    }
+    
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
     }
+
     @IBAction func ReturnBack(_ sender: Any) {
         username.resignFirstResponder()
         password.resignFirstResponder()

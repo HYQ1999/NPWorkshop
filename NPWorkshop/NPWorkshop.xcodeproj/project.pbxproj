@@ -16,11 +16,12 @@
 		0D95267621D6150A00367ADE /* NPWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95267521D6150A00367ADE /* NPWorkshopTests.swift */; };
 		0D95268121D6150A00367ADE /* NPWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */; };
 		36B7840BC24B5CB731B441F1 /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */; };
+		5AF9A70921DC459C00A77C3C /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9A70821DC459C00A77C3C /* WeiXiuTableViewController.swift */; };
+		5AF9A70B21DC468600A77C3C /* cehuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9A70A21DC468600A77C3C /* cehuaViewController.swift */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
 		9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259421D7019400803D85 /* JiexiuViewController.swift */; };
-		9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259621D7019F00803D85 /* WeixiuViewController.swift */; };
 		9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259821D701AB00803D85 /* PeijianViewController.swift */; };
 		9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259A21D701B700803D85 /* ShaheViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,12 +59,13 @@
 		0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPWorkshopUITests.swift; sourceTree = "<group>"; };
 		0D95268221D6150A00367ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF9A70821DC459C00A77C3C /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuTableViewController.swift; sourceTree = "<group>"; };
+		5AF9A70A21DC468600A77C3C /* cehuaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cehuaViewController.swift; sourceTree = "<group>"; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
 		9239259421D7019400803D85 /* JiexiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiexiuViewController.swift; sourceTree = "<group>"; };
-		9239259621D7019F00803D85 /* WeixiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeixiuViewController.swift; sourceTree = "<group>"; };
 		9239259821D701AB00803D85 /* PeijianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeijianViewController.swift; sourceTree = "<group>"; };
 		9239259A21D701B700803D85 /* ShaheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaheViewController.swift; sourceTree = "<group>"; };
 		E6316472C6A272C6F1C426B9 /* Pods-NPWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,7 +210,8 @@
 		9239258A21D6FA3400803D85 /* Weixiu */ = {
 			isa = PBXGroup;
 			children = (
-				9239259621D7019F00803D85 /* WeixiuViewController.swift */,
+				5AF9A70821DC459C00A77C3C /* WeiXiuTableViewController.swift */,
+				5AF9A70A21DC468600A77C3C /* cehuaViewController.swift */,
 			);
 			path = Weixiu;
 			sourceTree = "<group>";
@@ -413,12 +416,13 @@
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
+				5AF9A70921DC459C00A77C3C /* WeiXiuTableViewController.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
+				5AF9A70B21DC468600A77C3C /* cehuaViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
-				9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
