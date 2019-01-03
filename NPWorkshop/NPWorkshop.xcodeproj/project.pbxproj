@@ -16,11 +16,13 @@
 		0D95267621D6150A00367ADE /* NPWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95267521D6150A00367ADE /* NPWorkshopTests.swift */; };
 		0D95268121D6150A00367ADE /* NPWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */; };
 		36B7840BC24B5CB731B441F1 /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */; };
+		5A529F1221DDB0BF000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1021DDB0BF000F7AE6 /* SWRevealViewController.m */; };
+		5A529F1421DDB6BA000F7AE6 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1321DDB6BA000F7AE6 /* RightMenuViewController.swift */; };
+		5A529F1621DDB727000F7AE6 /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1521DDB727000F7AE6 /* WeiXiuTableViewController.swift */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
 		9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259421D7019400803D85 /* JiexiuViewController.swift */; };
-		9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259621D7019F00803D85 /* WeixiuViewController.swift */; };
 		9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259821D701AB00803D85 /* PeijianViewController.swift */; };
 		9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259A21D701B700803D85 /* ShaheViewController.swift */; };
 		9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259C21D71B4F00803D85 /* BXTableViewController.swift */; };
@@ -65,12 +67,16 @@
 		0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPWorkshopUITests.swift; sourceTree = "<group>"; };
 		0D95268221D6150A00367ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A529F0F21DDB0BE000F7AE6 /* NPWorkshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPWorkshop-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A529F1021DDB0BF000F7AE6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		5A529F1121DDB0BF000F7AE6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		5A529F1321DDB6BA000F7AE6 /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		5A529F1521DDB727000F7AE6 /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuTableViewController.swift; sourceTree = "<group>"; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
 		9239259421D7019400803D85 /* JiexiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiexiuViewController.swift; sourceTree = "<group>"; };
-		9239259621D7019F00803D85 /* WeixiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeixiuViewController.swift; sourceTree = "<group>"; };
 		9239259821D701AB00803D85 /* PeijianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeijianViewController.swift; sourceTree = "<group>"; };
 		9239259A21D701B700803D85 /* ShaheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaheViewController.swift; sourceTree = "<group>"; };
 		9239259C21D71B4F00803D85 /* BXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXTableViewController.swift; sourceTree = "<group>"; };
@@ -112,12 +118,15 @@
 		0D95265121D614FB00367ADE = {
 			isa = PBXGroup;
 			children = (
+				5A529F1121DDB0BF000F7AE6 /* SWRevealViewController.h */,
+				5A529F1021DDB0BF000F7AE6 /* SWRevealViewController.m */,
 				0D95265C21D614FB00367ADE /* NPWorkshop */,
 				0D95267421D6150A00367ADE /* NPWorkshopTests */,
 				0D95267F21D6150A00367ADE /* NPWorkshopUITests */,
 				0D95265B21D614FB00367ADE /* Products */,
 				75E181F47EDEADA7DDA30372 /* Pods */,
 				745C065FEDFD620FDD2168A4 /* Frameworks */,
+				5A529F0F21DDB0BE000F7AE6 /* NPWorkshop-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,7 +238,8 @@
 		9239258A21D6FA3400803D85 /* Weixiu */ = {
 			isa = PBXGroup;
 			children = (
-				9239259621D7019F00803D85 /* WeixiuViewController.swift */,
+				5A529F1321DDB6BA000F7AE6 /* RightMenuViewController.swift */,
+				5A529F1521DDB727000F7AE6 /* WeiXiuTableViewController.swift */,
 			);
 			path = Weixiu;
 			sourceTree = "<group>";
@@ -319,6 +329,7 @@
 				TargetAttributes = {
 					0D95265921D614FB00367ADE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0D95267021D6150A00367ADE = {
 						CreatedOnToolsVersion = 10.1;
@@ -412,6 +423,7 @@
 				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
+				5A529F1221DDB0BF000F7AE6 /* SWRevealViewController.m in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
 				929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */,
@@ -421,9 +433,10 @@
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
+				5A529F1621DDB727000F7AE6 /* WeiXiuTableViewController.swift in Sources */,
 				9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
-				9239259721D7019F00803D85 /* WeixiuViewController.swift in Sources */,
+				5A529F1421DDB6BA000F7AE6 /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +612,7 @@
 			baseConfigurationReference = E6316472C6A272C6F1C426B9 /* Pods-NPWorkshop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTUKLD89MB;
 				INFOPLIST_FILE = NPWorkshop/Info.plist;
@@ -608,6 +622,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = NightStudioH.NPWorkshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NPWorkshop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -618,6 +634,7 @@
 			baseConfigurationReference = 842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTUKLD89MB;
 				INFOPLIST_FILE = NPWorkshop/Info.plist;
@@ -627,6 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = NightStudioH.NPWorkshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NPWorkshop-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
