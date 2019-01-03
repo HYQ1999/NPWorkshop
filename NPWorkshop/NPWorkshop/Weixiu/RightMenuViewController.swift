@@ -1,14 +1,14 @@
 //
-//  WeixiuViewController.swift
+//  RightMenuViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2018/12/29.
-//  Copyright © 2018年 韩意谦. All rights reserved.
+//  Created by 欧张帆 on 2019/1/3.
+//  Copyright © 2019 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class WeixiuViewController: UIViewController {
+class RightMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -30,6 +30,9 @@ class LoginViewController: UIViewController {
         username.resignFirstResponder()
         password.resignFirstResponder()
     }
+    @IBAction func clicjk(_ sender: Any) {
+        self.performSegue(withIdentifier: "login", sender: self)
+    }
     /*
     // MARK: - Navigation
 
