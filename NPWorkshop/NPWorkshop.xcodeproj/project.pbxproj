@@ -26,7 +26,10 @@
 		9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259C21D71B4F00803D85 /* BXTableViewController.swift */; };
 		9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259E21D71D4100803D85 /* LeftViewController.swift */; };
 		923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923925A021D743F800803D85 /* DetailTableViewController.swift */; };
-		929CABCF21DC455F0072B2F1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CABCE21DC455F0072B2F1 /* AddViewController.swift */; };
+		929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */; };
+		92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */; };
+		92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */; };
+		92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +76,10 @@
 		9239259C21D71B4F00803D85 /* BXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXTableViewController.swift; sourceTree = "<group>"; };
 		9239259E21D71D4100803D85 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		923925A021D743F800803D85 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
-		929CABCE21DC455F0072B2F1 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuTabViewController.swift; sourceTree = "<group>"; };
+		92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBaritemController.swift; sourceTree = "<group>"; };
+		92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBaritemController.swift; sourceTree = "<group>"; };
+		92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShangbaoViewController.swift; sourceTree = "<group>"; };
 		E6316472C6A272C6F1C426B9 /* Pods-NPWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,7 +202,10 @@
 				9239259C21D71B4F00803D85 /* BXTableViewController.swift */,
 				9239259E21D71D4100803D85 /* LeftViewController.swift */,
 				923925A021D743F800803D85 /* DetailTableViewController.swift */,
-				929CABCE21DC455F0072B2F1 /* AddViewController.swift */,
+				929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */,
+				92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */,
+				92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */,
+				92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */,
 			);
 			path = Baoxiu;
 			sourceTree = "<group>";
@@ -252,7 +261,7 @@
 				0D95265621D614FB00367ADE /* Sources */,
 				0D95265721D614FB00367ADE /* Frameworks */,
 				0D95265821D614FB00367ADE /* Resources */,
-				035A5418AF9B6734B1349D98 /* [CP] Embed Pods Frameworks */,
+				E81689A08883FA314056AD4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,28 +379,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		035A5418AF9B6734B1349D98 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4502CBFD5292AB6D2555BF83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +401,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E81689A08883FA314056AD4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,13 +431,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */,
+				92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */,
+				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
-				929CABCF21DC455F0072B2F1 /* AddViewController.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
+				929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
+				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,

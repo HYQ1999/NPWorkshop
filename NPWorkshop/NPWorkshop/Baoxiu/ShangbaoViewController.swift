@@ -1,5 +1,5 @@
 //
-//  AddViewController.swift
+//  ShangbaoViewController.swift
 //  NPWorkshop
 //
 //  Created by 周旭 on 2019/1/2.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class ShangbaoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
