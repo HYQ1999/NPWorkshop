@@ -18,8 +18,8 @@ class WeiXiuTableViewController: UITableViewController {
         
        
 
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController()))) as! LoginViewController
-            self.present(controller, animated: true)
+//            let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController()))) as! LoginViewController
+//            self.present(controller, animated: true)
        
        
              customSetup()
