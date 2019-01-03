@@ -1,4 +1,3 @@
 use_frameworks!
 target 'NPWorkshop' do
-   pod 'Alamofire'
 end
