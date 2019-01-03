@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class RightBaritemController: UIViewController {
 
     override func viewDidLoad() {
