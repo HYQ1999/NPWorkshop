@@ -29,7 +29,7 @@ var search:UISearchBar!
         
         let button2 = UIButton(frame:CGRect(x:0, y:0,width:18,height:18))
         button2.setImage(UIImage(named: "tianjia"), for: .normal)
-        button2.addTarget(self,action: #selector(tapped2    ),for:.touchUpInside)
+        button2.addTarget(self,action: #selector(tapped2),for:.touchUpInside)
         let barButton2 = UIBarButtonItem(customView: button2)
         
         
@@ -38,6 +38,11 @@ var search:UISearchBar!
         gap.width = 15;
         
         self.navigationItem.rightBarButtonItems = [barButton2,rightNavBarButton]
+        
+        self.tabBarItem = UITabBarItem(title: "我的报修", image: UIImage(named: "xiuli"),
+                                       selectedImage: UIImage(named: "baoxiu"))
+        
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -48,7 +53,7 @@ var search:UISearchBar!
  
     
     @objc func tapped2(){
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: AddViewController()))) as! AddViewController
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: ShangbaoViewController()))) as! ShangbaoViewController
         self.navigationController?.pushViewController(controller, animated: true)
     }
     // MARK: - Table view data source

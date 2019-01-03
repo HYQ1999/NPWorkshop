@@ -1,27 +1,16 @@
 PODS:
-  - MMDrawerController (0.6.0):
-    - MMDrawerController/Core (= 0.6.0)
-    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
-    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
-    - MMDrawerController/Subclass (= 0.6.0)
-  - MMDrawerController/Core (0.6.0)
-  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
-    - MMDrawerController/Core
-  - MMDrawerController/MMDrawerVisualStates (0.6.0):
-    - MMDrawerController/Core
-  - MMDrawerController/Subclass (0.6.0):
-    - MMDrawerController/Core
+  - Alamofire (4.8.0)
 
 DEPENDENCIES:
-  - MMDrawerController
+  - Alamofire
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - MMDrawerController
+    - Alamofire
 
 SPEC CHECKSUMS:
-  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
 
-PODFILE CHECKSUM: 7cefcc79233dc8a09bf73ab2fe1449715669d649
+PODFILE CHECKSUM: 5a7a45b2796cdf6b2636a2552fa0a2576b090517
 
 COCOAPODS: 1.5.3

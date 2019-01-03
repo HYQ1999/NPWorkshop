@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class DetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
