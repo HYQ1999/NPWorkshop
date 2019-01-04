@@ -31,7 +31,40 @@ class LoginViewController: UIViewController {
         password.resignFirstResponder()
     }
     @IBAction func clicjk(_ sender: Any) {
-        self.performSegue(withIdentifier: "login", sender: self)
+        BtnSure()
+       
+    }
+    func BtnSure()
+    {
+        if(username.text == "" && password.text == "")
+        {
+            let alertController  = UIAlertController(title: "提示！", message: "账号密码不能为空！", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated:  true, completion: nil)
+        }
+        if( username.text == "" && password.text != "")
+        {
+            let alerttController = UIAlertController(title: "提示！", message: "账号不能为空", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+        }
+        if( username.text != "" && password.text == "")
+        {
+            let alerttController = UIAlertController(title: "提示！", message: "密码不能为空", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+        }
+        else
+        {
+            let alertttController = UIAlertController(title: "恭喜!", message: "登录成功" , preferredStyle: .alert)
+            let okkkAction =  UIAlertAction(title: "返回" , style: .default , handler: nil )
+            alertttController.addAction(okkkAction)
+            self.present(alertttController, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "login", sender: self)
+        }
     }
     /*
     // MARK: - Navigation
