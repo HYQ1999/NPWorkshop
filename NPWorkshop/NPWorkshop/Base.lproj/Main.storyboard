@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ln-kS-Ndi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="-867"/>
+            <point key="canvasLocation" x="-1874" y="-863"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="lnq-ME-Vr3">
@@ -192,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQg-Pc-RoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.7391304347827" y="-1717.663043478261"/>
+            <point key="canvasLocation" x="409" y="-1657"/>
         </scene>
         <!--维修用户-->
         <scene sceneID="wWY-3a-qkR">
@@ -226,7 +226,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5I-F8-AbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="-1042"/>
+            <point key="canvasLocation" x="409" y="-863"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PlP-gW-OcD">
@@ -242,7 +242,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQT-zh-UXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="-1015"/>
+            <point key="canvasLocation" x="-310" y="-863"/>
         </scene>
         <!--Item-->
         <scene sceneID="iT7-3c-eFR">
@@ -259,7 +259,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgv-Kj-A3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="695"/>
+            <point key="canvasLocation" x="-655" y="695"/>
         </scene>
         <!--我-->
         <scene sceneID="9bv-Q8-goJ">
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgV-dE-ADn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="695"/>
+            <point key="canvasLocation" x="48" y="695"/>
         </scene>
         <!--Item-->
         <scene sceneID="t4Y-rG-cED">
@@ -293,7 +293,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcJ-rP-t0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="-360"/>
+            <point key="canvasLocation" x="48" y="-12"/>
         </scene>
         <!--Item-->
         <scene sceneID="imb-Sy-kF3">
@@ -323,7 +323,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbv-fL-PtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2467" y="-306"/>
+            <point key="canvasLocation" x="796" y="-12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cp1-h5-Kvv">
@@ -336,7 +336,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSi-tt-fvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1677" y="-299"/>
+            <point key="canvasLocation" x="3826" y="-513"/>
         </scene>
         <!--上报维修单-->
         <scene sceneID="U6Q-5a-pkb">
@@ -527,7 +527,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckX-eH-VfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4933" y="828"/>
+            <point key="canvasLocation" x="132" y="1456"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vou-3N-lJB">
@@ -543,7 +543,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msy-m8-s4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3387" y="829"/>
+            <point key="canvasLocation" x="1568" y="1456"/>
         </scene>
         <!--报修单详细-->
         <scene sceneID="LtD-Io-7na">
@@ -791,7 +791,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjW-Fu-Fia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4234.7826086956529" y="827.44565217391312"/>
+            <point key="canvasLocation" x="2416" y="1455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Een-o6-gLd">
@@ -807,7 +807,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IZ-3d-aHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2539" y="375"/>
+            <point key="canvasLocation" x="-655" y="1456"/>
         </scene>
         <!--Baoxiu Tab View Controller-->
         <scene sceneID="D1B-al-G2H">
@@ -825,12 +825,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeN-4t-ow3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="-228"/>
+            <point key="canvasLocation" x="-654" y="-12"/>
         </scene>
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
-        <image name="logo" width="75" height="75"/>
+        <image name="logo" width="56.25" height="56.25"/>
         <image name="mima" width="32" height="32"/>
         <image name="slogan" width="270" height="36"/>
         <image name="wo1" width="32" height="32"/>
