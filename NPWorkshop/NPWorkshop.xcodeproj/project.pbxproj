@@ -32,6 +32,7 @@
 		92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */; };
 		92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */; };
 		92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F13F2521DEF1E1009A248D /* YiShangBaoDetailController.swift */; };
+		96F5F19DD52E874E3ECEF0CD /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F5F19DD52E874E3ECEF0CD /* Pods_NPWorkshop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +274,7 @@
 				0D95265621D614FB00367ADE /* Sources */,
 				0D95265721D614FB00367ADE /* Frameworks */,
 				0D95265821D614FB00367ADE /* Resources */,
+				B19EA7D04C902114DE0EB044 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -410,6 +413,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B19EA7D04C902114DE0EB044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
