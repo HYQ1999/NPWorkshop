@@ -16,12 +16,12 @@ class BaoxiuTabViewController: UITabBarController {
 //        self.view.backgroundColor = UIColor.white
         
         //一共包含了两个视图
-//        let baoxiu = BXTableViewController()
-
-        
-        
-//        baoxiu.tabBarItem = UITabBarItem(title: "我的报修", image: UIImage(named: "xiuli"),
-//        selectedImage: UIImage(named: "baoxiu"))
+//        let baoxiu = RightBaritemController()
+//
+//        
+//        
+//                 baoxiu.tabBarItem = UITabBarItem(title: "我", image: UIImage(named: "wo1"),
+//        selectedImage: UIImage(named: "wo"))
 //
 //
 

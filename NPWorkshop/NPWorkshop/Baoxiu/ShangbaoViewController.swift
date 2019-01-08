@@ -21,6 +21,9 @@ class ShangbaoViewController: UIViewController {
         zichannum.clearButtonMode = .always
         xinhaocanshu.borderStyle = UITextField.BorderStyle.none
         xinhaocanshu.clearButtonMode = .always
+        let bgColor = UIColor(red:240/255, green:240/255, blue: 240/255, alpha: 0)
+        
+        self.navigationController?.navigationBar.barTintColor = bgColor
         // Do any additional setup after loading the view.
     }
     

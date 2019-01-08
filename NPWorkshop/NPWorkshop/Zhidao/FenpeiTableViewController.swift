@@ -1,19 +1,17 @@
 //
-//  BXTableViewController.swift
+//  FenpeiTableViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2018/12/29.
-//  Copyright © 2018年 韩意谦. All rights reserved.
+//  Created by 周旭 on 2019/1/7.
+//  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class BXTableViewController: UITableViewController,UISearchBarDelegate {
+class FenpeiTableViewController: UITableViewController,UISearchBarDelegate {
 var search:UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         search = UISearchBar(frame:CGRect(x:0, y:0, width:300, height:20))
         search.barTintColor = UIColor.white
         search.searchBarStyle = UISearchBar.Style.minimal
@@ -23,41 +21,28 @@ var search:UISearchBar!
         search.placeholder = "请输入搜索信息"
         var logo = UIImageView(image:UIImage(named: "weixiu"))
         var rightNavBarButton = UIBarButtonItem(customView:search)
-//        self.navigationItem.rightBarButtonItem = rightNavBarButton
-        self.navigationItem.titleView = logo
-        search.delegate = self
-        
-        let button2 = UIButton(frame:CGRect(x:0, y:0,width:18,height:18))
-        button2.setImage(UIImage(named: "tianjia"), for: .normal)
-        button2.addTarget(self,action: #selector(tapped2),for:.touchUpInside)
-        let barButton2 = UIBarButtonItem(customView: button2)
-        
+        var logoes = UIBarButtonItem(customView:logo)
         
         let gap = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil,
                                   action: nil)
-        gap.width = 15;
+        gap.width = 10;
         
-        self.navigationItem.rightBarButtonItems = [barButton2,rightNavBarButton]
+        self.navigationItem.leftBarButtonItems = [logoes,gap,rightNavBarButton]
+        search.delegate = self
         
-        self.tabBarItem = UITabBarItem(title: "我的报修", image: UIImage(named: "xiuli"),
-                                       selectedImage: UIImage(named: "baoxiu"))
+        self.tabBarItem = UITabBarItem(title: "我的分配", image: UIImage(named: "wodefenpei"),
+                                       selectedImage: UIImage(named: "fenpei"))
         
         let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
         
         self.navigationController?.navigationBar.barTintColor = bgColor
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
- 
-    
-    @objc func tapped2(){
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: ShangbaoViewController()))) as! ShangbaoViewController
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

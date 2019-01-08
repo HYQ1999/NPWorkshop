@@ -27,6 +27,9 @@
 		9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259C21D71B4F00803D85 /* BXTableViewController.swift */; };
 		9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259E21D71D4100803D85 /* LeftViewController.swift */; };
 		923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923925A021D743F800803D85 /* DetailTableViewController.swift */; };
+		9248276821E349CE0023A222 /* WoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248276721E349CE0023A222 /* WoViewController.swift */; };
+		9275B3D421E441530036DCB4 /* FendanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D321E441530036DCB4 /* FendanController.swift */; };
+		929AD84421E33E9A00FB74D0 /* FenpeiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AD84321E33E9A00FB74D0 /* FenpeiTableViewController.swift */; };
 		929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */; };
 		92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */; };
 		92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */; };
@@ -83,6 +86,9 @@
 		9239259C21D71B4F00803D85 /* BXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXTableViewController.swift; sourceTree = "<group>"; };
 		9239259E21D71D4100803D85 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		923925A021D743F800803D85 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		9248276721E349CE0023A222 /* WoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoViewController.swift; sourceTree = "<group>"; };
+		9275B3D321E441530036DCB4 /* FendanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FendanController.swift; sourceTree = "<group>"; };
+		929AD84321E33E9A00FB74D0 /* FenpeiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenpeiTableViewController.swift; sourceTree = "<group>"; };
 		929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuTabViewController.swift; sourceTree = "<group>"; };
 		92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBaritemController.swift; sourceTree = "<group>"; };
 		92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBaritemController.swift; sourceTree = "<group>"; };
@@ -226,6 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				9239259221D7018800803D85 /* ZhidaoViewController.swift */,
+				929AD84321E33E9A00FB74D0 /* FenpeiTableViewController.swift */,
+				9248276721E349CE0023A222 /* WoViewController.swift */,
+				9275B3D321E441530036DCB4 /* FendanController.swift */,
 			);
 			path = Zhidao;
 			sourceTree = "<group>";
@@ -446,6 +455,7 @@
 			files = (
 				9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */,
 				5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */,
+				9248276821E349CE0023A222 /* WoViewController.swift in Sources */,
 				92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */,
 				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
@@ -460,9 +470,11 @@
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
+				9275B3D421E441530036DCB4 /* FendanController.swift in Sources */,
 				5A529F1621DDB727000F7AE6 /* WeiXiuTableViewController.swift in Sources */,
 				9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
+				929AD84421E33E9A00FB74D0 /* FenpeiTableViewController.swift in Sources */,
 				5A529F1421DDB6BA000F7AE6 /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
