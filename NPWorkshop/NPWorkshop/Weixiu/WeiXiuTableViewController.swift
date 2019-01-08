@@ -21,7 +21,7 @@ class WeiXiuTableViewController: UITableViewController {
 //            let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController()))) as! LoginViewController
 //            self.present(controller, animated: true)
        
-       
+       self.revealViewController().rearViewRevealWidth = 250
              customSetup()
         
         // Uncomment the following line to preserve selection between presentations
@@ -35,6 +35,7 @@ class WeiXiuTableViewController: UITableViewController {
     func customSetup() {
         let revealViewController: SWRevealViewController? = self.revealViewController()
         if revealViewController != nil {
+//            revealViewController?.rightViewRevealWidth = 50
             MenuItem.target = self.revealViewController()
             MenuItem.action = #selector(SWRevealViewController.revealToggle(_:))
             //            navigationController?.navigationBar.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer)

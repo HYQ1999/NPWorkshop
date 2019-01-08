@@ -10,12 +10,14 @@ import UIKit
 
 class RightMenuViewController: UIViewController {
 
+    @IBOutlet weak var imageview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageview.layer.cornerRadius = min(imageview.bounds.size.width, imageview.bounds.size.height) * 0.5
+        imageview.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
-    
+   
 
     /*
     // MARK: - Navigation
