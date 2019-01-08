@@ -21,9 +21,9 @@ var search:UISearchBar!
         search.barStyle = UIBarStyle.black
         search.tintColor = UIColor.blue
         search.placeholder = "请输入搜索信息"
-        var logo = UIImageView(image:UIImage(named: "logo"))
+        var logo = UIImageView(image:UIImage(named: "weixiu"))
         var rightNavBarButton = UIBarButtonItem(customView:search)
-//        self.navigationItem.rightBarButtonItem = rightNavBarButton
+        //        self.navigationItem.rightBarButtonItem = rightNavBarButton
         self.navigationItem.titleView = logo
         search.delegate = self
         
@@ -41,6 +41,10 @@ var search:UISearchBar!
         
         self.tabBarItem = UITabBarItem(title: "我的报修", image: UIImage(named: "xiuli"),
                                        selectedImage: UIImage(named: "baoxiu"))
+        
+        let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
+        
+        self.navigationController?.navigationBar.barTintColor = bgColor
         
         
         
