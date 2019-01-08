@@ -15,8 +15,8 @@
 		0D95266B21D6150A00367ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D95266921D6150A00367ADE /* LaunchScreen.storyboard */; };
 		0D95267621D6150A00367ADE /* NPWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95267521D6150A00367ADE /* NPWorkshopTests.swift */; };
 		0D95268121D6150A00367ADE /* NPWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */; };
-		5A529F1421DDB6BA000F7AE6 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1321DDB6BA000F7AE6 /* RightMenuViewController.swift */; };
-		5A529F1621DDB727000F7AE6 /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1521DDB727000F7AE6 /* WeiXiuTableViewController.swift */; };
+		5A3110AA21E4632D0097752D /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3110A821E4632C0097752D /* RightMenuViewController.swift */; };
+		5A3110AB21E4632D0097752D /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3110A921E4632D0097752D /* WeiXiuTableViewController.swift */; };
 		5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
@@ -71,8 +71,8 @@
 		0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPWorkshopUITests.swift; sourceTree = "<group>"; };
 		0D95268221D6150A00367ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A529F1321DDB6BA000F7AE6 /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
-		5A529F1521DDB727000F7AE6 /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuTableViewController.swift; sourceTree = "<group>"; };
+		5A3110A821E4632C0097752D /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightMenuViewController.swift; path = ../../../../fuck/NPWorkshop/NPWorkshop/Weixiu/RightMenuViewController.swift; sourceTree = "<group>"; };
+		5A3110A921E4632D0097752D /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiXiuTableViewController.swift; path = ../../../../fuck/NPWorkshop/NPWorkshop/Weixiu/WeiXiuTableViewController.swift; sourceTree = "<group>"; };
 		5A529F1A21DDDD72000F7AE6 /* NPWorkshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPWorkshop-Bridging-Header.h"; sourceTree = "<group>"; };
 		5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5A529F1C21DDDD73000F7AE6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -250,8 +250,8 @@
 		9239258A21D6FA3400803D85 /* Weixiu */ = {
 			isa = PBXGroup;
 			children = (
-				5A529F1321DDB6BA000F7AE6 /* RightMenuViewController.swift */,
-				5A529F1521DDB727000F7AE6 /* WeiXiuTableViewController.swift */,
+				5A3110A821E4632C0097752D /* RightMenuViewController.swift */,
+				5A3110A921E4632D0097752D /* WeiXiuTableViewController.swift */,
 			);
 			path = Weixiu;
 			sourceTree = "<group>";
@@ -467,15 +467,15 @@
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
+				5A3110AA21E4632D0097752D /* RightMenuViewController.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
 				9275B3DA21E452D50036DCB4 /* FendanController.swift in Sources */,
-				5A529F1621DDB727000F7AE6 /* WeiXiuTableViewController.swift in Sources */,
 				9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */,
+				5A3110AB21E4632D0097752D /* WeiXiuTableViewController.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
 				9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */,
-				5A529F1421DDB6BA000F7AE6 /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
