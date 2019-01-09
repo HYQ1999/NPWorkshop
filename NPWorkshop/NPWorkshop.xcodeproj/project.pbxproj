@@ -19,6 +19,10 @@
 		5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A421E579010061361C /* RightMenuViewController.swift */; };
 		5A7369A721E579740061361C /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A621E579740061361C /* WeiXiuTableViewController.swift */; };
 		921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */; };
+		921836C121E5F65C009D841B /* BaoxiuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */; };
+		921836C321E5F6E0009D841B /* WeixiudanDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C221E5F6E0009D841B /* WeixiudanDetailStoryboard.storyboard */; };
+		921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */; };
+		921836C721E5F743009D841B /* MyMoneyBoxStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
@@ -79,6 +83,10 @@
 		5A7369A621E579740061361C /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuTableViewController.swift; sourceTree = "<group>"; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIexiuMoneyBox.swift; sourceTree = "<group>"; };
+		921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaoxiuStoryboard.storyboard; sourceTree = "<group>"; };
+		921836C221E5F6E0009D841B /* WeixiudanDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeixiudanDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZhidaoJiaoshiStoryboard.storyboard; sourceTree = "<group>"; };
+		921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMoneyBoxStoryboard.storyboard; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 		0D95265C21D614FB00367ADE /* NPWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				921836BF21E5F624009D841B /* Storyboard */,
 				5A7369A321E577EC0061361C /* WeiXiu */,
 				9239258F21D7015000803D85 /* ShaHe */,
 				9239258B21D6FA4200803D85 /* Peijian */,
@@ -162,7 +171,6 @@
 				9239258621D6F98100803D85 /* Login */,
 				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
 				0D95265F21D614FB00367ADE /* ViewController.swift */,
-				0D95266121D614FB00367ADE /* Main.storyboard */,
 				0D95266721D6150A00367ADE /* Assets.xcassets */,
 				0D95266921D6150A00367ADE /* LaunchScreen.storyboard */,
 				0D95266C21D6150A00367ADE /* Info.plist */,
@@ -213,6 +221,18 @@
 				842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		921836BF21E5F624009D841B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D95266121D614FB00367ADE /* Main.storyboard */,
+				921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */,
+				921836C221E5F6E0009D841B /* WeixiudanDetailStoryboard.storyboard */,
+				921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */,
+				921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		9239258621D6F98100803D85 /* Login */ = {
@@ -383,8 +403,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D95266B21D6150A00367ADE /* LaunchScreen.storyboard in Resources */,
+				921836C321E5F6E0009D841B /* WeixiudanDetailStoryboard.storyboard in Resources */,
+				921836C721E5F743009D841B /* MyMoneyBoxStoryboard.storyboard in Resources */,
 				0D95266821D6150A00367ADE /* Assets.xcassets in Resources */,
 				0D95266321D614FB00367ADE /* Main.storyboard in Resources */,
+				921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */,
+				921836C121E5F65C009D841B /* BaoxiuStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

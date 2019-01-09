@@ -59,10 +59,6 @@ class LoginViewController: UIViewController {
         }
         else
         {
-            let alertttController = UIAlertController(title: "恭喜!", message: "登录成功" , preferredStyle: .alert)
-            let okkkAction =  UIAlertAction(title: "返回" , style: .default , handler: nil )
-            alertttController.addAction(okkkAction)
-            self.present(alertttController, animated: true, completion: nil)
             self.performSegue(withIdentifier: "login", sender: self)
         }
     }
