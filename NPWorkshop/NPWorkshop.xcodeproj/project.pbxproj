@@ -18,6 +18,7 @@
 		5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */; };
 		5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A421E579010061361C /* RightMenuViewController.swift */; };
 		5A7369A721E579740061361C /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A621E579740061361C /* WeiXiuTableViewController.swift */; };
+		921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
@@ -77,6 +78,7 @@
 		5A7369A421E579010061361C /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		5A7369A621E579740061361C /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuTableViewController.swift; sourceTree = "<group>"; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
+		921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIexiuMoneyBox.swift; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				9239259421D7019400803D85 /* JiexiuViewController.swift */,
+				921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */,
 			);
 			path = Jiexiu;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */,
 				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
+				921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
