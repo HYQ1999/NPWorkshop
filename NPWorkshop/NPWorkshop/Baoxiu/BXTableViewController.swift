@@ -58,6 +58,7 @@ var search:UISearchBar!
     
     @objc func tapped2(){
         let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: ShangbaoViewController()))) as! ShangbaoViewController
+        
         self.navigationController?.pushViewController(controller, animated: true)
     }
     // MARK: - Table view data source
