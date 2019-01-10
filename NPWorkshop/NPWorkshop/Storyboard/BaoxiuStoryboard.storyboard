@@ -21,7 +21,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="HjS-4Q-VJ5" kind="relationship" relationship="viewControllers" id="dxQ-6d-O5A"/>
-                        <segue destination="oi5-6t-Tla" kind="relationship" relationship="viewControllers" id="kY1-th-YzS"/>
+                        <segue destination="i9i-Nl-emo" kind="relationship" relationship="viewControllers" id="hH8-fF-RbM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9n-W5-Ng4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -74,174 +74,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcg-dw-GQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-584" y="505"/>
-        </scene>
-        <!--个人中心-->
-        <scene sceneID="V5U-K3-WXZ">
-            <objects>
-                <viewController id="oi5-6t-Tla" customClass="RightBaritemController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G2S-4K-UeB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" 登录图片" translatesAutoresizingMaskIntoConstraints="NO" id="hxp-d4-qsr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333334"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="李知恩3" translatesAutoresizingMaskIntoConstraints="NO" id="A0F-C9-yZs">
-                                <rect key="frame" x="167" y="77" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="JcL-mT-uzz"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李知恩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-eL-O3w">
-                                <rect key="frame" x="62" y="165" width="287" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-2n-yop">
-                                <rect key="frame" x="0.0" y="239" width="414" height="448"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心背景" translatesAutoresizingMaskIntoConstraints="NO" id="mRv-Q8-VhX">
-                                        <rect key="frame" x="19" y="125" width="376" height="297"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心背景" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-hL-O0m">
-                                        <rect key="frame" x="19" y="-24" width="376" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rm9-NV-auX">
-                                        <rect key="frame" x="118" y="195" width="215" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EE3-QY-7hw">
-                                        <rect key="frame" x="118" y="258" width="215" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xinmima" translatesAutoresizingMaskIntoConstraints="NO" id="v79-F5-78d">
-                                        <rect key="frame" x="74" y="198" width="25" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="querenmima" translatesAutoresizingMaskIntoConstraints="NO" id="X9B-Of-DMG">
-                                        <rect key="frame" x="74" y="261" width="25" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="untitled85" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-1H-HrZ">
-                                        <rect key="frame" x="66" y="-3" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qq" translatesAutoresizingMaskIntoConstraints="NO" id="DgR-6M-KRW">
-                                        <rect key="frame" x="187" y="-3" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lianxifangshi" translatesAutoresizingMaskIntoConstraints="NO" id="3uA-HE-YRd">
-                                        <rect key="frame" x="308" y="-3" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="基础部" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-Gr-0um">
-                                        <rect key="frame" x="20" y="48" width="131" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="963915882" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-9q-RO1">
-                                        <rect key="frame" x="118" y="48" width="179" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13565236563" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3z-OK-oX7">
-                                        <rect key="frame" x="239" y="48" width="179" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="修改密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-Oj-NfW">
-                                        <rect key="frame" x="30" y="132" width="76" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSx-DQ-njC">
-                                        <rect key="frame" x="88" y="248" width="240" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="修改密码按钮"/>
-                                        <connections>
-                                            <action selector="xiugaimimaclick:" destination="oi5-6t-Tla" eventType="touchUpInside" id="sMC-Qx-pJo"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线" translatesAutoresizingMaskIntoConstraints="NO" id="b0O-Mr-iaU">
-                                        <rect key="frame" x="66" y="241" width="282" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Av-Uh-2fF">
-                                        <rect key="frame" x="196" y="319" width="132" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="确认修改"/>
-                                        <connections>
-                                            <action selector="sureclick:" destination="oi5-6t-Tla" eventType="touchUpInside" id="1rR-9A-3f8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.92695777160000004" green="0.92695777160000004" blue="0.92695777160000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61m-1O-Ley">
-                                <rect key="frame" x="374" y="39" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="zhuxiaologout10"/>
-                                <connections>
-                                    <action selector="zhuxiao:" destination="oi5-6t-Tla" eventType="touchUpInside" id="IsX-He-vGP"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人中心" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14d-eT-QRY">
-                                <rect key="frame" x="162.66666666666666" y="33" width="86" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="baH-eL-O3w" firstAttribute="leading" secondItem="dwK-uV-5dm" secondAttribute="leading" constant="62" id="5o0-X1-sUg"/>
-                            <constraint firstItem="dwK-uV-5dm" firstAttribute="trailing" secondItem="baH-eL-O3w" secondAttribute="trailing" constant="65" id="ASP-fT-85Q"/>
-                            <constraint firstItem="hxp-d4-qsr" firstAttribute="height" secondItem="G2S-4K-UeB" secondAttribute="height" multiplier="1/3" id="ErM-aX-rv0"/>
-                            <constraint firstItem="MYh-2n-yop" firstAttribute="leading" secondItem="dwK-uV-5dm" secondAttribute="leading" id="G6g-6h-jcn"/>
-                            <constraint firstItem="A0F-C9-yZs" firstAttribute="centerX" secondItem="hxp-d4-qsr" secondAttribute="centerX" id="JUE-bB-XCL"/>
-                            <constraint firstItem="baH-eL-O3w" firstAttribute="top" secondItem="G2S-4K-UeB" secondAttribute="top" constant="165" id="NCC-PJ-fbR"/>
-                            <constraint firstItem="hxp-d4-qsr" firstAttribute="top" secondItem="G2S-4K-UeB" secondAttribute="top" id="Z5a-oU-V7x"/>
-                            <constraint firstItem="hxp-d4-qsr" firstAttribute="leading" secondItem="dwK-uV-5dm" secondAttribute="leading" id="cAl-Q7-8tG"/>
-                            <constraint firstItem="hxp-d4-qsr" firstAttribute="trailing" secondItem="dwK-uV-5dm" secondAttribute="trailing" id="gTk-I7-RVV"/>
-                            <constraint firstItem="baH-eL-O3w" firstAttribute="centerX" secondItem="14d-eT-QRY" secondAttribute="centerX" id="gjj-gx-3DU"/>
-                            <constraint firstItem="baH-eL-O3w" firstAttribute="top" secondItem="A0F-C9-yZs" secondAttribute="bottom" constant="8" symbolic="YES" id="gre-mN-jAI"/>
-                            <constraint firstItem="MYh-2n-yop" firstAttribute="bottom" secondItem="dwK-uV-5dm" secondAttribute="bottom" id="lAs-DV-IAM"/>
-                            <constraint firstItem="A0F-C9-yZs" firstAttribute="top" secondItem="14d-eT-QRY" secondAttribute="bottom" constant="18" id="p7Y-Gw-d4P"/>
-                            <constraint firstItem="hxp-d4-qsr" firstAttribute="width" secondItem="G2S-4K-UeB" secondAttribute="width" id="pUd-Pd-hEC"/>
-                            <constraint firstItem="MYh-2n-yop" firstAttribute="top" secondItem="baH-eL-O3w" secondAttribute="bottom" constant="52" id="pX7-G6-kWj"/>
-                            <constraint firstItem="A0F-C9-yZs" firstAttribute="leading" secondItem="dwK-uV-5dm" secondAttribute="leading" constant="167" id="sYw-Cg-zZE"/>
-                            <constraint firstItem="MYh-2n-yop" firstAttribute="trailing" secondItem="dwK-uV-5dm" secondAttribute="trailing" id="z3N-ZV-PmM"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="dwK-uV-5dm"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="我" image="wo1" id="T96-JY-Vvl"/>
-                    <navigationItem key="navigationItem" title="个人中心" id="FP9-32-YZ0"/>
-                    <connections>
-                        <outlet property="fengexian" destination="b0O-Mr-iaU" id="jD2-xC-Ct9"/>
-                        <outlet property="querenmima" destination="X9B-Of-DMG" id="UjJ-LU-d3m"/>
-                        <outlet property="querenmimatxt" destination="EE3-QY-7hw" id="Hpi-ii-cXe"/>
-                        <outlet property="surebtn" destination="7Av-Uh-2fF" id="d2e-Gp-ntM"/>
-                        <outlet property="userimg" destination="A0F-C9-yZs" id="aD3-YV-qjx"/>
-                        <outlet property="xinmima" destination="v79-F5-78d" id="Sbm-JZ-h63"/>
-                        <outlet property="xinmimatxt" destination="rm9-NV-auX" id="7io-Zc-eD3"/>
-                        <outlet property="xiugaimima" destination="TSx-DQ-njC" id="UEn-70-Gek"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="geL-Un-LDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1662" y="1260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zhx-2L-obI">
@@ -1726,10 +1558,208 @@
             </objects>
             <point key="canvasLocation" x="3784" y="2901"/>
         </scene>
+        <!--个人中心-->
+        <scene sceneID="hmQ-Gw-lse">
+            <objects>
+                <viewController id="i9i-Nl-emo" customClass="RightBaritemController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eCU-0n-NCt" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" 登录图片" translatesAutoresizingMaskIntoConstraints="NO" id="fBT-Ns-54K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333334"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="李知恩3" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-ml-yzS">
+                                <rect key="frame" x="167" y="77" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="PqC-hN-TLH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李知恩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH2-05-kQD">
+                                <rect key="frame" x="62" y="165" width="287" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-a9-aQZ">
+                                <rect key="frame" x="0.0" y="239" width="414" height="448"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心背景" translatesAutoresizingMaskIntoConstraints="NO" id="Oc8-PE-96E">
+                                        <rect key="frame" x="19" y="125" width="376" height="297"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心背景" translatesAutoresizingMaskIntoConstraints="NO" id="Tgi-bh-Kfi">
+                                        <rect key="frame" x="19" y="-24" width="376" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnY-iK-O5J">
+                                        <rect key="frame" x="118" y="251" width="215" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="returnback:" destination="i9i-Nl-emo" eventType="editingDidEndOnExit" id="iHg-oV-Bgw"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入原密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOm-OL-0Bz">
+                                        <rect key="frame" x="118" y="191" width="215" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="returnback:" destination="i9i-Nl-emo" eventType="editingDidEndOnExit" id="eMh-1K-wI3"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-pU-mG6">
+                                        <rect key="frame" x="118" y="309" width="215" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="returnback:" destination="i9i-Nl-emo" eventType="editingDidEndOnExit" id="u1u-cM-aJy"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xinmima" translatesAutoresizingMaskIntoConstraints="NO" id="6wy-Pp-aTP">
+                                        <rect key="frame" x="74" y="254" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mima666" translatesAutoresizingMaskIntoConstraints="NO" id="whE-11-VYE">
+                                        <rect key="frame" x="74" y="193" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="querenmima" translatesAutoresizingMaskIntoConstraints="NO" id="kiC-jo-ZEq">
+                                        <rect key="frame" x="74" y="312" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="untitled85" translatesAutoresizingMaskIntoConstraints="NO" id="HE4-jc-1cn">
+                                        <rect key="frame" x="66" y="-3" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qq" translatesAutoresizingMaskIntoConstraints="NO" id="haU-Oo-hmY">
+                                        <rect key="frame" x="187" y="-3" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lianxifangshi" translatesAutoresizingMaskIntoConstraints="NO" id="lET-CQ-bx4">
+                                        <rect key="frame" x="308" y="-3" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="基础部" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hZ-2w-4kr">
+                                        <rect key="frame" x="20" y="48" width="131" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="963915882" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5L-qh-PAZ">
+                                        <rect key="frame" x="118" y="48" width="179" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13565236563" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-9p-7n7">
+                                        <rect key="frame" x="239" y="48" width="179" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="修改密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6a-kH-pAR">
+                                        <rect key="frame" x="30" y="132" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m66-YJ-VKj">
+                                        <rect key="frame" x="88" y="248" width="240" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="修改密码按钮"/>
+                                        <connections>
+                                            <action selector="xiugaimimaclick:" destination="i9i-Nl-emo" eventType="touchUpInside" id="Qtc-AD-sP4"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线" translatesAutoresizingMaskIntoConstraints="NO" id="0Yt-jv-TGq">
+                                        <rect key="frame" x="66" y="295" width="282" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-3T-9J2">
+                                        <rect key="frame" x="66" y="234" width="282" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-sP-4fQ">
+                                        <rect key="frame" x="201" y="357" width="132" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="确认修改"/>
+                                        <connections>
+                                            <action selector="sureclick:" destination="i9i-Nl-emo" eventType="touchUpInside" id="8dV-nH-8hd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92695777160000004" green="0.92695777160000004" blue="0.92695777160000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WII-hh-5d2">
+                                <rect key="frame" x="374" y="39" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="zhuxiaologout10"/>
+                                <connections>
+                                    <action selector="zhuxiao:" destination="i9i-Nl-emo" eventType="touchUpInside" id="QSe-K7-a3P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人中心" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa3-KI-g9u">
+                                <rect key="frame" x="162.66666666666666" y="33" width="86" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KH2-05-kQD" firstAttribute="leading" secondItem="pN8-6R-viU" secondAttribute="leading" constant="62" id="7bk-Gk-wgK"/>
+                            <constraint firstItem="KH2-05-kQD" firstAttribute="top" secondItem="eCU-0n-NCt" secondAttribute="top" constant="165" id="7oK-z4-367"/>
+                            <constraint firstItem="pN8-6R-viU" firstAttribute="trailing" secondItem="KH2-05-kQD" secondAttribute="trailing" constant="65" id="BO6-fk-Ibw"/>
+                            <constraint firstItem="fBT-Ns-54K" firstAttribute="leading" secondItem="pN8-6R-viU" secondAttribute="leading" id="CjU-go-MhV"/>
+                            <constraint firstItem="8ga-a9-aQZ" firstAttribute="trailing" secondItem="pN8-6R-viU" secondAttribute="trailing" id="D9G-sc-foe"/>
+                            <constraint firstItem="8ga-a9-aQZ" firstAttribute="bottom" secondItem="pN8-6R-viU" secondAttribute="bottom" id="E4a-wD-751"/>
+                            <constraint firstItem="KH2-05-kQD" firstAttribute="top" secondItem="ygq-ml-yzS" secondAttribute="bottom" constant="8" symbolic="YES" id="Keg-bg-ZOG"/>
+                            <constraint firstItem="ygq-ml-yzS" firstAttribute="centerX" secondItem="fBT-Ns-54K" secondAttribute="centerX" id="NZa-Xt-WGb"/>
+                            <constraint firstItem="fBT-Ns-54K" firstAttribute="trailing" secondItem="pN8-6R-viU" secondAttribute="trailing" id="Ntt-RE-VW9"/>
+                            <constraint firstItem="8ga-a9-aQZ" firstAttribute="leading" secondItem="pN8-6R-viU" secondAttribute="leading" id="QcP-vm-PtV"/>
+                            <constraint firstItem="fBT-Ns-54K" firstAttribute="width" secondItem="eCU-0n-NCt" secondAttribute="width" id="bry-9m-ixa"/>
+                            <constraint firstItem="ygq-ml-yzS" firstAttribute="top" secondItem="Oa3-KI-g9u" secondAttribute="bottom" constant="18" id="dqk-91-cSM"/>
+                            <constraint firstItem="fBT-Ns-54K" firstAttribute="top" secondItem="eCU-0n-NCt" secondAttribute="top" id="etN-z5-R0u"/>
+                            <constraint firstItem="fBT-Ns-54K" firstAttribute="height" secondItem="eCU-0n-NCt" secondAttribute="height" multiplier="1/3" id="fvF-wy-eDm"/>
+                            <constraint firstItem="ygq-ml-yzS" firstAttribute="leading" secondItem="pN8-6R-viU" secondAttribute="leading" constant="167" id="fzX-8h-knH"/>
+                            <constraint firstItem="KH2-05-kQD" firstAttribute="centerX" secondItem="Oa3-KI-g9u" secondAttribute="centerX" id="gXy-Zl-89B"/>
+                            <constraint firstItem="8ga-a9-aQZ" firstAttribute="top" secondItem="KH2-05-kQD" secondAttribute="bottom" constant="52" id="ql2-dI-hTI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pN8-6R-viU"/>
+                        <connections>
+                            <action selector="viewclick:" destination="i9i-Nl-emo" eventType="touchUpInside" id="3Ix-YB-kox"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我" image="wo1" id="NDY-0i-hcJ"/>
+                    <navigationItem key="navigationItem" title="个人中心" id="G9V-jS-Yzc"/>
+                    <connections>
+                        <outlet property="fengexian" destination="0Yt-jv-TGq" id="zQH-YJ-zIi"/>
+                        <outlet property="fenxian" destination="gcv-3T-9J2" id="Cxp-YM-TOn"/>
+                        <outlet property="querenmima" destination="kiC-jo-ZEq" id="Avg-0S-7k8"/>
+                        <outlet property="querenmimatxt" destination="Mii-pU-mG6" id="ioV-9n-Eab"/>
+                        <outlet property="surebtn" destination="xWd-sP-4fQ" id="Pt1-EV-4pO"/>
+                        <outlet property="userimg" destination="ygq-ml-yzS" id="WMd-YA-Pqj"/>
+                        <outlet property="xinmima" destination="6wy-Pp-aTP" id="ezP-I6-PrJ"/>
+                        <outlet property="xinmimatxt" destination="CnY-iK-O5J" id="zih-FA-iUH"/>
+                        <outlet property="xiugaimima" destination="m66-YJ-VKj" id="1Ue-kU-2t9"/>
+                        <outlet property="yuanmima" destination="VOm-OL-0Bz" id="RSa-k4-wC1"/>
+                        <outlet property="yuanmimaimg" destination="whE-11-VYE" id="fKc-qP-N4d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWE-Y2-45Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2214" y="1295"/>
+        </scene>
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
         <image name="lianxifangshi" width="48" height="48"/>
+        <image name="mima666" width="32" height="32"/>
         <image name="qq" width="48" height="48"/>
         <image name="querenmima" width="48" height="48"/>
         <image name="untitled85" width="48" height="48"/>
