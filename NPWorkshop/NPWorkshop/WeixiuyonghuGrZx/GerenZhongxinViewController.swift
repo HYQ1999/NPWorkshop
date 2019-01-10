@@ -1,14 +1,14 @@
 //
-//  WoViewController.swift
+//  GerenZhongxinViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/8.
+//  Created by 周旭 on 2019/1/10.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class WoViewController: UIViewController {
+class GerenZhongxinViewController: UIViewController {
     @IBOutlet weak var userimg: UIImageView!
     @IBOutlet weak var xinmima: UIImageView!
     @IBOutlet weak var xinmimatxt: UITextField!
@@ -20,6 +20,7 @@ class WoViewController: UIViewController {
     @IBOutlet weak var yuanmima: UIImageView!
     @IBOutlet weak var yuanmimatxt: UITextField!
     @IBOutlet weak var fenxian: UIImageView!
+    @IBOutlet weak var MenuItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.selectedIndex = 1
@@ -40,7 +41,19 @@ class WoViewController: UIViewController {
         yuanmima.isHidden = true
         yuanmimatxt.isHidden = true
         fenxian.isHidden = true
+        self.revealViewController().rearViewRevealWidth = 250
+                customSetup()
         // Do any additional setup after loading the view.
+    }
+    
+    func customSetup() {
+        let revealViewController: SWRevealViewController? = self.revealViewController()
+        if revealViewController != nil {
+            //            revealViewController?.rightViewRevealWidth = 50
+            MenuItem.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+            //            navigationController?.navigationBar.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer)
+            self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
+        }
     }
     
     @IBAction func xiugaimimaclick(_ sender: Any) {
@@ -74,11 +87,13 @@ class WoViewController: UIViewController {
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
     }
+    
     @IBAction func returnback(_ sender: Any) {
-        xinmimatxt.resignFirstResponder()
         yuanmimatxt.resignFirstResponder()
         querenmimatxt.resignFirstResponder()
+        xinmimatxt.resignFirstResponder()
     }
+    
     /*
     // MARK: - Navigation
 
