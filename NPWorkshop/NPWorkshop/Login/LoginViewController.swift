@@ -59,7 +59,10 @@ class LoginViewController: UIViewController {
         }
         else
         {
-            self.performSegue(withIdentifier: "login", sender: self)
+            let destinationStoryboard = UIStoryboard(name:"MyMoneyBoxStoryboard",bundle:nil)
+            let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier:  String(describing: type(of: JIexiuMoneyBox()))) as! JIexiuMoneyBox
+            self.present(destinationViewController, animated: true, completion: nil)
+        
         }
     }
     /*
