@@ -159,23 +159,10 @@
             </objects>
             <point key="canvasLocation" x="-1233" y="-273"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Cp1-h5-Kvv">
-            <objects>
-                <navigationController id="9uO-kI-duz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EvP-pK-hSC">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QSi-tt-fvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3826" y="-513"/>
-        </scene>
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
-        <image name="logo" width="75" height="75"/>
+        <image name="logo" width="56.25" height="56.25"/>
         <image name="mima" width="32" height="32"/>
         <image name="slogan" width="270" height="36"/>
         <image name="xingmingyonghumingnicheng" width="32" height="32"/>

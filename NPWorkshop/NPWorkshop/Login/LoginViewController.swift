@@ -59,8 +59,8 @@ class LoginViewController: UIViewController {
         }
         else
         {
-            let destinationStoryboard = UIStoryboard(name:"MyMoneyBoxStoryboard",bundle:nil)
-            let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier:  String(describing: type(of: JIexiuMoneyBox()))) as! JIexiuMoneyBox
+            let destinationStoryboard = UIStoryboard(name:"JieXiu",bundle:nil)
+            let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier:  String(describing: type(of: SWRevealViewController()))) as! SWRevealViewController
             self.present(destinationViewController, animated: true, completion: nil)
         
         }
