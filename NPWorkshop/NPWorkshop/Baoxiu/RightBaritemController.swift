@@ -16,6 +16,7 @@ class RightBaritemController: UIViewController {
     @IBOutlet weak var querenmimatxt: UITextField!
     @IBOutlet weak var xiugaimima: UIButton!
     @IBOutlet weak var surebtn: UIButton!
+    @IBOutlet weak var MenuItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.selectedIndex = 1
@@ -34,7 +35,18 @@ class RightBaritemController: UIViewController {
         querenmimatxt.isHidden = true
         surebtn.isHidden = true
         
+        self.revealViewController().rearViewRevealWidth = 250
+        customSetup()
         // Do any additional setup after loading the view.
+    }
+    func customSetup() {
+        let revealViewController: SWRevealViewController? = self.revealViewController()
+        if revealViewController != nil {
+            //            revealViewController?.rightViewRevealWidth = 50
+        MenuItem.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+            //            navigationController?.navigationBar.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer)
+            self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
+        }
     }
     
     @IBAction func xiugaimimaclick(_ sender: Any) {
