@@ -159,7 +159,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="returnback:" destination="obH-Yk-Aeh" eventType="editingDidEndOnExit" id="3BV-QI-L4b"/>
+                                            <action selector="returnback:" destination="obH-Yk-Aeh" eventType="editingDidEndOnExit" id="Gg8-pm-Sze"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入原密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqp-1e-NLT">
@@ -168,7 +168,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="returnback:" destination="obH-Yk-Aeh" eventType="editingDidEndOnExit" id="gb7-j3-jYy"/>
+                                            <action selector="returnback:" destination="obH-Yk-Aeh" eventType="editingDidEndOnExit" id="j5f-qm-zYg"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-mb-Nl7">
@@ -177,7 +177,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="returnback:" destination="obH-Yk-Aeh" eventType="editingDidEndOnExit" id="uh2-PE-KVq"/>
+                                            <action selector="returnback:" destination="obH-Yk-Aeh" eventType="editingDidEndOnExit" id="9uv-cC-kgB"/>
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xinmima" translatesAutoresizingMaskIntoConstraints="NO" id="laO-x7-XqC">
@@ -233,6 +233,9 @@
                                         <rect key="frame" x="88" y="248" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="修改密码按钮"/>
+                                        <connections>
+                                            <action selector="xiugaimimaclick:" destination="obH-Yk-Aeh" eventType="touchUpInside" id="Sok-t7-1ol"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线" translatesAutoresizingMaskIntoConstraints="NO" id="CQ9-ov-I2a">
                                         <rect key="frame" x="66" y="295" width="282" height="1"/>
@@ -246,6 +249,9 @@
                                         <rect key="frame" x="201" y="357" width="132" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="确认修改"/>
+                                        <connections>
+                                            <action selector="sureclick:" destination="obH-Yk-Aeh" eventType="touchUpInside" id="hp2-db-7Rw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92695777160000004" green="0.92695777160000004" blue="0.92695777160000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -254,6 +260,9 @@
                                 <rect key="frame" x="374" y="39" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="zhuxiaologout10"/>
+                                <connections>
+                                    <action selector="zhuxiao:" destination="obH-Yk-Aeh" eventType="touchUpInside" id="qRv-Ws-5oC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人中心" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlp-1e-MDo">
                                 <rect key="frame" x="162.66666666666666" y="33" width="86" height="26"/>
@@ -284,28 +293,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TeA-Ww-Hdz"/>
                         <connections>
-                            <action selector="viewclick:" destination="obH-Yk-Aeh" eventType="touchUpInside" id="dyD-95-aqF"/>
+                            <action selector="viewclick:" destination="obH-Yk-Aeh" eventType="touchUpInside" id="hKR-O2-uDL"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="我" image="wo1" id="p30-DZ-oR1"/>
                     <navigationItem key="navigationItem" title="个人中心" id="jhh-sf-abK"/>
                     <connections>
-                        <outlet property="fengexian" destination="CQ9-ov-I2a" id="okF-Bm-PBD"/>
-                        <outlet property="fenxian" destination="Jsl-P1-jG9" id="zRc-0Q-KqI"/>
-                        <outlet property="querenmima" destination="YRH-pe-3oM" id="2z1-bB-tZo"/>
-                        <outlet property="querenmimatxt" destination="vv5-mb-Nl7" id="W5C-0N-jAD"/>
-                        <outlet property="surebtn" destination="5CW-NN-nHG" id="jhj-fA-i31"/>
-                        <outlet property="userimg" destination="kwT-yb-4kO" id="bLC-MY-8pK"/>
-                        <outlet property="xinmima" destination="laO-x7-XqC" id="8cz-dy-8rB"/>
-                        <outlet property="xinmimatxt" destination="6cI-PT-yZg" id="Ijk-Yp-Gc3"/>
-                        <outlet property="xiugaimima" destination="1Im-Dd-0Fc" id="a7N-IG-L7n"/>
-                        <outlet property="yuanmima" destination="fqp-1e-NLT" id="lJW-TG-4gB"/>
-                        <outlet property="yuanmimaimg" destination="dhT-g8-64K" id="bFp-Q6-EFI"/>
+                        <outlet property="fengexian" destination="CQ9-ov-I2a" id="k2q-fK-R4t"/>
+                        <outlet property="fenxian" destination="Jsl-P1-jG9" id="wAi-RQ-akq"/>
+                        <outlet property="querenmima" destination="YRH-pe-3oM" id="LGf-3V-vqK"/>
+                        <outlet property="querenmimatxt" destination="vv5-mb-Nl7" id="9ei-3P-RjQ"/>
+                        <outlet property="surebtn" destination="5CW-NN-nHG" id="PPJ-ZM-dKg"/>
+                        <outlet property="userimg" destination="kwT-yb-4kO" id="w2h-NY-cHl"/>
+                        <outlet property="xinmima" destination="laO-x7-XqC" id="5Xr-wt-PHQ"/>
+                        <outlet property="xinmimatxt" destination="6cI-PT-yZg" id="nkd-b4-s00"/>
+                        <outlet property="xiugaimima" destination="1Im-Dd-0Fc" id="GiW-BY-NF5"/>
+                        <outlet property="yuanmima" destination="dhT-g8-64K" id="m3K-g1-vNq"/>
+                        <outlet property="yuanmimatxt" destination="fqp-1e-NLT" id="efW-pe-FBq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UR-4x-avy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2452" y="2946"/>
+            <point key="canvasLocation" x="-2365.217391304348" y="2907.880434782609"/>
         </scene>
     </scenes>
     <resources>

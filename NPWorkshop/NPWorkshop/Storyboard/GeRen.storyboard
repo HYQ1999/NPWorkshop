@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9X-DW-daB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="-1692"/>
+            <point key="canvasLocation" x="204" y="-1657"/>
         </scene>
         <!--Menu-->
         <scene sceneID="wYI-Hb-Uaz">
@@ -357,7 +357,7 @@
         <!--个人中心-->
         <scene sceneID="n8w-TK-TXX">
             <objects>
-                <viewController id="XQV-zY-8gy" customClass="RightBaritemController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XQV-zY-8gy" customClass="GerenZhongxinViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LTa-Yu-YZc" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,7 +394,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="returnback:" destination="XQV-zY-8gy" eventType="editingDidEndOnExit" id="1G6-Rj-NNw"/>
+                                            <action selector="returnback:" destination="XQV-zY-8gy" eventType="editingDidEnd" id="gdl-UI-qHz"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入原密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-VH-7ks">
@@ -403,7 +403,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="returnback:" destination="XQV-zY-8gy" eventType="editingDidEndOnExit" id="X1k-Zl-hee"/>
+                                            <action selector="returnback:" destination="XQV-zY-8gy" eventType="editingDidEndOnExit" id="RpX-Xc-MNZ"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyk-59-T0s">
@@ -412,7 +412,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="returnback:" destination="XQV-zY-8gy" eventType="editingDidEndOnExit" id="5oW-r8-ajw"/>
+                                            <action selector="returnback:" destination="XQV-zY-8gy" eventType="editingDidEnd" id="Zau-Rw-6UU"/>
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xinmima" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-y7-fA7">
@@ -469,7 +469,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="修改密码按钮"/>
                                         <connections>
-                                            <action selector="xiugaimimaclick:" destination="XQV-zY-8gy" eventType="touchUpInside" id="xNg-YI-lfn"/>
+                                            <action selector="xiugaimimaclick:" destination="XQV-zY-8gy" eventType="touchUpInside" id="4AN-Di-x4j"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线" translatesAutoresizingMaskIntoConstraints="NO" id="DB0-xp-hEG">
@@ -485,7 +485,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="确认修改"/>
                                         <connections>
-                                            <action selector="sureclick:" destination="XQV-zY-8gy" eventType="touchUpInside" id="e79-W3-rI3"/>
+                                            <action selector="sureclick:" destination="XQV-zY-8gy" eventType="touchUpInside" id="wMf-e1-pJw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -496,7 +496,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="zhuxiaologout10"/>
                                 <connections>
-                                    <action selector="zhuxiao:" destination="XQV-zY-8gy" eventType="touchUpInside" id="FG3-Ag-vux"/>
+                                    <action selector="zhuxiao:" destination="XQV-zY-8gy" eventType="touchUpInside" id="6ks-00-nbs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人中心" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-Yq-VS7">
@@ -505,6 +505,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hI3-Ax-A3X">
+                                <rect key="frame" x="20" y="35" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="侧滑白"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -528,28 +533,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rIp-CX-MWp"/>
                         <connections>
-                            <action selector="viewclick:" destination="XQV-zY-8gy" eventType="touchUpInside" id="J2t-Rd-VTs"/>
+                            <action selector="viewclick:" destination="XQV-zY-8gy" eventType="touchUpInside" id="bB9-0k-Hb7"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="我" image="wo1" id="RY2-lN-XaK"/>
                     <navigationItem key="navigationItem" title="个人中心" id="M7Z-hv-Cgy"/>
                     <connections>
-                        <outlet property="fengexian" destination="DB0-xp-hEG" id="qN1-qk-t89"/>
-                        <outlet property="fenxian" destination="pTZ-Tj-ZyZ" id="tYr-Ky-frj"/>
-                        <outlet property="querenmima" destination="Vhb-WT-t4c" id="Pr0-ch-UTF"/>
-                        <outlet property="querenmimatxt" destination="cyk-59-T0s" id="zls-in-dR0"/>
-                        <outlet property="surebtn" destination="zi7-yo-5lF" id="VBc-M0-uE2"/>
-                        <outlet property="userimg" destination="GLc-W5-yby" id="DcQ-ZU-ETA"/>
-                        <outlet property="xinmima" destination="b3s-y7-fA7" id="SH4-u4-Ska"/>
-                        <outlet property="xinmimatxt" destination="Ffr-Gt-6d3" id="ovb-pb-9Ic"/>
-                        <outlet property="xiugaimima" destination="rf5-8U-38y" id="1Nf-ri-Tzl"/>
-                        <outlet property="yuanmima" destination="oaB-VH-7ks" id="OFV-Zu-NxX"/>
-                        <outlet property="yuanmimaimg" destination="PSt-KV-WSY" id="Gf5-Aw-fYl"/>
+                        <outlet property="MenuItem" destination="hI3-Ax-A3X" id="h3Q-KP-3PG"/>
+                        <outlet property="fengexian" destination="DB0-xp-hEG" id="PI8-45-r8X"/>
+                        <outlet property="fenxian" destination="pTZ-Tj-ZyZ" id="kbx-5c-pCk"/>
+                        <outlet property="querenmima" destination="Vhb-WT-t4c" id="oEc-eR-Vsx"/>
+                        <outlet property="querenmimatxt" destination="cyk-59-T0s" id="g56-MV-pTS"/>
+                        <outlet property="surebtn" destination="zi7-yo-5lF" id="Zam-sw-sKr"/>
+                        <outlet property="userimg" destination="GLc-W5-yby" id="2Bv-3f-4ZP"/>
+                        <outlet property="xinmima" destination="b3s-y7-fA7" id="G7q-Q1-ath"/>
+                        <outlet property="xinmimatxt" destination="Ffr-Gt-6d3" id="RkS-aq-0uM"/>
+                        <outlet property="xiugaimima" destination="rf5-8U-38y" id="drY-Eh-urb"/>
+                        <outlet property="yuanmima" destination="PSt-KV-WSY" id="7kY-56-HYs"/>
+                        <outlet property="yuanmimatxt" destination="oaB-VH-7ks" id="Eud-sG-sDN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rV7-EX-jcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-741" y="-909"/>
+            <point key="canvasLocation" x="-791" y="-911"/>
         </scene>
     </scenes>
     <resources>
@@ -564,6 +570,7 @@
         <image name="zhuxiaologout10" width="48" height="48"/>
         <image name="个人中心" width="50" height="50"/>
         <image name="个人中心背景" width="401" height="325"/>
+        <image name="侧滑白" width="20" height="20"/>
         <image name="修改密码按钮" width="240" height="50"/>
         <image name="假孙兴民" width="324" height="324"/>
         <image name="分割线" width="200" height="2"/>
