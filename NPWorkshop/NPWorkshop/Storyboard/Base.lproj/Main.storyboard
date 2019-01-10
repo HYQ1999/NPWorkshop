@@ -102,7 +102,6 @@
                                 <state key="normal" title="Button" image="按钮"/>
                                 <connections>
                                     <action selector="clicjk:" destination="hhh-xE-shS" eventType="touchUpInside" id="Ecj-Wz-QLS"/>
-                                    <segue destination="C2B-GT-IR8" kind="modal" identifier="login" id="t6s-df-YGO"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-ob-sPY">
@@ -159,14 +158,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ln-kS-Ndi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1233" y="-273"/>
-        </scene>
-        <!--BaoxiuStoryboard-->
-        <scene sceneID="lqd-Yh-NEZ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="BaoxiuStoryboard" id="C2B-GT-IR8" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OCr-Oc-Tw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-417" y="-313"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cp1-h5-Kvv">
