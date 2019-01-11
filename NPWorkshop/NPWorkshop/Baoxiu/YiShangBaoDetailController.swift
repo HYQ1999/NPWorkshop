@@ -16,9 +16,9 @@ class YiShangBaoDetailController: UIViewController {
     @IBOutlet weak var xinhaocanshu: UITextField!
     @IBOutlet weak var baoxiutime: UILabel!
     @IBOutlet weak var baoxiustate: UILabel!
+    @IBOutlet weak var guzhanxianxiang: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +29,7 @@ class YiShangBaoDetailController: UIViewController {
         shebeiname.resignFirstResponder()
         zicannum.resignFirstResponder()
         xinhaocanshu.resignFirstResponder()
+        guzhanxianxiang.resignFirstResponder()
     }
     
     /*
