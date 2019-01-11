@@ -10,15 +10,15 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var UserNameTextField: UITextField!
+    @IBOutlet weak var PassWordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        username.borderStyle = UITextField.BorderStyle.none
-        username.clearButtonMode = .always
-        password.borderStyle = UITextField.BorderStyle.none
-        password.clearButtonMode = .always
-        password.isSecureTextEntry = true
+        UserNameTextField.borderStyle = UITextField.BorderStyle.none
+        UserNameTextField.clearButtonMode = .always
+        PassWordTextField.borderStyle = UITextField.BorderStyle.none
+        PassWordTextField.clearButtonMode = .always
+        PassWordTextField.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
     
@@ -27,8 +27,8 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     @IBAction func ReturnBack(_ sender: Any) {
-        username.resignFirstResponder()
-        password.resignFirstResponder()
+        UserNameTextField.resignFirstResponder()
+        PassWordTextField.resignFirstResponder()
     }
     @IBAction func clicjk(_ sender: Any) {
         BtnSure()
@@ -36,21 +36,21 @@ class LoginViewController: UIViewController {
     }
     func BtnSure()
     {
-        if(username.text == "" && password.text == "")
+        if(UserNameTextField.text == "" && PassWordTextField.text == "")
         {
             let alertController  = UIAlertController(title: "提示！", message: "账号密码不能为空！", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
             alertController.addAction(okAction)
             self.present(alertController, animated:  true, completion: nil)
         }
-        if( username.text == "" && password.text != "")
+        if( UserNameTextField.text == "" && PassWordTextField.text != "")
         {
             let alerttController = UIAlertController(title: "提示！", message: "账号不能为空", preferredStyle: .alert)
             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
             alerttController.addAction(okkAction)
             self.present( alerttController, animated:  true, completion: nil)
         }
-        if( username.text != "" && password.text == "")
+        if( UserNameTextField.text != "" && PassWordTextField.text == "")
         {
             let alerttController = UIAlertController(title: "提示！", message: "密码不能为空", preferredStyle: .alert)
             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
@@ -59,9 +59,30 @@ class LoginViewController: UIViewController {
         }
         else
         {
-            let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
-            let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier:  String(describing: type(of: YiWanXiuViewController()))) as! YiWanXiuViewController
-            self.present(destinationViewController, animated: true, completion: nil)
+            if let username = UserNameTextField.text, let password = PassWordTextField.text{
+                let requesting : Models_Login.Requesting = Models_Login.Requesting(UserName: username, Password: password)
+                UserReposity().user_login(requesting: requesting) { (response, error) in
+                    if error == nil, let response = response{
+                        if response.id == ""  && response.roel == ""{
+                            let alerttController = UIAlertController(title: "Error!", message: "账号不存在", preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                        }
+                        print(response.id ?? "")
+                    }
+                        
+                    else if let error = error {
+                        let alerttController = UIAlertController(title: "Error!", message: error, preferredStyle: .alert)
+                        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                        alerttController.addAction(okkAction)
+                        self.present( alerttController, animated:  true, completion: nil)
+                        print(error)
+                    }
+                    
+                }
+                //                UserReposity().user_login(requesting: requesting, handler: getLoginresponse(response:error:))
+            }
         
         }
     }
@@ -72,7 +93,9 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
+     } let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
+     let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier:  String(describing: type(of: YiWanXiuViewController()))) as! YiWanXiuViewController
+     self.present(destinationViewController, animated: true, completion: nil)
     */
 
 }

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hhh-xE-shS">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,24 +11,24 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="hhh-xE-shS" customClass="LoginViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XrN-35-6XA" customClass="UIControl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" 登录图片" translatesAutoresizingMaskIntoConstraints="NO" id="1zL-8h-BRK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333334"/>
+                                <rect key="frame" x="0.0" y="-90.5" width="600" height="200"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录背景图片" translatesAutoresizingMaskIntoConstraints="NO" id="47f-bm-iU2">
-                                <rect key="frame" x="31" y="216" width="352" height="310"/>
+                                <rect key="frame" x="31" y="216" width="538" height="174"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QDA-sO-RVy">
-                                <rect key="frame" x="66" y="246" width="40" height="40"/>
+                                <rect key="frame" x="66" y="110" width="226" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="NJc-nb-7vW"/>
                                     <constraint firstAttribute="height" constant="40" id="wUd-wU-Q9u"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiq-Md-cfZ">
-                                <rect key="frame" x="107" y="252" width="60" height="28"/>
+                                <rect key="frame" x="107" y="116" width="246" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="BIg-kb-kGh"/>
                                     <constraint firstAttribute="height" constant="28" id="uth-qC-Zwa"/>
@@ -42,35 +38,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="线" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-hs-QIg">
-                                <rect key="frame" x="58" y="355" width="296" height="1"/>
+                                <rect key="frame" x="58" y="219" width="296" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="dfu-8W-cHu"/>
                                     <constraint firstAttribute="width" constant="296" id="eXb-NC-AjL"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="线" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-mX-ICC">
-                                <rect key="frame" x="59" y="421" width="296" height="1"/>
+                                <rect key="frame" x="59" y="285" width="296" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="CCc-0y-ZCb"/>
                                     <constraint firstAttribute="height" constant="1" id="NSe-aR-Oxb"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xingmingyonghumingnicheng" translatesAutoresizingMaskIntoConstraints="NO" id="MaG-FD-aEd">
-                                <rect key="frame" x="84" y="308" width="25" height="25"/>
+                                <rect key="frame" x="84" y="172" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="R1c-55-HCf"/>
                                     <constraint firstAttribute="width" constant="25" id="vdj-G8-L50"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mima" translatesAutoresizingMaskIntoConstraints="NO" id="Sc6-nC-ImS">
-                                <rect key="frame" x="84" y="375" width="25" height="25"/>
+                                <rect key="frame" x="84" y="239" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="9W5-vL-zhn"/>
                                     <constraint firstAttribute="width" constant="25" id="Ubx-rg-hv9"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入你的用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPB-yv-46B">
-                                <rect key="frame" x="121" y="305.66666666666669" width="215" height="30"/>
+                                <rect key="frame" x="307" y="169.5" width="215" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="cvS-V0-gj2"/>
                                     <constraint firstAttribute="height" constant="30" id="pra-AJ-5mC"/>
@@ -82,7 +78,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入你的密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBy-JS-Dnd">
-                                <rect key="frame" x="121" y="372" width="215" height="30"/>
+                                <rect key="frame" x="307" y="236" width="215" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6ey-Sf-Pbh"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="pSp-dX-wEN"/>
@@ -94,7 +90,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHS-PV-DKR">
-                                <rect key="frame" x="70" y="491" width="274" height="42"/>
+                                <rect key="frame" x="163" y="355" width="274" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Py5-1k-LOl"/>
                                     <constraint firstAttribute="width" constant="274" id="VFT-iI-R8a"/>
@@ -105,7 +101,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-ob-sPY">
-                                <rect key="frame" x="72" y="680" width="270" height="36"/>
+                                <rect key="frame" x="165" y="544" width="270" height="36"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,8 +149,8 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="password" destination="JBy-JS-Dnd" id="ARF-Km-JAw"/>
-                        <outlet property="username" destination="TPB-yv-46B" id="Ey4-sb-1bW"/>
+                        <outlet property="PassWordTextField" destination="JBy-JS-Dnd" id="ARF-Km-JAw"/>
+                        <outlet property="UserNameTextField" destination="TPB-yv-46B" id="Ey4-sb-1bW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ln-kS-Ndi" userLabel="First Responder" sceneMemberID="firstResponder"/>

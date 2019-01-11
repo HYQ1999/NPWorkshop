@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D6823D321E88F990010C122 /* UserReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6823D221E88F990010C122 /* UserReposity.swift */; };
+		0D6823D521E890060010C122 /* Models_Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6823D421E890060010C122 /* Models_Login.swift */; };
 		0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95265D21D614FB00367ADE /* AppDelegate.swift */; };
 		0D95266021D614FB00367ADE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95265F21D614FB00367ADE /* ViewController.swift */; };
 		0D95266321D614FB00367ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D95266121D614FB00367ADE /* Main.storyboard */; };
@@ -70,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D6823D221E88F990010C122 /* UserReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposity.swift; sourceTree = "<group>"; };
+		0D6823D421E890060010C122 /* Models_Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_Login.swift; sourceTree = "<group>"; };
 		0D95265A21D614FB00367ADE /* NPWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D95265D21D614FB00367ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D95265F21D614FB00367ADE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0D6823D021E88EF20010C122 /* NetMethod */ = {
+			isa = PBXGroup;
+			children = (
+				0D6823D221E88F990010C122 /* UserReposity.swift */,
+			);
+			path = NetMethod;
+			sourceTree = "<group>";
+		};
+		0D6823D121E88F050010C122 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D6823D421E890060010C122 /* Models_Login.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0D95265121D614FB00367ADE = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +229,8 @@
 		0D95265C21D614FB00367ADE /* NPWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				0D6823D021E88EF20010C122 /* NetMethod */,
+				0D6823D121E88F050010C122 /* Models */,
 				0D6823CF21E885100010C122 /* View */,
 				0D6823CE21E884C10010C122 /* Controller */,
 			);
@@ -526,12 +548,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,6 +578,7 @@
 				921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				9228695C21E7227B0077813A /* YiWanXiuViewController.swift in Sources */,
+				0D6823D521E890060010C122 /* Models_Login.swift in Sources */,
 				92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
@@ -563,6 +588,7 @@
 				9228695A21E71F290077813A /* GerenZhongxinViewController.swift in Sources */,
 				5A2FB8D121E6CDC300E5C1D7 /* Menu.swift in Sources */,
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
+				0D6823D321E88F990010C122 /* UserReposity.swift in Sources */,
 				5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
@@ -752,6 +778,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTUKLD89MB;
 				INFOPLIST_FILE = NPWorkshop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -774,6 +801,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTUKLD89MB;
 				INFOPLIST_FILE = NPWorkshop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
