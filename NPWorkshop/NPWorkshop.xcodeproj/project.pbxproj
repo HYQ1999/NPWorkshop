@@ -151,6 +151,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6823CE21E884C10010C122 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9228695821E71EF40077813A /* WeixiuyonghuGrZx */,
+				9228695721E715ED0077813A /* WeixiudanDetail */,
+				5A7369A321E577EC0061361C /* WeiXiu */,
+				9239258F21D7015000803D85 /* ShaHe */,
+				9239258B21D6FA4200803D85 /* Peijian */,
+				9239258921D6FA1E00803D85 /* Jiexiu */,
+				9239258821D6FA1700803D85 /* Zhidao */,
+				9239258721D6FA0E00803D85 /* Baoxiu */,
+				9239258621D6F98100803D85 /* Login */,
+				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
+				0D95265F21D614FB00367ADE /* ViewController.swift */,
+				0D95266721D6150A00367ADE /* Assets.xcassets */,
+				0D95266921D6150A00367ADE /* LaunchScreen.storyboard */,
+				0D95266C21D6150A00367ADE /* Info.plist */,
+				0D95266421D614FB00367ADE /* NPWorkshop.xcdatamodeld */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D6823CF21E885100010C122 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				921836BF21E5F624009D841B /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0D95265121D614FB00367ADE = {
 			isa = PBXGroup;
 			children = (
@@ -179,22 +209,8 @@
 		0D95265C21D614FB00367ADE /* NPWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				9228695821E71EF40077813A /* WeixiuyonghuGrZx */,
-				9228695721E715ED0077813A /* WeixiudanDetail */,
-				921836BF21E5F624009D841B /* Storyboard */,
-				5A7369A321E577EC0061361C /* WeiXiu */,
-				9239258F21D7015000803D85 /* ShaHe */,
-				9239258B21D6FA4200803D85 /* Peijian */,
-				9239258921D6FA1E00803D85 /* Jiexiu */,
-				9239258821D6FA1700803D85 /* Zhidao */,
-				9239258721D6FA0E00803D85 /* Baoxiu */,
-				9239258621D6F98100803D85 /* Login */,
-				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
-				0D95265F21D614FB00367ADE /* ViewController.swift */,
-				0D95266721D6150A00367ADE /* Assets.xcassets */,
-				0D95266921D6150A00367ADE /* LaunchScreen.storyboard */,
-				0D95266C21D6150A00367ADE /* Info.plist */,
-				0D95266421D614FB00367ADE /* NPWorkshop.xcdatamodeld */,
+				0D6823CF21E885100010C122 /* View */,
+				0D6823CE21E884C10010C122 /* Controller */,
 			);
 			path = NPWorkshop;
 			sourceTree = "<group>";
@@ -336,6 +352,7 @@
 				9239259A21D701B700803D85 /* ShaheViewController.swift */,
 			);
 			name = ShaHe;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
