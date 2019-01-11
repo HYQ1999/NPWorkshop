@@ -34,7 +34,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiq-Md-cfZ">
                                 <rect key="frame" x="107" y="252" width="60" height="28"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="BIg-kb-kGh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="BIg-kb-kGh"/>
                                     <constraint firstAttribute="height" constant="28" id="uth-qC-Zwa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -72,7 +72,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入你的用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPB-yv-46B">
                                 <rect key="frame" x="121" y="305.66666666666669" width="215" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="cvS-V0-gj2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="cvS-V0-gj2"/>
                                     <constraint firstAttribute="height" constant="30" id="pra-AJ-5mC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="121" y="372" width="215" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6ey-Sf-Pbh"/>
-                                    <constraint firstAttribute="width" constant="215" id="pSp-dX-wEN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="pSp-dX-wEN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -123,8 +123,9 @@
                             <constraint firstAttribute="trailing" secondItem="yBW-mX-ICC" secondAttribute="trailing" constant="59" id="G0K-bw-OYj"/>
                             <constraint firstItem="1zL-8h-BRK" firstAttribute="height" secondItem="XrN-35-6XA" secondAttribute="height" multiplier="1/3" id="GWg-Ov-g1y"/>
                             <constraint firstItem="yBW-mX-ICC" firstAttribute="top" secondItem="JBy-JS-Dnd" secondAttribute="bottom" constant="19" id="Mdh-57-G1M"/>
-                            <constraint firstItem="JBy-JS-Dnd" firstAttribute="leading" secondItem="Sc6-nC-ImS" secondAttribute="trailing" constant="12" id="QB0-SL-tVi"/>
-                            <constraint firstItem="TPB-yv-46B" firstAttribute="leading" secondItem="MaG-FD-aEd" secondAttribute="trailing" constant="12" id="UCB-LG-MPR"/>
+                            <constraint firstItem="JBy-JS-Dnd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Sc6-nC-ImS" secondAttribute="trailing" constant="8" symbolic="YES" id="QB0-SL-tVi"/>
+                            <constraint firstItem="za9-wG-E2Q" firstAttribute="trailing" secondItem="JBy-JS-Dnd" secondAttribute="trailing" constant="78" id="TAF-Zg-TWt"/>
+                            <constraint firstItem="TPB-yv-46B" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MaG-FD-aEd" secondAttribute="trailing" symbolic="YES" id="UCB-LG-MPR"/>
                             <constraint firstItem="za9-wG-E2Q" firstAttribute="trailing" secondItem="47f-bm-iU2" secondAttribute="trailing" constant="31" id="UIc-j3-tko"/>
                             <constraint firstItem="4B4-hs-QIg" firstAttribute="leading" secondItem="XrN-35-6XA" secondAttribute="leading" constant="58" id="WRX-gA-i4M"/>
                             <constraint firstItem="1zL-8h-BRK" firstAttribute="leading" secondItem="za9-wG-E2Q" secondAttribute="leading" id="WUx-cK-Czd"/>
@@ -137,6 +138,7 @@
                             <constraint firstItem="za9-wG-E2Q" firstAttribute="trailing" secondItem="QDA-sO-RVy" secondAttribute="trailing" constant="308" id="mOV-46-idq"/>
                             <constraint firstItem="MaG-FD-aEd" firstAttribute="leading" secondItem="za9-wG-E2Q" secondAttribute="leading" constant="84" id="rOX-Oo-bZk"/>
                             <constraint firstItem="Sc6-nC-ImS" firstAttribute="leading" secondItem="za9-wG-E2Q" secondAttribute="leading" constant="84" id="sDG-Kh-O3W"/>
+                            <constraint firstItem="za9-wG-E2Q" firstAttribute="trailing" secondItem="TPB-yv-46B" secondAttribute="trailing" constant="78" id="tLN-G9-gfI"/>
                             <constraint firstItem="1zL-8h-BRK" firstAttribute="top" secondItem="XrN-35-6XA" secondAttribute="top" id="tXN-Nn-EKG"/>
                             <constraint firstItem="za9-wG-E2Q" firstAttribute="bottom" secondItem="47f-bm-iU2" secondAttribute="bottom" constant="210" id="vGH-BG-jBP"/>
                             <constraint firstItem="za9-wG-E2Q" firstAttribute="bottom" secondItem="7J6-ob-sPY" secondAttribute="bottom" constant="20" id="vcn-9L-MNF"/>
@@ -162,7 +164,7 @@
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
-        <image name="logo" width="56.25" height="56.25"/>
+        <image name="logo" width="75" height="75"/>
         <image name="mima" width="32" height="32"/>
         <image name="slogan" width="270" height="36"/>
         <image name="xingmingyonghumingnicheng" width="32" height="32"/>

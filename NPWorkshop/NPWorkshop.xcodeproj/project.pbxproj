@@ -31,6 +31,7 @@
 		921836C721E5F743009D841B /* MyMoneyBoxStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */; };
 		9228695A21E71F290077813A /* GerenZhongxinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228695921E71F290077813A /* GerenZhongxinViewController.swift */; };
 		9228695C21E7227B0077813A /* YiWanXiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228695B21E7227B0077813A /* YiWanXiuViewController.swift */; };
+		9228695E21E740980077813A /* Weixiudanxiangxi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
@@ -103,6 +104,7 @@
 		921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMoneyBoxStoryboard.storyboard; sourceTree = "<group>"; };
 		9228695921E71F290077813A /* GerenZhongxinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GerenZhongxinViewController.swift; sourceTree = "<group>"; };
 		9228695B21E7227B0077813A /* YiWanXiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiWanXiuViewController.swift; sourceTree = "<group>"; };
+		9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weixiudanxiangxi.storyboard; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				5A2FB8D621E6D50000E5C1D7 /* JieXiu.storyboard */,
 				5A2FB8DA21E6D5BF00E5C1D7 /* QianHe.storyboard */,
 				5A2FB8DC21E6D66F00E5C1D7 /* GeRen.storyboard */,
+				9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				0D95266321D614FB00367ADE /* Main.storyboard in Resources */,
 				921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */,
 				5A2FB8DD21E6D66F00E5C1D7 /* GeRen.storyboard in Resources */,
+				9228695E21E740980077813A /* Weixiudanxiangxi.storyboard in Resources */,
 				5A2FB8CF21E6CBB900E5C1D7 /* WeiXiu.storyboard in Resources */,
 				5A2FB8D721E6D50000E5C1D7 /* JieXiu.storyboard in Resources */,
 				921836C121E5F65C009D841B /* BaoxiuStoryboard.storyboard in Resources */,
