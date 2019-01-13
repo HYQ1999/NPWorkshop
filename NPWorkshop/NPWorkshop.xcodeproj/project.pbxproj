@@ -27,6 +27,8 @@
 		5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */; };
 		5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A421E579010061361C /* RightMenuViewController.swift */; };
 		5A7369A721E579740061361C /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A621E579740061361C /* WeiXiuTableViewController.swift */; };
+		9201F3D521EB067D007E3CA4 /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */; };
+		9201F3DF21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */; };
 		921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */; };
 		921836C121E5F65C009D841B /* BaoxiuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */; };
 		921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */; };
@@ -51,7 +53,6 @@
 		92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */; };
 		92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */; };
 		92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F13F2521DEF1E1009A248D /* YiShangBaoDetailController.swift */; };
-		96F5F19DD52E874E3ECEF0CD /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		5A7369A421E579010061361C /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		5A7369A621E579740061361C /* WeiXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuTableViewController.swift; sourceTree = "<group>"; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
+		9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoTabBarController.swift; sourceTree = "<group>"; };
 		921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIexiuMoneyBox.swift; sourceTree = "<group>"; };
 		921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaoxiuStoryboard.storyboard; sourceTree = "<group>"; };
 		921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZhidaoJiaoshiStoryboard.storyboard; sourceTree = "<group>"; };
@@ -134,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F5F19DD52E874E3ECEF0CD /* Pods_NPWorkshop.framework in Frameworks */,
+				9201F3D521EB067D007E3CA4 /* Pods_NPWorkshop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,12 +170,6 @@
 				9239258821D6FA1700803D85 /* Zhidao */,
 				9239258721D6FA0E00803D85 /* Baoxiu */,
 				9239258621D6F98100803D85 /* Login */,
-				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
-				0D95265F21D614FB00367ADE /* ViewController.swift */,
-				0D95266721D6150A00367ADE /* Assets.xcassets */,
-				0D95266921D6150A00367ADE /* LaunchScreen.storyboard */,
-				0D95266C21D6150A00367ADE /* Info.plist */,
-				0D95266421D614FB00367ADE /* NPWorkshop.xcdatamodeld */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +230,12 @@
 				0D6823D121E88F050010C122 /* Models */,
 				0D6823CF21E885100010C122 /* View */,
 				0D6823CE21E884C10010C122 /* Controller */,
+				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
+				0D95265F21D614FB00367ADE /* ViewController.swift */,
+				0D95266721D6150A00367ADE /* Assets.xcassets */,
+				0D95266921D6150A00367ADE /* LaunchScreen.storyboard */,
+				0D95266421D614FB00367ADE /* NPWorkshop.xcdatamodeld */,
+				0D95266C21D6150A00367ADE /* Info.plist */,
 			);
 			path = NPWorkshop;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 		745C065FEDFD620FDD2168A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */,
 				199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */,
 			);
 			name = Frameworks;
@@ -346,6 +350,7 @@
 				9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */,
 				9275B3D721E452BF0036DCB4 /* WoViewController.swift */,
 				9275B3D921E452D50036DCB4 /* FendanController.swift */,
+				9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */,
 			);
 			path = Zhidao;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				9228695C21E7227B0077813A /* YiWanXiuViewController.swift in Sources */,
 				0D6823D521E890060010C122 /* Models_Login.swift in Sources */,
+				9201F3DF21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift in Sources */,
 				92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */,
 				9239259921D701AB00803D85 /* PeijianViewController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,

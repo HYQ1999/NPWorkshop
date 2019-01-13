@@ -64,10 +64,50 @@ class LoginViewController: UIViewController {
                 UserReposity().user_login(requesting: requesting) { (response, error) in
                     if error == nil, let response = response{
                         if response.id == ""  && response.roel == ""{
-                            let alerttController = UIAlertController(title: "Error!", message: "账号不存在", preferredStyle: .alert)
+                            let alerttController = UIAlertController(title: "Error!", message: response.ts, preferredStyle: .alert)
                             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
                             alerttController.addAction(okkAction)
                             self.present( alerttController, animated:  true, completion: nil)
+                            return
+                        }
+                        
+                        if response.id != "" && response.roel == Models_Login.UserRole.guanliyuan.rawValue
+                        {
+                            let alerttController = UIAlertController(title: "Error!", message: "身份不匹配，无法进入", preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                            return
+                        }
+                        
+                        if response.id != "" && response.roel == Models_Login.UserRole.baoxiuyonghu.rawValue
+                        {
+                            let alerttController = UIAlertController(title: "Error!", message: response.ts, preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                                action in
+                                let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
+                                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: BaoxiuTabViewController())))
+                                    as! BaoxiuTabViewController
+                                self.present(controller, animated: true, completion: nil)
+                            })
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                            return
+                        }
+                        
+                        if response.id != "" && response.roel == Models_Login.UserRole.zhidaojiaoshi.rawValue
+                        {
+                            let alerttController = UIAlertController(title: "Error!", message: response.ts, preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                                action in
+                                let destinationStoryboard = UIStoryboard(name:"ZhidaoJiaoshiStoryboard",bundle:nil)
+                                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: ZhidaoTabBarController())))
+                                    as! ZhidaoTabBarController
+                                self.present(controller, animated: true, completion: nil)
+                            })
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                            return
                         }
                         print(response.id ?? "")
                     }
