@@ -43,4 +43,11 @@ class Models_Login: NSObject {
         }
     }
     
+    
+    enum UserRole: String {
+        case  guanliyuan = "管理员"
+        case  baoxiuyonghu = "报修用户"
+        case  zhidaojiaoshi = "指导教师"
+    }
+    
 }

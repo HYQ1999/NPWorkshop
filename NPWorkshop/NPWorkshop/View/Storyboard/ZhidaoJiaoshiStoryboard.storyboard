@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Zhidao Tab Bar Controller-->
         <scene sceneID="9ek-r9-CvA">
             <objects>
-                <tabBarController id="16K-WX-QRp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ZhidaoTabBarController" id="16K-WX-QRp" customClass="ZhidaoTabBarController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dro-ra-KOP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
