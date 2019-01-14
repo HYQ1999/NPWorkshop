@@ -42,7 +42,7 @@ class WoViewController: UIViewController {
         fenxian.isHidden = true
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func xiugaimimaclick(_ sender: Any) {
         xiugaimima.isHidden = true
         xinmima.isHidden = false
@@ -70,6 +70,10 @@ class WoViewController: UIViewController {
     }
     
     @IBAction func zhuxiao(_ sender: Any) {
+        let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
+        let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
+            as! LoginViewController
+        self.present(controller, animated: true, completion: nil)
     }
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
@@ -79,14 +83,6 @@ class WoViewController: UIViewController {
         yuanmimatxt.resignFirstResponder()
         querenmimatxt.resignFirstResponder()
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

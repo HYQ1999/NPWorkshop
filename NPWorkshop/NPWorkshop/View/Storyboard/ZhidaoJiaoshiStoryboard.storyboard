@@ -88,7 +88,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ej6-sX-gZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2859" y="3640"/>
+            <point key="canvasLocation" x="-2797" y="3640"/>
         </scene>
         <!--Fendan Controller-->
         <scene sceneID="l1s-k0-rym">
