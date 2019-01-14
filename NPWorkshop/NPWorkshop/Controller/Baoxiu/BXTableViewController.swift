@@ -8,8 +8,10 @@
 
 import UIKit
 
-class BXTableViewController: UITableViewController,UISearchBarDelegate {
+class BXTableViewController: UITableViewController,UISearchBarDelegate,SearchTableViewDelegate {
+    
 var search:UISearchBar!
+    @IBOutlet var BxTableview: SearchTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,7 @@ var search:UISearchBar!
         search.barStyle = UIBarStyle.black
         search.tintColor = UIColor.blue
         search.placeholder = "请输入搜索信息"
+        BxTableview.mDelegate = self
         var logo = UIImageView(image:UIImage(named: "weixiu"))
         var rightNavBarButton = UIBarButtonItem(customView:search)
         //        self.navigationItem.rightBarButtonItem = rightNavBarButton
@@ -60,6 +63,11 @@ var search:UISearchBar!
         let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: ShangbaoViewController()))) as! ShangbaoViewController
         
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    
+    func hideKeyBoard() {
+        search.resignFirstResponder()
     }
     // MARK: - Table view data source
 
