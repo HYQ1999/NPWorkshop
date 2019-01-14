@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="297" y="-1657"/>
         </scene>
-        <!--Menu-->
+        <!--Menu Pei Jian-->
         <scene sceneID="9PE-MU-RLJ">
             <objects>
-                <tableViewController id="qj5-Db-YJe" customClass="Menu" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="qj5-Db-YJe" customClass="MenuPeiJian" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5gf-3j-JEz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,72 +114,8 @@
                         <sections>
                             <tableViewSection id="zb3-Wi-ZC5">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="rlu-cU-FKf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rlu-cU-FKf" id="6lk-Wx-yaC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="接修人员" translatesAutoresizingMaskIntoConstraints="NO" id="NRI-sw-lgB">
-                                                    <rect key="frame" x="31" y="21" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="7vG-f7-0Pc"/>
-                                                        <constraint firstAttribute="height" constant="30" id="IiU-W7-E7t"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接修人员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ks-xo-90z">
-                                                    <rect key="frame" x="76" y="26" width="69.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="NRI-sw-lgB" firstAttribute="leading" secondItem="6lk-Wx-yaC" secondAttribute="leadingMargin" constant="15" id="9Nf-xF-ugZ"/>
-                                                <constraint firstItem="2Ks-xo-90z" firstAttribute="top" secondItem="6lk-Wx-yaC" secondAttribute="topMargin" constant="15" id="FyM-fc-ioX"/>
-                                                <constraint firstItem="NRI-sw-lgB" firstAttribute="top" secondItem="6lk-Wx-yaC" secondAttribute="topMargin" constant="10" id="blv-Hy-7Bk"/>
-                                                <constraint firstItem="2Ks-xo-90z" firstAttribute="leading" secondItem="NRI-sw-lgB" secondAttribute="trailing" constant="15" id="uN6-Ke-tyc"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="1Gi-wT-yhP" kind="modal" id="oGC-id-f3O"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="QhD-z5-1X2">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QhD-z5-1X2" id="t0i-7e-e1Q">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="维修人员" translatesAutoresizingMaskIntoConstraints="NO" id="s14-io-92g">
-                                                    <rect key="frame" x="31" y="21" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="WyL-ae-r3k"/>
-                                                        <constraint firstAttribute="height" constant="30" id="ieY-ZP-jrG"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维修人员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-Xe-XFc">
-                                                    <rect key="frame" x="76" y="26" width="70" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="s14-io-92g" firstAttribute="leading" secondItem="t0i-7e-e1Q" secondAttribute="leadingMargin" constant="15" id="b5H-Dw-6ZW"/>
-                                                <constraint firstItem="nHg-Xe-XFc" firstAttribute="top" secondItem="t0i-7e-e1Q" secondAttribute="topMargin" constant="15" id="duQ-Ur-4P7"/>
-                                                <constraint firstItem="nHg-Xe-XFc" firstAttribute="leading" secondItem="s14-io-92g" secondAttribute="trailing" constant="15" id="nB5-66-Dvm"/>
-                                                <constraint firstItem="s14-io-92g" firstAttribute="top" secondItem="t0i-7e-e1Q" secondAttribute="topMargin" constant="10" id="oRo-jz-wqh"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Z7i-JX-VvP" kind="modal" id="1PL-ug-Dtv"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="vQF-7C-FgA">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQF-7C-FgA" id="A9x-Qh-0CW">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -211,7 +147,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="tL1-pi-JAI">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tL1-pi-JAI" id="dzL-66-MMH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -243,7 +179,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="yub-yF-jec">
-                                        <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yub-yF-jec" id="Wkd-PC-voG">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -275,7 +211,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Gsi-pn-lV1">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="180" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gsi-pn-lV1" id="fYP-ph-bZp">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -315,7 +251,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="tableview" destination="5gf-3j-JEz" id="imY-yA-bW9"/>
+                        <outlet property="tableview" destination="5gf-3j-JEz" id="bJ5-T8-Z3a"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7i-JJ-DDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,22 +294,6 @@
             </objects>
             <point key="canvasLocation" x="186" y="-815"/>
         </scene>
-        <!--JieXiu-->
-        <scene sceneID="8s4-Ko-wLp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="JieXiu" id="1Gi-wT-yhP" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRI-iw-T59" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1601" y="-1829"/>
-        </scene>
-        <!--WeiXiu-->
-        <scene sceneID="Rzl-gu-fcc">
-            <objects>
-                <viewControllerPlaceholder storyboardName="WeiXiu" id="Z7i-JX-VvP" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OJ7-DG-PAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1595" y="-1784"/>
-        </scene>
         <!--PeiJian-->
         <scene sceneID="5Sl-pL-WIq">
             <objects>
@@ -414,8 +334,6 @@
         <image name="假孙兴民" width="324" height="324"/>
         <image name="我的消息" width="50" height="50"/>
         <image name="我的钱盒" width="50" height="50"/>
-        <image name="接修人员" width="50" height="50"/>
-        <image name="维修人员" width="50" height="50"/>
         <image name="退出登陆大" width="334" height="40"/>
         <image name="配件申购员" width="50" height="50"/>
     </resources>

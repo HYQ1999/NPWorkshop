@@ -146,72 +146,8 @@
                                             <segue destination="oKv-G5-3H4" kind="modal" id="7t6-xO-62m"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="1oh-wS-0lC">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1oh-wS-0lC" id="f2H-u6-bpJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="维修人员" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-ye-cgl">
-                                                    <rect key="frame" x="31" y="21" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="5iV-7v-Vhr"/>
-                                                        <constraint firstAttribute="height" constant="30" id="zO7-Vw-08g"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维修人员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHN-65-z7A">
-                                                    <rect key="frame" x="76" y="26" width="70" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="6xp-ye-cgl" firstAttribute="top" secondItem="f2H-u6-bpJ" secondAttribute="topMargin" constant="10" id="16u-Xz-D76"/>
-                                                <constraint firstItem="xHN-65-z7A" firstAttribute="leading" secondItem="6xp-ye-cgl" secondAttribute="trailing" constant="15" id="B1s-tb-6H3"/>
-                                                <constraint firstItem="xHN-65-z7A" firstAttribute="top" secondItem="f2H-u6-bpJ" secondAttribute="topMargin" constant="15" id="mJ9-gh-nHH"/>
-                                                <constraint firstItem="6xp-ye-cgl" firstAttribute="leading" secondItem="f2H-u6-bpJ" secondAttribute="leadingMargin" constant="15" id="zxY-xB-gqp"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="uiA-td-I1v" kind="modal" id="5Gc-Cc-F15"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Rnr-j2-RLD">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rnr-j2-RLD" id="17c-XQ-jU7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="配件申购员" translatesAutoresizingMaskIntoConstraints="NO" id="FIF-Dm-IsK">
-                                                    <rect key="frame" x="31" y="21" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="K7T-8t-IFy"/>
-                                                        <constraint firstAttribute="height" constant="30" id="dsQ-wg-DIt"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配件申购员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNH-SI-pjG">
-                                                    <rect key="frame" x="76" y="26" width="87" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="FIF-Dm-IsK" firstAttribute="top" secondItem="17c-XQ-jU7" secondAttribute="topMargin" constant="10" id="9lg-hW-hRj"/>
-                                                <constraint firstItem="FIF-Dm-IsK" firstAttribute="leading" secondItem="17c-XQ-jU7" secondAttribute="leadingMargin" constant="15" id="A3S-jC-kqc"/>
-                                                <constraint firstItem="zNH-SI-pjG" firstAttribute="leading" secondItem="FIF-Dm-IsK" secondAttribute="trailing" constant="15" id="TvZ-Nn-AP6"/>
-                                                <constraint firstItem="zNH-SI-pjG" firstAttribute="top" secondItem="17c-XQ-jU7" secondAttribute="topMargin" constant="15" id="j13-oA-MxD"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="PkA-Mi-caq" kind="modal" id="Ven-yR-HH7"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Zwb-Ht-FFr">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zwb-Ht-FFr" id="8wx-Dl-XI5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -243,7 +179,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="YNG-k9-gvb">
-                                        <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YNG-k9-gvb" id="c8H-vd-Hjz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -334,22 +270,6 @@
             </objects>
             <point key="canvasLocation" x="1601" y="-1829"/>
         </scene>
-        <!--WeiXiu-->
-        <scene sceneID="3TG-kh-Knf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="WeiXiu" id="uiA-td-I1v" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ABy-f1-0BQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1595" y="-1784"/>
-        </scene>
-        <!--PeiJian-->
-        <scene sceneID="UVS-OE-pqZ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PeiJian" id="PkA-Mi-caq" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lhO-7y-wqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1586" y="-1736"/>
-        </scene>
         <!--QianHe-->
         <scene sceneID="ccQ-Nf-39q">
             <objects>
@@ -374,8 +294,6 @@
         <image name="假孙兴民" width="324" height="324"/>
         <image name="我的钱盒" width="50" height="50"/>
         <image name="接修人员" width="50" height="50"/>
-        <image name="维修人员" width="50" height="50"/>
         <image name="退出登陆大" width="334" height="40"/>
-        <image name="配件申购员" width="50" height="50"/>
     </resources>
 </document>
