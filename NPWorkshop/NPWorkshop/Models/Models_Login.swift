@@ -50,5 +50,11 @@ class Models_Login: NSObject {
         case  zhidaojiaoshi = "指导教师"
         case  weixiuyonghu = "维修用户"
     }
+    enum WeiXiuQuanXian: String{
+        case  jiexiu = "接修"
+        case  zuzhang = "组长"
+        case  weixiu = "维修"
+        case  peijian = "配件申购"
+    }
     
 }
