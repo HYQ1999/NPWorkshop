@@ -49,7 +49,7 @@
         <scene sceneID="jxA-8T-qxx">
             <objects>
                 <tableViewController id="Blt-Fb-BI6" customClass="BXTableViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v6q-4C-Vj7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v6q-4C-Vj7" customClass="SearchTableView" customModule="NPWorkshop" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,6 +70,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="" id="xt0-Sz-PxP"/>
                     <navigationItem key="navigationItem" id="4Oc-5i-TCy"/>
+                    <connections>
+                        <outlet property="BxTableview" destination="v6q-4C-Vj7" id="Jka-xU-dZ1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcg-dw-GQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1699,7 +1702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWE-Y2-45Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2309" y="1283"/>
+            <point key="canvasLocation" x="-2281" y="1290"/>
         </scene>
     </scenes>
     <resources>

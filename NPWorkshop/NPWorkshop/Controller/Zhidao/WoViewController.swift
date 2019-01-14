@@ -70,6 +70,10 @@ class WoViewController: UIViewController {
     }
     
     @IBAction func zhuxiao(_ sender: Any) {
+        let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
+        let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
+            as! LoginViewController
+        self.present(controller, animated: true, completion: nil)
     }
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
