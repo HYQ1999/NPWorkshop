@@ -80,6 +80,21 @@ class LoginViewController: UIViewController {
                             return
                         }
                         
+                        if response.id != "" && response.roel == Models_Login.UserRole.weixiuyonghu.rawValue
+                        {
+                            let alerttController = UIAlertController(title: "Error!", message: response.ts, preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                                action in
+                                let destinationStoryboard = UIStoryboard(name:"JieXiu",bundle:nil)
+                                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
+                                    as! SWRevealViewController
+                                self.present(controller, animated: true, completion: nil)
+                            })
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                            return
+                        }
+                        
                         if response.id != "" && response.roel == Models_Login.UserRole.baoxiuyonghu.rawValue
                         {
                             let alerttController = UIAlertController(title: "Error!", message: response.ts, preferredStyle: .alert)

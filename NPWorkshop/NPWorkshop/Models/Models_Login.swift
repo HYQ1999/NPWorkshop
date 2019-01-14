@@ -48,6 +48,7 @@ class Models_Login: NSObject {
         case  guanliyuan = "管理员"
         case  baoxiuyonghu = "报修用户"
         case  zhidaojiaoshi = "指导教师"
+        case  weixiuyonghu = "维修用户"
     }
     
 }
