@@ -17,11 +17,12 @@
 		0D95266B21D6150A00367ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D95266921D6150A00367ADE /* LaunchScreen.storyboard */; };
 		0D95267621D6150A00367ADE /* NPWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95267521D6150A00367ADE /* NPWorkshopTests.swift */; };
 		0D95268121D6150A00367ADE /* NPWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */; };
+		5A26DCAF21EC1B90003C2A4C /* MenuPeiJian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26DCAE21EC1B90003C2A4C /* MenuPeiJian.swift */; };
 		5A2FB8CF21E6CBB900E5C1D7 /* WeiXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8CE21E6CBB900E5C1D7 /* WeiXiu.storyboard */; };
-		5A2FB8D121E6CDC300E5C1D7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FB8D021E6CDC300E5C1D7 /* Menu.swift */; };
+		5A2FB8D121E6CDC300E5C1D7 /* MenuWeiXiu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FB8D021E6CDC300E5C1D7 /* MenuWeiXiu.swift */; };
 		5A2FB8D521E6D3FA00E5C1D7 /* PeiJian.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8D421E6D3FA00E5C1D7 /* PeiJian.storyboard */; };
 		5A2FB8D721E6D50000E5C1D7 /* JieXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8D621E6D50000E5C1D7 /* JieXiu.storyboard */; };
-		5A2FB8D921E6D56800E5C1D7 /* Menu5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FB8D821E6D56800E5C1D7 /* Menu5.swift */; };
+		5A2FB8D921E6D56800E5C1D7 /* Menujiexiu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FB8D821E6D56800E5C1D7 /* Menujiexiu.swift */; };
 		5A2FB8DB21E6D5BF00E5C1D7 /* QianHe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8DA21E6D5BF00E5C1D7 /* QianHe.storyboard */; };
 		5A2FB8DD21E6D66F00E5C1D7 /* GeRen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8DC21E6D66F00E5C1D7 /* GeRen.storyboard */; };
 		5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */; };
@@ -92,11 +93,12 @@
 		0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPWorkshopUITests.swift; sourceTree = "<group>"; };
 		0D95268221D6150A00367ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A26DCAE21EC1B90003C2A4C /* MenuPeiJian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPeiJian.swift; sourceTree = "<group>"; };
 		5A2FB8CE21E6CBB900E5C1D7 /* WeiXiu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeiXiu.storyboard; sourceTree = "<group>"; };
-		5A2FB8D021E6CDC300E5C1D7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		5A2FB8D021E6CDC300E5C1D7 /* MenuWeiXiu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWeiXiu.swift; sourceTree = "<group>"; };
 		5A2FB8D421E6D3FA00E5C1D7 /* PeiJian.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeiJian.storyboard; sourceTree = "<group>"; };
 		5A2FB8D621E6D50000E5C1D7 /* JieXiu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JieXiu.storyboard; sourceTree = "<group>"; };
-		5A2FB8D821E6D56800E5C1D7 /* Menu5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu5.swift; sourceTree = "<group>"; };
+		5A2FB8D821E6D56800E5C1D7 /* Menujiexiu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menujiexiu.swift; sourceTree = "<group>"; };
 		5A2FB8DA21E6D5BF00E5C1D7 /* QianHe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QianHe.storyboard; sourceTree = "<group>"; };
 		5A2FB8DC21E6D66F00E5C1D7 /* GeRen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeRen.storyboard; sourceTree = "<group>"; };
 		5A529F1A21DDDD72000F7AE6 /* NPWorkshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPWorkshop-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -269,7 +271,7 @@
 			children = (
 				5A7369A421E579010061361C /* RightMenuViewController.swift */,
 				5A7369A621E579740061361C /* WeiXiuTableViewController.swift */,
-				5A2FB8D021E6CDC300E5C1D7 /* Menu.swift */,
+				5A2FB8D021E6CDC300E5C1D7 /* MenuWeiXiu.swift */,
 			);
 			path = WeiXiu;
 			sourceTree = "<group>";
@@ -366,7 +368,7 @@
 			children = (
 				9239259421D7019400803D85 /* JiexiuViewController.swift */,
 				921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */,
-				5A2FB8D821E6D56800E5C1D7 /* Menu5.swift */,
+				5A2FB8D821E6D56800E5C1D7 /* Menujiexiu.swift */,
 			);
 			path = Jiexiu;
 			sourceTree = "<group>";
@@ -375,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				9239259821D701AB00803D85 /* PeijianViewController.swift */,
+				5A26DCAE21EC1B90003C2A4C /* MenuPeiJian.swift */,
 			);
 			path = Peijian;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				9201F3E321EB2D99007E3CA4 /* Models_Baoxiu.swift in Sources */,
 				9275B3D821E452BF0036DCB4 /* WoViewController.swift in Sources */,
 				92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */,
+				5A26DCAF21EC1B90003C2A4C /* MenuPeiJian.swift in Sources */,
 				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
 				921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */,
@@ -599,7 +603,7 @@
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				9228695A21E71F290077813A /* GerenZhongxinViewController.swift in Sources */,
-				5A2FB8D121E6CDC300E5C1D7 /* Menu.swift in Sources */,
+				5A2FB8D121E6CDC300E5C1D7 /* MenuWeiXiu.swift in Sources */,
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
 				0D6823D321E88F990010C122 /* UserReposity.swift in Sources */,
 				5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */,
@@ -607,7 +611,7 @@
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
-				5A2FB8D921E6D56800E5C1D7 /* Menu5.swift in Sources */,
+				5A2FB8D921E6D56800E5C1D7 /* Menujiexiu.swift in Sources */,
 				9275B3DA21E452D50036DCB4 /* FendanController.swift in Sources */,
 				9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */,
 				5A7369A721E579740061361C /* WeiXiuTableViewController.swift in Sources */,
