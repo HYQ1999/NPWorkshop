@@ -29,6 +29,8 @@
 		5A7369A721E579740061361C /* WeiXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A621E579740061361C /* WeiXiuTableViewController.swift */; };
 		9201F3D521EB067D007E3CA4 /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */; };
 		9201F3DF21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */; };
+		9201F3E121EB2917007E3CA4 /* BaoxiuReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F3E021EB2917007E3CA4 /* BaoxiuReposity.swift */; };
+		9201F3E321EB2D99007E3CA4 /* Models_Baoxiu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F3E221EB2D99007E3CA4 /* Models_Baoxiu.swift */; };
 		921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */; };
 		921836C121E5F65C009D841B /* BaoxiuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */; };
 		921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */; };
@@ -105,6 +107,8 @@
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoTabBarController.swift; sourceTree = "<group>"; };
+		9201F3E021EB2917007E3CA4 /* BaoxiuReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuReposity.swift; sourceTree = "<group>"; };
+		9201F3E221EB2D99007E3CA4 /* Models_Baoxiu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_Baoxiu.swift; sourceTree = "<group>"; };
 		921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIexiuMoneyBox.swift; sourceTree = "<group>"; };
 		921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaoxiuStoryboard.storyboard; sourceTree = "<group>"; };
 		921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZhidaoJiaoshiStoryboard.storyboard; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				0D6823D221E88F990010C122 /* UserReposity.swift */,
+				9201F3E021EB2917007E3CA4 /* BaoxiuReposity.swift */,
 			);
 			path = NetMethod;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				0D6823D421E890060010C122 /* Models_Login.swift */,
+				9201F3E221EB2D99007E3CA4 /* Models_Baoxiu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -576,6 +582,7 @@
 			files = (
 				9239259521D7019400803D85 /* JiexiuViewController.swift in Sources */,
 				5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */,
+				9201F3E321EB2D99007E3CA4 /* Models_Baoxiu.swift in Sources */,
 				9275B3D821E452BF0036DCB4 /* WoViewController.swift in Sources */,
 				92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */,
 				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
@@ -596,6 +603,7 @@
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
 				0D6823D321E88F990010C122 /* UserReposity.swift in Sources */,
 				5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */,
+				9201F3E121EB2917007E3CA4 /* BaoxiuReposity.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
