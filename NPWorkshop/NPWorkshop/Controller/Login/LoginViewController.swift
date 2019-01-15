@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PassWordTextField: UITextField!
+    var usermodel = UserModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         UserNameTextField.borderStyle = UITextField.BorderStyle.none
@@ -131,6 +132,11 @@ class LoginViewController: UIViewController {
                             let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
                             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
                                 action in
+                                self.usermodel.loadData()
+                                self.usermodel.userlist.append(UserList(userid:response.id!,userrole:response.roel!,quanxian:response.qx!))
+                                self.usermodel.saveData()
+                                
+                                
                                 let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
                                 let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: BaoxiuTabViewController())))
                                     as! BaoxiuTabViewController

@@ -3,4 +3,5 @@ use_frameworks!
 target 'NPWorkshop' do
 pod 'Alamofire'
 pod 'SwiftyJSON', '~> 4.2.0'
+pod 'ProgressHUD'
 end
