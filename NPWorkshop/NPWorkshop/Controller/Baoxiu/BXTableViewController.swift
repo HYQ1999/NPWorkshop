@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
+import ProgressHUD
 class BXTableViewController: UITableViewController,UISearchBarDelegate,SearchTableViewDelegate {
     
 var search:UISearchBar!
+        var tablelist: [Models_Baoxiu.Response] = []
     @IBOutlet var BxTableview: SearchTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,7 +59,30 @@ var search:UISearchBar!
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
- 
+  
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Baoxiu"), object: nil)
+        Messages().showNow(code: 0x2004)
+        BaoxiuReposity().Baoxiulist()
+            
+        
+    }
+    @objc func TakeOrders(_ notification:Notification) {
+        if let Response: [Models_Baoxiu.Response] = notification.object as! [Models_Baoxiu.Response]?{
+            tablelist = Response
+            tableView.reloadData()
+            ProgressHUD.dismiss()
+        }
+        else {
+            Messages().showError(code: 0x1002)
+        }
+    }
+
+   
+    
     
     @objc func tapped2(){
         let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: ShangbaoViewController()))) as! ShangbaoViewController
@@ -73,14 +98,26 @@ var search:UISearchBar!
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        
+        return tablelist.count
     }
 
+    
+      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "baoxiucell", for: indexPath) as! BaoxiuTableViewCell
+        let list = tablelist[indexPath.row] as Models_Baoxiu.Response
+        cell.baoxiuid.text = list.RepairID
+        cell.baoxiustyle.text = list.RepairState
+        cell.shebeimingchen.text = list.EqptName
+        return cell
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

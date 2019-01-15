@@ -50,6 +50,9 @@
 		9228695C21E7227B0077813A /* YiWanXiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228695B21E7227B0077813A /* YiWanXiuViewController.swift */; };
 		9228695E21E740980077813A /* Weixiudanxiangxi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */; };
 		922C78E721EC298A0056E09F /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78E621EC298A0056E09F /* Search.swift */; };
+		922C78E921EC35930056E09F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78E821EC35930056E09F /* UserModel.swift */; };
+		922C78EB21EC35B70056E09F /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78EA21EC35B70056E09F /* UserList.swift */; };
+		922C78ED21EC6B790056E09F /* BaoxiuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78EC21EC6B790056E09F /* BaoxiuTableViewCell.swift */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
@@ -57,6 +60,7 @@
 		9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259C21D71B4F00803D85 /* BXTableViewController.swift */; };
 		9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259E21D71D4100803D85 /* LeftViewController.swift */; };
 		923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923925A021D743F800803D85 /* DetailTableViewController.swift */; };
+		924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8EE21ED73D900ADD1D4 /* Messages.swift */; };
 		9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */; };
 		9275B3D821E452BF0036DCB4 /* WoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D721E452BF0036DCB4 /* WoViewController.swift */; };
 		9275B3DA21E452D50036DCB4 /* FendanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D921E452D50036DCB4 /* FendanController.swift */; };
@@ -138,6 +142,9 @@
 		9228695B21E7227B0077813A /* YiWanXiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiWanXiuViewController.swift; sourceTree = "<group>"; };
 		9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weixiudanxiangxi.storyboard; sourceTree = "<group>"; };
 		922C78E621EC298A0056E09F /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		922C78E821EC35930056E09F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		922C78EA21EC35B70056E09F /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		922C78EC21EC6B790056E09F /* BaoxiuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuTableViewCell.swift; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +152,7 @@
 		9239259C21D71B4F00803D85 /* BXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXTableViewController.swift; sourceTree = "<group>"; };
 		9239259E21D71D4100803D85 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		923925A021D743F800803D85 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		924BA8EE21ED73D900ADD1D4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenpeiTableViewController.swift; sourceTree = "<group>"; };
 		9275B3D721E452BF0036DCB4 /* WoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoViewController.swift; sourceTree = "<group>"; };
 		9275B3D921E452D50036DCB4 /* FendanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FendanController.swift; sourceTree = "<group>"; };
@@ -252,6 +260,7 @@
 		0D95265C21D614FB00367ADE /* NPWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				924BA8ED21ED73BA00ADD1D4 /* Other */,
 				922C78E421EC25280056E09F /* Protocol */,
 				0D6823D021E88EF20010C122 /* NetMethod */,
 				0D6823D121E88F050010C122 /* Models */,
@@ -403,6 +412,7 @@
 				92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */,
 				92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */,
 				92F13F2521DEF1E1009A248D /* YiShangBaoDetailController.swift */,
+				922C78EC21EC6B790056E09F /* BaoxiuTableViewCell.swift */,
 			);
 			path = Baoxiu;
 			sourceTree = "<group>";
@@ -445,9 +455,19 @@
 			isa = PBXGroup;
 			children = (
 				9239259A21D701B700803D85 /* ShaheViewController.swift */,
+				922C78E821EC35930056E09F /* UserModel.swift */,
+				922C78EA21EC35B70056E09F /* UserList.swift */,
 			);
 			name = ShaHe;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		924BA8ED21ED73BA00ADD1D4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				924BA8EE21ED73D900ADD1D4 /* Messages.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -625,6 +645,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -632,6 +653,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,12 +685,15 @@
 				92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
 				929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */,
+				922C78EB21EC35B70056E09F /* UserList.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
+				924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				9228695A21E71F290077813A /* JieXiuGeRen.swift in Sources */,
 				5A2FB8D121E6CDC300E5C1D7 /* MenuWeiXiu.swift in Sources */,
 				5A1ED91021ED634F0097A950 /* PeiJianTableViewController.swift in Sources */,
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
+				922C78ED21EC6B790056E09F /* BaoxiuTableViewCell.swift in Sources */,
 				0D6823D321E88F990010C122 /* UserReposity.swift in Sources */,
 				5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */,
 				5A26DCC821EC822C003C2A4C /* WeixiuMoneyBox.swift in Sources */,
@@ -684,6 +709,7 @@
 				5A7369A721E579740061361C /* WeiXiuTableViewController.swift in Sources */,
 				5A1ED91421ED64950097A950 /* PeijianMoneyBox.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
+				922C78E921EC35930056E09F /* UserModel.swift in Sources */,
 				9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

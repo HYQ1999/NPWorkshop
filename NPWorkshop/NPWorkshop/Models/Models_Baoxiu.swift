@@ -10,5 +10,31 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 class Models_Baoxiu: NSObject {
-
+    /// 请求
+//    class Requesting: NSObject {
+//        var UserId:String
+//        
+//        init(UserId:String) {
+//            self.UserId = UserId
+//        }
+//    }
+    
+    /// 响应
+    class Response: NSObject {
+        var RepairID:String?
+        var EqptName:String?
+        var RepairState:String?
+        
+        init(
+            RepairID: String?,
+            EqptName: String?,
+            RepairState: String?
+            ){
+            self.RepairID = RepairID
+            self.EqptName = EqptName
+            self.RepairState = RepairState
+         
+        }
+    }
+    
 }
