@@ -193,7 +193,6 @@
 		0D6823CE21E884C10010C122 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9228695821E71EF40077813A /* WeixiuyonghuGrZx */,
 				9228695721E715ED0077813A /* WeixiudanDetail */,
 				5A7369A321E577EC0061361C /* WeiXiu */,
 				9239258F21D7015000803D85 /* ShaHe */,
@@ -375,13 +374,6 @@
 				9228695B21E7227B0077813A /* YiWanXiuViewController.swift */,
 			);
 			path = WeixiudanDetail;
-			sourceTree = "<group>";
-		};
-		9228695821E71EF40077813A /* WeixiuyonghuGrZx */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WeixiuyonghuGrZx;
 			sourceTree = "<group>";
 		};
 		922C78E421EC25280056E09F /* Protocol */ = {
