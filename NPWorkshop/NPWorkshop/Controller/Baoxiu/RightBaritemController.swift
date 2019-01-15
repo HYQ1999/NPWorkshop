@@ -20,6 +20,7 @@ class RightBaritemController: UIViewController {
     @IBOutlet weak var yuanmimatxt: UITextField!
     @IBOutlet weak var fenxian: UIImageView!
     var userlist = UserModel()
+    var baoxiulist = BaoxiuModel()
     //    @IBOutlet weak var MenuItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +77,9 @@ class RightBaritemController: UIViewController {
         userlist.userlist.removeAll()
         userlist.saveData()
         
+        baoxiulist.loadData()
+        baoxiulist.bxlist.removeAll()
+        baoxiulist.saveData()
         
         let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
         let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))

@@ -11,6 +11,7 @@ import ProgressHUD
 class BXTableViewController: UITableViewController,UISearchBarDelegate,SearchTableViewDelegate {
     
 var search:UISearchBar!
+    var baoxiulist = BaoxiuModel()
         var tablelist: [Models_Baoxiu.Response] = []
     @IBOutlet var BxTableview: SearchTableView!
     
@@ -67,7 +68,7 @@ var search:UISearchBar!
         NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Baoxiu"), object: nil)
         Messages().showNow(code: 0x2004)
         BaoxiuReposity().Baoxiulist()
-            
+            baoxiulist.loadData()
         
     }
     @objc func TakeOrders(_ notification:Notification) {
@@ -104,18 +105,20 @@ var search:UISearchBar!
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        
-        return tablelist.count
+        baoxiulist.loadData()
+        return baoxiulist.bxlist.count
     }
-
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     
       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+         baoxiulist.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "baoxiucell", for: indexPath) as! BaoxiuTableViewCell
-        let list = tablelist[indexPath.row] as Models_Baoxiu.Response
-        cell.baoxiuid.text = list.RepairID
-        cell.baoxiustyle.text = list.RepairState
-        cell.shebeimingchen.text = list.EqptName
+        cell.baoxiuid.text = baoxiulist.bxlist[indexPath.row].RepairID
+        cell.baoxiustyle.text = baoxiulist.bxlist[indexPath.row].RepairState
+        cell.shebeimingchen.text = baoxiulist.bxlist[indexPath.row].EqptName
         return cell
     }
     /*

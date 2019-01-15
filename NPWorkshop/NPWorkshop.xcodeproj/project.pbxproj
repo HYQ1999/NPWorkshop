@@ -61,6 +61,8 @@
 		9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259E21D71D4100803D85 /* LeftViewController.swift */; };
 		923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923925A021D743F800803D85 /* DetailTableViewController.swift */; };
 		924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8EE21ED73D900ADD1D4 /* Messages.swift */; };
+		924BA8F221ED9DB100ADD1D4 /* BaoxiuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */; };
+		924BA8F421ED9DC300ADD1D4 /* BaoxiuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */; };
 		9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */; };
 		9275B3D821E452BF0036DCB4 /* WoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D721E452BF0036DCB4 /* WoViewController.swift */; };
 		9275B3DA21E452D50036DCB4 /* FendanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D921E452D50036DCB4 /* FendanController.swift */; };
@@ -153,6 +155,8 @@
 		9239259E21D71D4100803D85 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		923925A021D743F800803D85 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		924BA8EE21ED73D900ADD1D4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuList.swift; sourceTree = "<group>"; };
+		924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuModel.swift; sourceTree = "<group>"; };
 		9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenpeiTableViewController.swift; sourceTree = "<group>"; };
 		9275B3D721E452BF0036DCB4 /* WoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoViewController.swift; sourceTree = "<group>"; };
 		9275B3D921E452D50036DCB4 /* FendanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FendanController.swift; sourceTree = "<group>"; };
@@ -449,6 +453,8 @@
 				9239259A21D701B700803D85 /* ShaheViewController.swift */,
 				922C78E821EC35930056E09F /* UserModel.swift */,
 				922C78EA21EC35B70056E09F /* UserList.swift */,
+				924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */,
+				924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */,
 			);
 			name = ShaHe;
 			path = ..;
@@ -677,6 +683,7 @@
 				92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
 				929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */,
+				924BA8F421ED9DC300ADD1D4 /* BaoxiuModel.swift in Sources */,
 				922C78EB21EC35B70056E09F /* UserList.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */,
@@ -703,6 +710,7 @@
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
 				922C78E921EC35930056E09F /* UserModel.swift in Sources */,
 				9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */,
+				924BA8F221ED9DB100ADD1D4 /* BaoxiuList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
