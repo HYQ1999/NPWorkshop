@@ -1,14 +1,15 @@
 //
-//  GerenZhongxinViewController.swift
+//  PeijianGeRen.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/10.
-//  Copyright © 2019年 韩意谦. All rights reserved.
+//  Created by 欧张帆 on 2019/1/15.
+//  Copyright © 2019 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class GerenZhongxinViewController: UIViewController {
+class PeijianGeRen: UIViewController {
+
     @IBOutlet weak var userimg: UIImageView!
     @IBOutlet weak var xinmima: UIImageView!
     @IBOutlet weak var xinmimatxt: UITextField!
@@ -42,10 +43,9 @@ class GerenZhongxinViewController: UIViewController {
         yuanmimatxt.isHidden = true
         fenxian.isHidden = true
         self.revealViewController().rearViewRevealWidth = 250
-                customSetup()
+        customSetup()
         // Do any additional setup after loading the view.
     }
-    
     func customSetup() {
         let revealViewController: SWRevealViewController? = self.revealViewController()
         if revealViewController != nil {
@@ -55,7 +55,6 @@ class GerenZhongxinViewController: UIViewController {
             self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         }
     }
-    
     @IBAction func xiugaimimaclick(_ sender: Any) {
         xiugaimima.isHidden = true
         xinmima.isHidden = false
@@ -82,13 +81,7 @@ class GerenZhongxinViewController: UIViewController {
         fenxian.isHidden = true
     }
     
-    @IBAction func zhuxiao(_ sender: Any) {
-        let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
-        let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
-            as! LoginViewController
-        self.present(controller, animated: true, completion: nil)
-        
-    }
+    
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -98,7 +91,6 @@ class GerenZhongxinViewController: UIViewController {
         querenmimatxt.resignFirstResponder()
         xinmimatxt.resignFirstResponder()
     }
-    
     /*
     // MARK: - Navigation
 
