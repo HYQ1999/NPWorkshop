@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Menu5: UITableViewController {
+class Menujiexiu: UITableViewController {
 
     @IBOutlet var tableview: UITableView!
     override func viewDidLoad() {

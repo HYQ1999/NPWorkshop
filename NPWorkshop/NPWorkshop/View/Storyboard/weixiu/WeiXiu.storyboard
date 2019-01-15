@@ -53,18 +53,18 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cn-N9-ixz">
                                 <rect key="frame" x="0.0" y="216" width="414" height="520"/>
                                 <connections>
-                                    <segue destination="TAE-D3-jwk" kind="embed" id="s7j-cB-4yH"/>
+                                    <segue destination="TAE-D3-jwk" kind="embed" id="tM2-Ku-v2w"/>
                                 </connections>
                             </containerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="假孙兴民" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-En-R8G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="维修员" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-En-R8G">
                                 <rect key="frame" x="90" y="40" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Owa-1g-XbW"/>
                                     <constraint firstAttribute="height" constant="80" id="qa3-yB-2dS"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserNa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSm-2o-3Hg">
-                                <rect key="frame" x="103" y="140" width="58" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维修员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSm-2o-3Hg">
+                                <rect key="frame" x="90" y="140" width="80" height="21"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -72,6 +72,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arj-7i-89f">
                                 <rect key="frame" x="10" y="676" width="334" height="40"/>
                                 <state key="normal" image="退出登陆大"/>
+                                <connections>
+                                    <action selector="out:" destination="DhF-54-oOo" eventType="touchUpInside" id="1JZ-0n-l8N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,14 +86,15 @@
                             <constraint firstItem="iAR-En-R8G" firstAttribute="top" secondItem="l6U-Xu-XVf" secondAttribute="top" constant="20" id="Gv5-5b-pTn"/>
                             <constraint firstItem="l6U-Xu-XVf" firstAttribute="bottom" secondItem="KRZ-ja-ubm" secondAttribute="bottom" constant="550" id="JuQ-JQ-dxG"/>
                             <constraint firstAttribute="trailing" secondItem="KRZ-ja-ubm" secondAttribute="trailing" id="M9T-pb-tkK"/>
+                            <constraint firstItem="GSm-2o-3Hg" firstAttribute="leading" secondItem="iAR-En-R8G" secondAttribute="leading" id="Vaq-OC-Sdc"/>
+                            <constraint firstItem="GSm-2o-3Hg" firstAttribute="top" secondItem="iAR-En-R8G" secondAttribute="bottom" constant="20" id="XkX-kf-5x2"/>
+                            <constraint firstItem="GSm-2o-3Hg" firstAttribute="trailing" secondItem="iAR-En-R8G" secondAttribute="trailing" id="YjR-7m-lwz"/>
                             <constraint firstItem="arj-7i-89f" firstAttribute="top" secondItem="KRZ-ja-ubm" secondAttribute="bottom" constant="490" id="Zrl-7j-Izs"/>
                             <constraint firstItem="arj-7i-89f" firstAttribute="leading" secondItem="l6U-Xu-XVf" secondAttribute="leading" constant="10" id="dnm-3a-Lkf"/>
                             <constraint firstItem="l6U-Xu-XVf" firstAttribute="trailing" secondItem="7cn-N9-ixz" secondAttribute="trailing" id="kit-nN-kHU"/>
-                            <constraint firstItem="GSm-2o-3Hg" firstAttribute="top" secondItem="iAR-En-R8G" secondAttribute="bottom" constant="20" id="lju-Rq-fEh"/>
                             <constraint firstItem="KRZ-ja-ubm" firstAttribute="leading" secondItem="YXx-bs-rpb" secondAttribute="leading" id="nub-zD-O4X"/>
                             <constraint firstItem="iAR-En-R8G" firstAttribute="leading" secondItem="l6U-Xu-XVf" secondAttribute="leading" constant="90" id="oaF-AM-KWo"/>
                             <constraint firstItem="7cn-N9-ixz" firstAttribute="leading" secondItem="l6U-Xu-XVf" secondAttribute="leading" id="ofS-dU-uSH"/>
-                            <constraint firstItem="GSm-2o-3Hg" firstAttribute="leading" secondItem="l6U-Xu-XVf" secondAttribute="leading" constant="103" id="qW5-Ab-hif"/>
                             <constraint firstItem="l6U-Xu-XVf" firstAttribute="bottom" secondItem="7cn-N9-ixz" secondAttribute="bottom" id="qXk-6d-PiI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l6U-Xu-XVf"/>
@@ -101,12 +105,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNW-Ll-6RQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="-1692"/>
+            <point key="canvasLocation" x="211.59420289855075" y="-1692.3913043478262"/>
         </scene>
-        <!--Menu-->
+        <!--Menu Wei Xiu-->
         <scene sceneID="4FM-dl-BJn">
             <objects>
-                <tableViewController id="TAE-D3-jwk" customClass="Menu" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="TAE-D3-jwk" customClass="MenuWeiXiu" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OWQ-Kk-bQ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="1595" y="-1784"/>
         </scene>
-        <!--QianHe-->
+        <!--QianHeWeiXiu-->
         <scene sceneID="NuD-ly-NC6">
             <objects>
-                <viewControllerPlaceholder storyboardName="QianHe" id="Z4W-K8-8KI" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="QianHeWeiXiu" id="Z4W-K8-8KI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azD-Cc-zti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1578" y="-1686"/>
@@ -282,10 +286,10 @@
             </objects>
             <point key="canvasLocation" x="1563" y="-1634"/>
         </scene>
-        <!--GeRen-->
+        <!--GeRenWeiXiu-->
         <scene sceneID="s9s-fB-cMj">
             <objects>
-                <viewControllerPlaceholder storyboardName="GeRen" id="rsz-Mo-GJr" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="GeRenWeiXiu" id="rsz-Mo-GJr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXq-Y2-SPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1560" y="-1583"/>
@@ -331,10 +335,10 @@
         <image name=" 登录图片" width="1920" height="925"/>
         <image name="个人中心" width="50" height="50"/>
         <image name="侧滑" width="32" height="32"/>
-        <image name="假孙兴民" width="324" height="324"/>
         <image name="我的消息" width="50" height="50"/>
         <image name="我的钱盒" width="50" height="50"/>
         <image name="维修人员" width="50" height="50"/>
+        <image name="维修员" width="180" height="180"/>
         <image name="退出登陆大" width="334" height="40"/>
     </resources>
 </document>
