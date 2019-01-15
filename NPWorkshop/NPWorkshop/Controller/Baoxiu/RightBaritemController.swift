@@ -19,6 +19,7 @@ class RightBaritemController: UIViewController {
     @IBOutlet weak var yuanmima: UIImageView!
     @IBOutlet weak var yuanmimatxt: UITextField!
     @IBOutlet weak var fenxian: UIImageView!
+    var userlist = UserModel()
     //    @IBOutlet weak var MenuItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,11 @@ class RightBaritemController: UIViewController {
     }
     
     @IBAction func zhuxiao(_ sender: Any) {
+        userlist.loadData()
+        userlist.userlist.removeAll()
+        userlist.saveData()
+        
+        
         let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
         let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
             as! LoginViewController
