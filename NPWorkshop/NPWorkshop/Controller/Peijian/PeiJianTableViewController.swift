@@ -1,36 +1,47 @@
 //
-//  Menu.swift
+//  PeiJianTableViewController.swift
 //  NPWorkshop
 //
-//  Created by 欧张帆 on 2019/1/10.
+//  Created by 欧张帆 on 2019/1/15.
 //  Copyright © 2019 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class MenuWeiXiu: UITableViewController {
-    
- @IBOutlet var tableview: UITableView!
+class PeiJianTableViewController: UITableViewController {
+
+     @IBOutlet weak var MenuItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-self.tableView.tableFooterView = UIView(frame:CGRect.zero)
+
+        self.revealViewController().rearViewRevealWidth = 250
+        customSetup()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    func customSetup() {
+        let revealViewController: SWRevealViewController? = self.revealViewController()
+        if revealViewController != nil {
+            //            revealViewController?.rightViewRevealWidth = 50
+            MenuItem.target = self.revealViewController()
+            MenuItem.action = #selector(SWRevealViewController.revealToggle(_:))
+            //            navigationController?.navigationBar.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer)
+            self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 0
     }
 
     /*

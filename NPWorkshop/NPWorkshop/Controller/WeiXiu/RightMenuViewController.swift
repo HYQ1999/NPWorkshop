@@ -18,7 +18,34 @@ class RightMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func out(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "提示",
+                                                message: "您确定要退出此账号吗？", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+            action in
+            let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
+            let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
+                as! LoginViewController
+            self.present(controller, animated: true, completion: nil)
+        })
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+//        let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
+//        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+//            action in
+//            let destinationStoryboard = UIStoryboard(name:"JieXiu",bundle:nil)
+//            let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
+//                as! LoginViewController
+//            self.present(controller, animated: true, completion: nil)
+//        })
+//        alerttController.addAction(okkAction)
+//        self.present( alerttController, animated:  true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
