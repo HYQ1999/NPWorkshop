@@ -1,22 +1,23 @@
 //
-//  WeiXiuTableViewController.swift
+//  FixTableViewController.swift
 //  NPWorkshop
 //
-//  Created by 欧张帆 on 2019/1/9.
+//  Created by 欧张帆 on 2019/1/16.
 //  Copyright © 2019 韩意谦. All rights reserved.
 //
 
 import UIKit
+import ProgressHUD
 
-class WeiXiuTableViewController: UITableViewController {
-
-    @IBOutlet weak var MenuItem: UIBarButtonItem!
-    var  xiaoou = "0"
+class FixTableViewController: UITableViewController {
     
+    var weixiuModel = WeixiuModel()
+    var weixiuUserModel = WeiXiuUserModel()
+    var tablelist: [Models_Weixiu.Response] = []
+    @IBOutlet weak var MenuItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         self.revealViewController().rearViewRevealWidth = 250
         customSetup()
         // Uncomment the following line to preserve selection between presentations
@@ -35,16 +36,46 @@ class WeiXiuTableViewController: UITableViewController {
             self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Weixiu"), object: nil)
+        Messages().showNow(code: 0x2004)
+        weixiuModel.loadData()
+        weixiuModel.wxlist.removeAll()
+        weixiuModel.saveData()
+        
+        WeixiuReposity().Weixiulist()
+//        weixiuModel.loadData()
+    }
     // MARK: - Table view data source
-
+    @objc func TakeOrders(_ notification:Notification) {
+        if let Response: [Models_Weixiu.Response] = notification.object as! [Models_Weixiu.Response]?{
+            tableView.reloadData()
+            ProgressHUD.dismiss()
+        }
+        else {
+            Messages().showError(code: 0x1002)
+        }
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        weixiuModel.loadData()
+        return weixiuModel.wxlist.count
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weixiucell", for: indexPath) as! WeiXiuTableViewCell
+        weixiuModel.loadData()
+        cell.weixiuren.text = weixiuModel.wxlist[indexPath.row].FixID
+        cell.weixiushebei.text = weixiuModel.wxlist[indexPath.row].EqptName
+        cell.weixiuzhuangtai.text = weixiuModel.wxlist[indexPath.row].FixState
+        return cell
     }
 
     /*
