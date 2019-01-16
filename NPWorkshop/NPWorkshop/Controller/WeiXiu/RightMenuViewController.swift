@@ -9,7 +9,8 @@
 import UIKit
 
 class RightMenuViewController: UIViewController {
-
+    var weixiuUserModel = WeiXiuUserModel()
+    var weixiuModel = WeixiuModel()
     @IBOutlet weak var imageview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,14 @@ class RightMenuViewController: UIViewController {
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         let okAction = UIAlertAction(title: "好的", style: .default, handler: {
             action in
+            self.weixiuUserModel.loadData()
+            self.weixiuUserModel.userlist.removeAll()
+            self.weixiuUserModel.saveData()
+            
+            self.weixiuModel.loadData()
+            self.weixiuModel.wxlist.removeAll()
+            self.weixiuModel.saveData()
+            
             let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
             let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
                 as! LoginViewController

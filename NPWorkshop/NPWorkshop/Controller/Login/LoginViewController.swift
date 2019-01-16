@@ -10,11 +10,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    var weixiuModel = WeixiuModel()
+    var weixiuUserModel = WeiXiuUserModel()
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PassWordTextField: UITextField!
     var usermodel = UserModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.weixiuUserModel.loadData()
+//        self.weixiuUserModel.userlist.removeAll()
+//        self.weixiuUserModel.saveData()
+////
+//        self.weixiuModel.loadData()
+//        self.weixiuModel.wxlist.removeAll()
+//        self.weixiuModel.saveData()
         UserNameTextField.borderStyle = UITextField.BorderStyle.none
         UserNameTextField.clearButtonMode = .always
         PassWordTextField.borderStyle = UITextField.BorderStyle.none
@@ -102,6 +111,11 @@ class LoginViewController: UIViewController {
                                 let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
                                 let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
                                     action in
+                                    
+                                    self.weixiuUserModel.loadData()
+                                    self.weixiuUserModel.userlist.append(WeiXiuUserList(userid:response.id!,userrole:response.roel!,quanxian:response.qx!))
+                                    self.weixiuUserModel.saveData()
+                                    
                                     let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
                                     let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
                                         as! SWRevealViewController
