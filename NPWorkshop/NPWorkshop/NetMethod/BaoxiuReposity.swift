@@ -31,7 +31,7 @@ class BaoxiuReposity: NSObject {
             "UserId": userlist.userlist[0].userid //左边是接口
         ]
         
-        Alamofire.request("http://172.16.101.66:8083/api/RepAPI/GetRepLists", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+        Alamofire.request("http://172.16.101.66:8083/api/RepAPI/PostRepLists", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             if response.result.value != nil {
                 do{
                     //当收到JSON相应时
@@ -48,6 +48,7 @@ class BaoxiuReposity: NSObject {
                             baoxiulist.saveData()
                             //                                        print(i)
                         }
+                        
                         
                     }
                     

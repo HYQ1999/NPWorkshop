@@ -61,22 +61,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLs-wg-iTn">
-                                            <rect key="frame" x="72" y="11" width="161" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLs-wg-iTn">
+                                            <rect key="frame" x="20" y="8" width="179" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWx-JN-q4t">
-                                            <rect key="frame" x="72" y="40" width="191" height="21"/>
+                                            <rect key="frame" x="20" y="43" width="179" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToO-G6-bzX">
-                                            <rect key="frame" x="278" y="30" width="125" height="21"/>
+                                            <rect key="frame" x="313" y="29" width="101" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -291,9 +291,13 @@
                     <navigationItem key="navigationItem" title="上报维修单" id="OQU-4A-Bbc">
                         <barButtonItem key="rightBarButtonItem" title="上传" id="2ox-d3-DZc">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="shangbao:" destination="HFw-Lu-4K6" id="zf9-g0-f2P"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="guzhangxianxiang" destination="mhn-As-JZa" id="JmA-hw-aZI"/>
                         <outlet property="shebeiname" destination="C2O-id-AoD" id="joX-ar-tdY"/>
                         <outlet property="xinhaocanshu" destination="pHT-cS-LaD" id="bkR-O0-LFu"/>
                         <outlet property="zichannum" destination="Oz5-dP-amh" id="7fe-4T-TJO"/>
@@ -301,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djq-pB-Tai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168.11594202898553" y="1400.5434782608697"/>
+            <point key="canvasLocation" x="238" y="1258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E3E-3F-5aN">

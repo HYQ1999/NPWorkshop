@@ -27,8 +27,9 @@ var search:UISearchBar!
         search.tintColor = UIColor.blue
         search.placeholder = "请输入搜索信息"
         BxTableview.mDelegate = self
-        var logo = UIImageView(image:UIImage(named: "weixiu"))
-        var rightNavBarButton = UIBarButtonItem(customView:search)
+        self.tableView.tableFooterView = UIView(frame:CGRect.zero)
+        let logo = UIImageView(image:UIImage(named: "weixiu"))
+        let rightNavBarButton = UIBarButtonItem(customView:search)
         //        self.navigationItem.rightBarButtonItem = rightNavBarButton
         self.navigationItem.titleView = logo
         search.delegate = self
@@ -53,7 +54,6 @@ var search:UISearchBar!
         self.navigationController?.navigationBar.barTintColor = bgColor
         
         
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -61,9 +61,9 @@ var search:UISearchBar!
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
   
-    override func viewDidDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self)
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        NotificationCenter.default.removeObserver(self)
+//    }
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Baoxiu"), object: nil)
         Messages().showNow(code: 0x2004)
@@ -121,6 +121,68 @@ var search:UISearchBar!
         cell.shebeimingchen.text = baoxiulist.bxlist[indexPath.row].EqptName
         return cell
     }
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let chehui = UITableViewRowAction(style: .normal, title: "撤销") {
+            action , index in
+//            self.baoxiulist.loadData()
+//            
+////            let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: self.baoxiulist.bxlist[indexPath.row].RepairID)
+//            BaoxiuDetail().Baoxiudetail()
+            if self.baoxiulist.bxlist[indexPath.row].RepairState != "未分配"
+            {
+                let alerttController = UIAlertController(title: "Error！", message: "此报修单无法撤销", preferredStyle: .alert)
+                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                alerttController.addAction(okkAction)
+                self.present( alerttController, animated:  true, completion: nil)
+            }
+            else
+            {
+                 let alertController = UIAlertController(title: "提示！",message: "请填写故障原因", preferredStyle: .alert)
+                alertController.addTextField {
+                    (textField: UITextField!) -> Void in
+                    textField.placeholder = "故障原因"
+                }
+                 let newpw = alertController.textFields!.first!
+                 let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+                let okAction = UIAlertAction(title: "确定", style: .default, handler: {
+                    action in
+                    self.baoxiulist.loadData()
+    
+                    let requesting : Models_CheXiao.Requesting = Models_CheXiao.Requesting(RepairID: self.baoxiulist.bxlist[indexPath.row].RepairID, operation: "撤销",RepairState: self.baoxiulist.bxlist[indexPath.row].RepairState,Mark1:newpw.text!)
+                        CheXiaoReposity().Chexiao(requesting: requesting){(response, error) in
+                              if error == nil, let response = response{
+                                
+                                self.baoxiulist.bxlist[indexPath.row] = BaoxiuList(RepairID: self.baoxiulist.bxlist[indexPath.row].RepairID,EqptName:self.baoxiulist.bxlist[indexPath.row].EqptName,RepairState:"已撤销")
+                                self.baoxiulist.saveData()
+                                let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler:{
+                                    action in
+                                    self.tableView.reloadData()
+                                })
+                                alerttController.addAction(okkAction)
+                                self.present( alerttController, animated:  true, completion: nil)
+                                
+                            }
+                            
+                        }
+                        
+                    
+                    
+                })
+                alertController.addAction(cancelAction)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+                
+        }
+            
+        chehui.backgroundColor = UIColor.red
+        return [chehui]
+    }
+    
+    
+    
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
