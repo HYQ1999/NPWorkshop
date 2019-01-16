@@ -17,16 +17,17 @@ class Models_ShangBao: NSObject {
         var EqptName:String
         var AssetsNumber:String
         var Appearance:String
-        init(UserID:String,EqptName:String,AssetsNumber:String,Appearance:String) {
+        var Parameter:String
+        init(UserID:String,EqptName:String,AssetsNumber:String,Appearance:String,Parameter:String) {
             self.UserID = UserID
             self.EqptName = EqptName
             self.AssetsNumber = AssetsNumber
             self.Appearance = Appearance
+            self.Parameter = Parameter
         }
     }
     class Response: NSObject {
         var ts:String?
-        
         init(jsonData: JSON?){
             if let jsonData = jsonData{
                 self.ts = jsonData["ts"].stringValue

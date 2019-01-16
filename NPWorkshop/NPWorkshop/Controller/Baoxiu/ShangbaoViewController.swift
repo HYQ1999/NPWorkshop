@@ -38,7 +38,52 @@ class ShangbaoViewController: UIViewController {
     }
     @IBAction func shangbao(_ sender: Any) {
         
-        
+        userlist.loadData()
+        if shebeiname.text == ""
+        {
+            let alertController  = UIAlertController(title: "提示！", message: "设备名称不能为空！", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated:  true, completion: nil)
+            return
+        }
+        if zichannum.text == ""
+        {
+            let alertController  = UIAlertController(title: "提示！", message: "资产序号不能为空！", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated:  true, completion: nil)
+            return
+        }
+        if xinhaocanshu.text == ""
+        {
+            let alertController  = UIAlertController(title: "提示！", message: "型号参数不能为空！", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated:  true, completion: nil)
+            return
+        }
+        if guzhangxianxiang.text == ""
+        {
+            let alertController  = UIAlertController(title: "提示！", message: "故障现象！", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated:  true, completion: nil)
+            return
+        }
+        else
+        {
+            
+            let requesting : Models_ShangBao.Requesting = Models_ShangBao.Requesting(UserID: userlist.userlist[0].userid, EqptName: shebeiname.text!,AssetsNumber: zichannum.text!,Appearance:xinhaocanshu.text!,Parameter:guzhangxianxiang.text!)
+            ShangBaoReposity().ShangBao(requesting: requesting) { (response, error) in
+                if error == nil, let response = response{
+                    let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                    alerttController.addAction(okkAction)
+                    self.present( alerttController, animated:  true, completion: nil)
+                }
+            }
+        }
         
     }
     /*
