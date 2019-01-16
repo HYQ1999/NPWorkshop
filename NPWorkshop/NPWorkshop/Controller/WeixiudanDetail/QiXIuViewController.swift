@@ -1,20 +1,19 @@
 //
-//  YiWanXiuViewController.swift
+//  QiXIuViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/10.
+//  Created by 周旭 on 2019/1/16.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class YiWanXiuViewController: UIViewController {
+class QiXIuViewController: UIViewController {
 
-    
     @IBOutlet weak var baoxiuid: UILabel!
-    @IBOutlet weak var shebeiname: UILabel!
-    @IBOutlet weak var zichanxuhao: UILabel!
-    @IBOutlet weak var xinghaocanshu: UILabel!
+    @IBOutlet weak var shebeimingcheng: UILabel!
+    @IBOutlet weak var cichanxuhao: UILabel!
+    @IBOutlet weak var xinhaocanshu: UILabel!
     @IBOutlet weak var baoxiuzhuangtai: UILabel!
     @IBOutlet weak var guzhangxianxiang: UITextView!
     @IBOutlet weak var guzhangyuanyin: UITextView!
@@ -28,7 +27,6 @@ class YiWanXiuViewController: UIViewController {
     @IBOutlet weak var weixiujine: UILabel!
     @IBOutlet weak var baoxiushijian: UILabel!
     @IBOutlet weak var wanxiushijian: UILabel!
-    @IBOutlet weak var peijiantableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,27 +10,22 @@ import UIKit
 
 class YiShangBaoDetailController: UIViewController {
 
-    @IBOutlet weak var shebeiname: UITextField!
     @IBOutlet weak var baoxiuid: UILabel!
-    @IBOutlet weak var zicannum: UITextField!
-    @IBOutlet weak var xinhaocanshu: UITextField!
-    @IBOutlet weak var baoxiutime: UILabel!
-    @IBOutlet weak var baoxiustate: UILabel!
-    @IBOutlet weak var guzhanxianxiang: UITextView!
+    @IBOutlet weak var shebeimingcheng: UILabel!
+    @IBOutlet weak var zichannum: UILabel!
+    @IBOutlet weak var xinhaocanshu: UILabel!
+    @IBOutlet weak var baoxiuzhuangtai: UILabel!
+    @IBOutlet weak var baoxiuren: UILabel!
+    @IBOutlet weak var guzhangxianxiang: UITextView!
+    @IBOutlet weak var baoxiubumen: UILabel!
+    @IBOutlet weak var lianxifangshi: UILabel!
+    @IBOutlet weak var baoxiushijian: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func viewclick(_ sender: Any) {
-        self.view.endEditing(true)
-    }
-    @IBAction func ReturnBack(_ sender: Any) {
-        shebeiname.resignFirstResponder()
-        zicannum.resignFirstResponder()
-        xinhaocanshu.resignFirstResponder()
-        guzhanxianxiang.resignFirstResponder()
-    }
+   
     
     /*
     // MARK: - Navigation
