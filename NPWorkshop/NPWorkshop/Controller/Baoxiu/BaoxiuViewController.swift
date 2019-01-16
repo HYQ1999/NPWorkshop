@@ -123,8 +123,8 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: YiWanXiuViewController())))
-            as! YiWanXiuViewController
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: CheXiaoViewController())))
+            as! CheXiaoViewController
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
