@@ -18,7 +18,8 @@ func ShangBao(requesting: Models_ShangBao.Requesting, handler:  @escaping(_ resp
         "UserID": requesting.UserID,//左边是接口
         "EqptName": requesting.EqptName,
         "AssetsNumber":requesting.AssetsNumber,
-        "Appearance":requesting.Appearance
+        "Appearance":requesting.Appearance,
+         "Parameter":requesting.Parameter
     ]
     
      Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepAdd", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
