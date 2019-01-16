@@ -60,9 +60,17 @@
 		9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259C21D71B4F00803D85 /* BXTableViewController.swift */; };
 		9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259E21D71D4100803D85 /* LeftViewController.swift */; };
 		923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923925A021D743F800803D85 /* DetailTableViewController.swift */; };
+		923FC89B21EEB636004A758C /* BaoxiuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FC89A21EEB636004A758C /* BaoxiuDetail.swift */; };
+		923FC89D21EEB64F004A758C /* Models_BaoxiuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FC89C21EEB64F004A758C /* Models_BaoxiuDetail.swift */; };
+		923FC89F21EEBAFC004A758C /* BaoxiuPeijian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FC89E21EEBAFC004A758C /* BaoxiuPeijian.swift */; };
+		923FC8A121EEBB13004A758C /* Models_BaoxiuPeijian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FC8A021EEBB13004A758C /* Models_BaoxiuPeijian.swift */; };
+		923FC8A421EECBED004A758C /* ShangBaoReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FC8A321EECBED004A758C /* ShangBaoReposity.swift */; };
+		923FC8A621EECC0B004A758C /* Models_ShangBao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FC8A521EECC0B004A758C /* Models_ShangBao.swift */; };
 		924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8EE21ED73D900ADD1D4 /* Messages.swift */; };
 		924BA8F221ED9DB100ADD1D4 /* BaoxiuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */; };
 		924BA8F421ED9DC300ADD1D4 /* BaoxiuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */; };
+		924BA8F621EDD00F00ADD1D4 /* CheXiaoReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F521EDD00F00ADD1D4 /* CheXiaoReposity.swift */; };
+		924BA8F821EDD3A300ADD1D4 /* Models_CheXiao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F721EDD3A300ADD1D4 /* Models_CheXiao.swift */; };
 		9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */; };
 		9275B3D821E452BF0036DCB4 /* WoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D721E452BF0036DCB4 /* WoViewController.swift */; };
 		9275B3DA21E452D50036DCB4 /* FendanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275B3D921E452D50036DCB4 /* FendanController.swift */; };
@@ -154,9 +162,17 @@
 		9239259C21D71B4F00803D85 /* BXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXTableViewController.swift; sourceTree = "<group>"; };
 		9239259E21D71D4100803D85 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		923925A021D743F800803D85 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		923FC89A21EEB636004A758C /* BaoxiuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuDetail.swift; sourceTree = "<group>"; };
+		923FC89C21EEB64F004A758C /* Models_BaoxiuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_BaoxiuDetail.swift; sourceTree = "<group>"; };
+		923FC89E21EEBAFC004A758C /* BaoxiuPeijian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuPeijian.swift; sourceTree = "<group>"; };
+		923FC8A021EEBB13004A758C /* Models_BaoxiuPeijian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_BaoxiuPeijian.swift; sourceTree = "<group>"; };
+		923FC8A321EECBED004A758C /* ShangBaoReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShangBaoReposity.swift; sourceTree = "<group>"; };
+		923FC8A521EECC0B004A758C /* Models_ShangBao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_ShangBao.swift; sourceTree = "<group>"; };
 		924BA8EE21ED73D900ADD1D4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuList.swift; sourceTree = "<group>"; };
 		924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuModel.swift; sourceTree = "<group>"; };
+		924BA8F521EDD00F00ADD1D4 /* CheXiaoReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheXiaoReposity.swift; sourceTree = "<group>"; };
+		924BA8F721EDD3A300ADD1D4 /* Models_CheXiao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_CheXiao.swift; sourceTree = "<group>"; };
 		9275B3D521E451950036DCB4 /* FenpeiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenpeiTableViewController.swift; sourceTree = "<group>"; };
 		9275B3D721E452BF0036DCB4 /* WoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoViewController.swift; sourceTree = "<group>"; };
 		9275B3D921E452D50036DCB4 /* FendanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FendanController.swift; sourceTree = "<group>"; };
@@ -222,6 +238,10 @@
 			children = (
 				0D6823D221E88F990010C122 /* UserReposity.swift */,
 				9201F3E021EB2917007E3CA4 /* BaoxiuReposity.swift */,
+				924BA8F521EDD00F00ADD1D4 /* CheXiaoReposity.swift */,
+				923FC89A21EEB636004A758C /* BaoxiuDetail.swift */,
+				923FC89E21EEBAFC004A758C /* BaoxiuPeijian.swift */,
+				923FC8A321EECBED004A758C /* ShangBaoReposity.swift */,
 			);
 			path = NetMethod;
 			sourceTree = "<group>";
@@ -231,6 +251,10 @@
 			children = (
 				0D6823D421E890060010C122 /* Models_Login.swift */,
 				9201F3E221EB2D99007E3CA4 /* Models_Baoxiu.swift */,
+				924BA8F721EDD3A300ADD1D4 /* Models_CheXiao.swift */,
+				923FC89C21EEB64F004A758C /* Models_BaoxiuDetail.swift */,
+				923FC8A021EEBB13004A758C /* Models_BaoxiuPeijian.swift */,
+				923FC8A521EECC0B004A758C /* Models_ShangBao.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -674,12 +698,14 @@
 				5A26DCAF21EC1B90003C2A4C /* MenuPeiJian.swift in Sources */,
 				92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */,
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
+				923FC89B21EEB636004A758C /* BaoxiuDetail.swift in Sources */,
 				921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */,
 				5A1ED91821ED68600097A950 /* PeijianGeRen.swift in Sources */,
 				9239259B21D701B700803D85 /* ShaheViewController.swift in Sources */,
 				9228695C21E7227B0077813A /* YiWanXiuViewController.swift in Sources */,
 				0D6823D521E890060010C122 /* Models_Login.swift in Sources */,
 				9201F3DF21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift in Sources */,
+				924BA8F621EDD00F00ADD1D4 /* CheXiaoReposity.swift in Sources */,
 				92F13F2621DEF1E1009A248D /* YiShangBaoDetailController.swift in Sources */,
 				9239259D21D71B4F00803D85 /* BXTableViewController.swift in Sources */,
 				929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */,
@@ -687,18 +713,23 @@
 				922C78EB21EC35B70056E09F /* UserList.swift in Sources */,
 				0D95266021D614FB00367ADE /* ViewController.swift in Sources */,
 				924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */,
+				923FC8A421EECBED004A758C /* ShangBaoReposity.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				9228695A21E71F290077813A /* JieXiuGeRen.swift in Sources */,
 				5A2FB8D121E6CDC300E5C1D7 /* MenuWeiXiu.swift in Sources */,
+				924BA8F821EDD3A300ADD1D4 /* Models_CheXiao.swift in Sources */,
 				5A1ED91021ED634F0097A950 /* PeiJianTableViewController.swift in Sources */,
+				923FC89F21EEBAFC004A758C /* BaoxiuPeijian.swift in Sources */,
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
 				922C78ED21EC6B790056E09F /* BaoxiuTableViewCell.swift in Sources */,
 				0D6823D321E88F990010C122 /* UserReposity.swift in Sources */,
+				923FC8A121EEBB13004A758C /* Models_BaoxiuPeijian.swift in Sources */,
 				5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */,
 				5A26DCC821EC822C003C2A4C /* WeixiuMoneyBox.swift in Sources */,
 				9201F3E121EB2917007E3CA4 /* BaoxiuReposity.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
+				923FC89D21EEB64F004A758C /* Models_BaoxiuDetail.swift in Sources */,
 				922C78E721EC298A0056E09F /* Search.swift in Sources */,
 				923925A121D743F800803D85 /* DetailTableViewController.swift in Sources */,
 				5A2FB8D921E6D56800E5C1D7 /* Menujiexiu.swift in Sources */,
@@ -709,6 +740,7 @@
 				5A1ED91421ED64950097A950 /* PeijianMoneyBox.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
 				922C78E921EC35930056E09F /* UserModel.swift in Sources */,
+				923FC8A621EECC0B004A758C /* Models_ShangBao.swift in Sources */,
 				9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */,
 				924BA8F221ED9DB100ADD1D4 /* BaoxiuList.swift in Sources */,
 			);

@@ -23,8 +23,7 @@ class SearchTableView: UITableView {
     var mDelegate:SearchTableViewDelegate!
     
     required init?(coder aDecoder: NSCoder) {
-        
-        
+    
         
         super.init(coder: aDecoder)
         

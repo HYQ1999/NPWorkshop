@@ -13,6 +13,9 @@ class ShangbaoViewController: UIViewController {
     @IBOutlet weak var shebeiname: UITextField!
     @IBOutlet weak var zichannum: UITextField!
     @IBOutlet weak var xinhaocanshu: UITextField!
+    @IBOutlet weak var guzhangxianxiang: UITextView!
+    var userlist = UserModel()
+    var baoxiulist = BaoxiuModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         shebeiname.borderStyle = UITextField.BorderStyle.none
@@ -32,6 +35,11 @@ class ShangbaoViewController: UIViewController {
         shebeiname.resignFirstResponder()
         zichannum.resignFirstResponder()
         xinhaocanshu.resignFirstResponder()
+    }
+    @IBAction func shangbao(_ sender: Any) {
+        
+        
+        
     }
     /*
     // MARK: - Navigation
