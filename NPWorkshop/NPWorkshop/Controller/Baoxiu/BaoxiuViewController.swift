@@ -8,7 +8,7 @@
 
 import UIKit
 import ProgressHUD
-class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate  {
+class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UITextFieldDelegate  {
 
     
     var search:UISearchBar!
@@ -60,16 +60,51 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
         let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
         
         self.navigationController?.navigationBar.barTintColor = bgColor
+        
+         addDoneButtonOnKeyboard()
+        
         // Do any additional setup after loading the view.
     }
     
+    //在键盘上添加“完成“按钮
+    func addDoneButtonOnKeyboard() {
+        let doneToolbar = UIToolbar()
+        
+        //左侧的空隙
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                        target: nil, action: nil)
+        //右侧的完成按钮
+        let done: UIBarButtonItem = UIBarButtonItem(title: "完成", style: .done,
+                                                    target: self,
+                                                    action: #selector(doneButtonAction))
+        
+        var items:[UIBarButtonItem] = []
+        items.append(flexSpace)
+        items.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        self.search.inputAccessoryView = doneToolbar
+    }
     
-    @IBAction func viewclick(_ sender: Any) {
-        search.resignFirstResponder()
+    @objc func doneButtonAction() {
+        //收起键盘
+        self.search.resignFirstResponder()
+        print("您输入的是：\(search.text!)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
+        
+        
+//        let gestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self.hideKeyboard(_:)))
+//
+//        gestureRecognizer.numberOfTapsRequired = 1
+//        gestureRecognizer.cancelsTouchesInView = false
+//
+//        baoxiulistableview.addGestureRecognizer(gestureRecognizer)
+//        baoxiusearchtableview.addGestureRecognizer(gestureRecognizer)
         if search.text == ""
         {
             NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Baoxiu"), object: nil)
@@ -79,8 +114,6 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             baoxiulist.saveData()
             baoxiulistableview.isHidden = false
             baoxiusearchtableview.isHidden = true
-            
-            
             BaoxiuReposity().Baoxiulist()
         }
         
@@ -91,7 +124,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
              baoxiulist.loadData()
             for i in 0...baoxiulist.bxlist.count - 1
             {
-                if baoxiulist.bxlist[i].EqptName == search.text!
+                if baoxiulist.bxlist[i].EqptName.hasPrefix(search.text!)
                 {
                     let requesting :  Models_BaoxiuSearch.Requesting =  Models_BaoxiuSearch.Requesting(EqpName: search.text!)
                     BaoxiuSearchResposity().Search(requesting: requesting)
@@ -135,6 +168,17 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         
     }
+    
+    @IBAction func viewclick(_ sender: Any) {
+        self.view.endEditing(true)
+        search.resignFirstResponder()
+    }
+    //   @objc  func hideKeyboard(_ notification:Notification) {
+//        search.resignFirstResponder()
+//    }
+   
+  
+    
     @objc func TakeOrders(_ notification:Notification) {
         if let Response: [Models_Baoxiu.Response] = notification.object as! [Models_Baoxiu.Response]?{
             tablelist = Response
@@ -212,6 +256,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         
 //          baoxiulist.loadData()
 //        let requesting :  Models_BaoxiuSearch.Requesting =  Models_BaoxiuSearch.Requesting(EqpName: baoxiulist.bxlist[indexPath.row].EqptName)
@@ -358,8 +403,6 @@ extension BaoxiuViewController {
         
         self.viewWillAppear(true)
         
-        
-        
 //
 //        let alertController = UIAlertController(title: "提示!",
 //                                                message: "查无此商品（请填写完整商品名称）！", preferredStyle: .alert)
@@ -377,7 +420,9 @@ extension BaoxiuViewController {
         }
         
         
+        
     }
+    
     
     
 }

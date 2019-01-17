@@ -54,7 +54,6 @@
 		921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */; };
 		921836C121E5F65C009D841B /* BaoxiuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */; };
 		921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */; };
-		921836C721E5F743009D841B /* MyMoneyBoxStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */; };
 		9228695A21E71F290077813A /* JieXiuGeRen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228695921E71F290077813A /* JieXiuGeRen.swift */; };
 		9228695C21E7227B0077813A /* YiWanXiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228695B21E7227B0077813A /* YiWanXiuViewController.swift */; };
 		9228695E21E740980077813A /* Weixiudanxiangxi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */; };
@@ -180,7 +179,6 @@
 		921836B921E59EDC009D841B /* JIexiuMoneyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIexiuMoneyBox.swift; sourceTree = "<group>"; };
 		921836C021E5F65C009D841B /* BaoxiuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaoxiuStoryboard.storyboard; sourceTree = "<group>"; };
 		921836C421E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZhidaoJiaoshiStoryboard.storyboard; sourceTree = "<group>"; };
-		921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMoneyBoxStoryboard.storyboard; sourceTree = "<group>"; };
 		9228695921E71F290077813A /* JieXiuGeRen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JieXiuGeRen.swift; sourceTree = "<group>"; };
 		9228695B21E7227B0077813A /* YiWanXiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiWanXiuViewController.swift; sourceTree = "<group>"; };
 		9228695D21E740980077813A /* Weixiudanxiangxi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weixiudanxiangxi.storyboard; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 				0D6823D021E88EF20010C122 /* NetMethod */,
 				0D6823D121E88F050010C122 /* Models */,
 				0D6823CF21E885100010C122 /* View */,
-				921836C621E5F743009D841B /* MyMoneyBoxStoryboard.storyboard */,
 				0D6823CE21E884C10010C122 /* Controller */,
 				0D95265D21D614FB00367ADE /* AppDelegate.swift */,
 				0D95265F21D614FB00367ADE /* ViewController.swift */,
@@ -675,7 +672,6 @@
 				5A1ED91221ED63F40097A950 /* QianHePeiJian.storyboard in Resources */,
 				5A2FB8D521E6D3FA00E5C1D7 /* PeiJian.storyboard in Resources */,
 				5A26DCC621EC80F9003C2A4C /* QianHeWeiXiu.storyboard in Resources */,
-				921836C721E5F743009D841B /* MyMoneyBoxStoryboard.storyboard in Resources */,
 				0D95266821D6150A00367ADE /* Assets.xcassets in Resources */,
 				5A2FB8DB21E6D5BF00E5C1D7 /* QianHeJieXiu.storyboard in Resources */,
 				0D95266321D614FB00367ADE /* Main.storyboard in Resources */,

@@ -53,8 +53,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hBa-lb-sx4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hBa-lb-sx4">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="baoxiusearchcell" rowHeight="95" id="ytD-jp-yPI" customClass="BaoxiuSearchTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
@@ -95,8 +96,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PO-uK-Mbw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PO-uK-Mbw">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="baoxiucell" rowHeight="81" id="1dH-IN-igu" customClass="BaoxiuTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
@@ -143,19 +145,10 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hBa-lb-sx4" firstAttribute="leading" secondItem="Dvq-C6-KzB" secondAttribute="leading" id="3tf-2W-nOp"/>
-                            <constraint firstItem="0PO-uK-Mbw" firstAttribute="leading" secondItem="Dvq-C6-KzB" secondAttribute="leading" id="91v-yg-0DV"/>
-                            <constraint firstItem="hBa-lb-sx4" firstAttribute="bottom" secondItem="Dvq-C6-KzB" secondAttribute="bottom" id="KFz-K2-2q8"/>
-                            <constraint firstItem="0PO-uK-Mbw" firstAttribute="top" secondItem="Dvq-C6-KzB" secondAttribute="top" id="qbC-Qt-42L"/>
-                            <constraint firstItem="0PO-uK-Mbw" firstAttribute="trailing" secondItem="Dvq-C6-KzB" secondAttribute="trailing" id="trr-jh-eNM"/>
-                            <constraint firstItem="0PO-uK-Mbw" firstAttribute="bottom" secondItem="Dvq-C6-KzB" secondAttribute="bottom" id="wYH-9K-1SC"/>
-                            <constraint firstItem="hBa-lb-sx4" firstAttribute="trailing" secondItem="Dvq-C6-KzB" secondAttribute="trailing" id="zNz-4x-sON"/>
-                            <constraint firstItem="hBa-lb-sx4" firstAttribute="top" secondItem="Dvq-C6-KzB" secondAttribute="top" id="zcf-8B-2hF"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dvq-C6-KzB"/>
                         <connections>
-                            <action selector="viewclick:" destination="z3e-uy-TwE" eventType="touchUpInside" id="2um-CE-21f"/>
+                            <action selector="viewclick:" destination="z3e-uy-TwE" eventType="touchUpInside" id="8YB-h3-G6h"/>
+                            <action selector="viewclick:" destination="z3e-uy-TwE" eventType="touchUpOutside" id="sZn-0w-Rdu"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="PTt-NZ-kBW"/>
@@ -1399,7 +1392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCL-b8-r7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3227.536231884058" y="1884.7826086956522"/>
+            <point key="canvasLocation" x="3251" y="1838"/>
         </scene>
         <!--报修单详细(弃修)-->
         <scene sceneID="eFG-Cp-SEQ">
