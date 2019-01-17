@@ -41,7 +41,7 @@ class BaoxiuReposity: NSObject {
                         let repvm = json?["repvm"] as?[[String: AnyObject]]{
                         count = repvm.count
                         print(count)
-                        for i in 0..<count-1 {
+                        for i in 0...count - 1 {
                             print(repvm[i]["RepairID"] as! String)
                           baoxiulist.loadData()
                             baoxiulist.bxlist.append(BaoxiuList(RepairID: repvm[i]["RepairID"] as! String, EqptName: repvm[i]["EqptName"] as! String, RepairState: repvm[i]["RepairState"] as! String))
