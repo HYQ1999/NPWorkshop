@@ -43,7 +43,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ua-tF-8VI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1419" y="505"/>
+            <point key="canvasLocation" x="-1420" y="543"/>
         </scene>
         <!--Baoxiu View Controller-->
         <scene sceneID="q4a-5Z-o5P">
@@ -53,6 +53,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hBa-lb-sx4">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="baoxiusearchcell" rowHeight="95" id="ytD-jp-yPI" customClass="BaoxiuSearchTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ytD-jp-yPI" id="DmX-Iq-mNF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="报修单号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K23-w2-1jY">
+                                                    <rect key="frame" x="20" y="8" width="179" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="设备名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oW-ef-SyO">
+                                                    <rect key="frame" x="20" y="43" width="179" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="报修状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGl-6X-3Y2">
+                                                    <rect key="frame" x="313" y="29" width="101" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="baoxiuid" destination="K23-w2-1jY" id="jUT-Cd-Js3"/>
+                                            <outlet property="baoxiustate" destination="DGl-6X-3Y2" id="bnl-Bf-9KG"/>
+                                            <outlet property="shebeimin" destination="6oW-ef-SyO" id="LbG-Yw-UPh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PO-uK-Mbw">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,10 +144,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hBa-lb-sx4" firstAttribute="leading" secondItem="Dvq-C6-KzB" secondAttribute="leading" id="3tf-2W-nOp"/>
                             <constraint firstItem="0PO-uK-Mbw" firstAttribute="leading" secondItem="Dvq-C6-KzB" secondAttribute="leading" id="91v-yg-0DV"/>
+                            <constraint firstItem="hBa-lb-sx4" firstAttribute="bottom" secondItem="Dvq-C6-KzB" secondAttribute="bottom" id="KFz-K2-2q8"/>
                             <constraint firstItem="0PO-uK-Mbw" firstAttribute="top" secondItem="Dvq-C6-KzB" secondAttribute="top" id="qbC-Qt-42L"/>
                             <constraint firstItem="0PO-uK-Mbw" firstAttribute="trailing" secondItem="Dvq-C6-KzB" secondAttribute="trailing" id="trr-jh-eNM"/>
                             <constraint firstItem="0PO-uK-Mbw" firstAttribute="bottom" secondItem="Dvq-C6-KzB" secondAttribute="bottom" id="wYH-9K-1SC"/>
+                            <constraint firstItem="hBa-lb-sx4" firstAttribute="trailing" secondItem="Dvq-C6-KzB" secondAttribute="trailing" id="zNz-4x-sON"/>
+                            <constraint firstItem="hBa-lb-sx4" firstAttribute="top" secondItem="Dvq-C6-KzB" secondAttribute="top" id="zcf-8B-2hF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dvq-C6-KzB"/>
                         <connections>
@@ -115,11 +161,12 @@
                     <navigationItem key="navigationItem" id="PTt-NZ-kBW"/>
                     <connections>
                         <outlet property="baoxiulistableview" destination="0PO-uK-Mbw" id="XTJ-hH-Sur"/>
+                        <outlet property="baoxiusearchtableview" destination="hBa-lb-sx4" id="5z9-Gt-3iR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkR-io-mxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-707.24637681159425" y="454.89130434782612"/>
+            <point key="canvasLocation" x="-646.37681159420299" y="542.93478260869574"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="jxA-8T-qxx">
@@ -180,7 +227,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcg-dw-GQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="505"/>
+            <point key="canvasLocation" x="454" y="530"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zhx-2L-obI">
@@ -381,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djq-pB-Tai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="1258"/>
+            <point key="canvasLocation" x="201" y="1401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E3E-3F-5aN">
@@ -397,7 +444,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jv6-c2-fIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="2133"/>
+            <point key="canvasLocation" x="-865" y="2133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ob6-q1-wZF">
@@ -899,7 +946,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPK-P7-uMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308.69565217391306" y="2132.608695652174"/>
+            <point key="canvasLocation" x="180" y="2133"/>
         </scene>
         <!--报修单详细(已完修)-->
         <scene sceneID="7Or-AP-L3w">
