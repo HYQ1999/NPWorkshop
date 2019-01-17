@@ -61,6 +61,10 @@
 		922C78E921EC35930056E09F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78E821EC35930056E09F /* UserModel.swift */; };
 		922C78EB21EC35B70056E09F /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78EA21EC35B70056E09F /* UserList.swift */; };
 		922C78ED21EC6B790056E09F /* BaoxiuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C78EC21EC6B790056E09F /* BaoxiuTableViewCell.swift */; };
+		92309DF321F0AFFB0023D971 /* ShenGouReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92309DF221F0AFFB0023D971 /* ShenGouReposity.swift */; };
+		92309DF521F0B0100023D971 /* Models_ShenGou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92309DF421F0B0100023D971 /* Models_ShenGou.swift */; };
+		92309DF721F0B16E0023D971 /* PeiJianListResposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92309DF621F0B16E0023D971 /* PeiJianListResposity.swift */; };
+		92309DF921F0B18F0023D971 /* Models_PeiJianList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92309DF821F0B18F0023D971 /* Models_PeiJianList.swift */; };
 		9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239258C21D6FDFC00803D85 /* LoginViewController.swift */; };
 		9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259021D7017C00803D85 /* BaoxiuViewController.swift */; };
 		9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239259221D7018800803D85 /* ZhidaoViewController.swift */; };
@@ -210,6 +214,10 @@
 		922C78E821EC35930056E09F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		922C78EA21EC35B70056E09F /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		922C78EC21EC6B790056E09F /* BaoxiuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuTableViewCell.swift; sourceTree = "<group>"; };
+		92309DF221F0AFFB0023D971 /* ShenGouReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShenGouReposity.swift; sourceTree = "<group>"; };
+		92309DF421F0B0100023D971 /* Models_ShenGou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_ShenGou.swift; sourceTree = "<group>"; };
+		92309DF621F0B16E0023D971 /* PeiJianListResposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeiJianListResposity.swift; sourceTree = "<group>"; };
+		92309DF821F0B18F0023D971 /* Models_PeiJianList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_PeiJianList.swift; sourceTree = "<group>"; };
 		9239258C21D6FDFC00803D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9239259021D7017C00803D85 /* BaoxiuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuViewController.swift; sourceTree = "<group>"; };
 		9239259221D7018800803D85 /* ZhidaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +354,8 @@
 				923BC0B421F0A3A200311005 /* FenPeiSearchResposity.swift */,
 				923BC0C021F0AAE800311005 /* ZhiDaoReposity.swift */,
 				923BC0C421F0ACAE00311005 /* JieXiuReposity.swift */,
+				92309DF221F0AFFB0023D971 /* ShenGouReposity.swift */,
+				92309DF621F0B16E0023D971 /* PeiJianListResposity.swift */,
 			);
 			path = NetMethod;
 			sourceTree = "<group>";
@@ -369,6 +379,8 @@
 				923BC0B621F0A3B800311005 /* Models_FenPeiSearch.swift */,
 				923BC0C221F0AAFB00311005 /* Models_ZhiDao.swift */,
 				923BC0C621F0ACBD00311005 /* Models_JieXiu.swift */,
+				92309DF421F0B0100023D971 /* Models_ShenGou.swift */,
+				92309DF821F0B18F0023D971 /* Models_PeiJianList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -844,6 +856,7 @@
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
 				5A1ED92F21EEDD3F0097A950 /* WeixiuModel.swift in Sources */,
 				923FC8BE21EF407C004A758C /* QiXIuNaviGation.swift in Sources */,
+				92309DF321F0AFFB0023D971 /* ShenGouReposity.swift in Sources */,
 				923FC89B21EEB636004A758C /* BaoxiuDetail.swift in Sources */,
 				921836BA21E59EDC009D841B /* JIexiuMoneyBox.swift in Sources */,
 				5A250BC721F0133F004F7445 /* Models_Start.swift in Sources */,
@@ -879,6 +892,7 @@
 				923FC8A421EECBED004A758C /* ShangBaoReposity.swift in Sources */,
 				923BC0C321F0AAFB00311005 /* Models_ZhiDao.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
+				92309DF521F0B0100023D971 /* Models_ShenGou.swift in Sources */,
 				5A1ED92B21EEDCC10097A950 /* WeixiuReposity.swift in Sources */,
 				923BC0BF21F0A9F400311005 /* PeiJianShenGouSearchTableViewController.swift in Sources */,
 				9228695A21E71F290077813A /* JieXiuGeRen.swift in Sources */,
@@ -903,6 +917,7 @@
 				923FC8CA21EF47C2004A758C /* QiTaStateViewController.swift in Sources */,
 				923BC08F21F0403000311005 /* WeixiuSearchModel.swift in Sources */,
 				5A1ED93121EEDD590097A950 /* WeixiuList.swift in Sources */,
+				92309DF721F0B16E0023D971 /* PeiJianListResposity.swift in Sources */,
 				9201F3E121EB2917007E3CA4 /* BaoxiuReposity.swift in Sources */,
 				9239259321D7018800803D85 /* ZhidaoViewController.swift in Sources */,
 				5A250BC521F01323004F7445 /* StartReposity.swift in Sources */,
@@ -927,6 +942,7 @@
 				923BC0B121F0A31200311005 /* PeiJianSearchResposity.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
 				5A1ED93921EEF9530097A950 /* FixTableViewController.swift in Sources */,
+				92309DF921F0B18F0023D971 /* Models_PeiJianList.swift in Sources */,
 				922C78E921EC35930056E09F /* UserModel.swift in Sources */,
 				923FC8A621EECC0B004A758C /* Models_ShangBao.swift in Sources */,
 				9275B3D621E451950036DCB4 /* FenpeiTableViewController.swift in Sources */,
