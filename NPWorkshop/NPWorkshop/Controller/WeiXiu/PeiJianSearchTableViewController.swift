@@ -1,23 +1,18 @@
 //
-//  FendanController.swift
+//  PeiJianSearchTableViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/8.
+//  Created by 周旭 on 2019/1/17.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
-import ProgressHUD
-class FendanController: UITableViewController {
+
+class PeiJianSearchTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        
-       
-        
-        let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
-        
-        self.navigationController?.navigationBar.barTintColor = bgColor
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,11 +31,11 @@ class FendanController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
     
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let sure = UITableViewRowAction(style: .normal, title: "确定"){
             actionm, index in
         }
