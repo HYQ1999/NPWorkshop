@@ -17,7 +17,7 @@ class BaoxiuSearchResposity: NSObject {
         userlist.loadData()
         let parameters :[String : Any] = [
             "UserID": userlist.userlist[0].userid,//左边是接口
-            "EqptName": requesting.EqpName
+            "EqpName": requesting.EqpName
         ]
         
         
@@ -31,12 +31,15 @@ class BaoxiuSearchResposity: NSObject {
                         let repvm = json?["repvm"] as?[[String: AnyObject]]{
                         count = repvm.count
                         print(count)
+                        baoxiulist.bxlist.removeAll()
+                         baoxiulist.saveData()
+                        for i in repvm
+                        {
+                            print(i)
+                        }
+                        
                         for i in 0..<count-1 {
                             print(repvm[i]["RepairID"] as! String)
-                            baoxiulist.loadData()
-                            baoxiulist.bxlist.removeAll()
-                             baoxiulist.saveData()
-                            
                             baoxiulist.bxlist.append(BaoxiuList(RepairID: repvm[i]["RepairID"] as! String, EqptName: repvm[i]["EqptName"] as! String, RepairState: repvm[i]["RepairState"] as! String))
                             baoxiulist.saveData()
                             //                                        print(i)
