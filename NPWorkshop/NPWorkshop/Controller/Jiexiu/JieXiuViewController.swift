@@ -1,30 +1,31 @@
 //
-//  ZhidaoViewController.swift
+//  JieXiuViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2018/12/29.
-//  Copyright © 2018年 韩意谦. All rights reserved.
+//  Created by 周旭 on 2019/1/17.
+//  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 import ProgressHUD
-class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UITextFieldDelegate {
+class JieXiuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UITextFieldDelegate {
     
     
- 
-    var search:UISearchBar!
-    @IBOutlet weak var ZhiDaosearchTableview: UITableView!
    
-    @IBOutlet weak var ZhiDaoListTableView: UITableView!
+    var search:UISearchBar!
+ @IBOutlet weak var MenuItem: UIBarButtonItem!
+    @IBOutlet weak var JieXiuSearchTableview: UITableView!
+    @IBOutlet weak var JieXiuTableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        ZhiDaosearchTableview.delegate = self
-        ZhiDaosearchTableview.dataSource = self
-        ZhiDaoListTableView.delegate = self
-        ZhiDaoListTableView.dataSource = self
-       
+        self.revealViewController().rearViewRevealWidth = 250
+        customSetup()
+        JieXiuSearchTableview.delegate = self
+        JieXiuSearchTableview.dataSource = self
+        JieXiuTableview.delegate = self
+        JieXiuTableview.dataSource = self
+        
         search = UISearchBar(frame:CGRect(x:0, y:0, width:300, height:20))
         search.barTintColor = UIColor.white
         search.searchBarStyle = UISearchBar.Style.minimal
@@ -32,29 +33,32 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
         search.barStyle = UIBarStyle.black
         search.tintColor = UIColor.blue
         search.placeholder = "请输入设备名称"
-        var logo = UIImageView(image:UIImage(named: "weixiu"))
-        var rightNavBarButton = UIBarButtonItem(customView:search)
-        var logoes = UIBarButtonItem(customView:logo)
-        
+         var rightNavBarButton = UIBarButtonItem(customView:search)
         let gap = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil,
                                   action: nil)
         gap.width = 10;
-        
-        self.navigationItem.leftBarButtonItems = [logoes,gap,rightNavBarButton]
+           self.navigationItem.rightBarButtonItem = rightNavBarButton
         search.delegate = self
-        
-        self.tabBarItem = UITabBarItem(title: "我的分配", image: UIImage(named: "wodefenpei"),
-                                       selectedImage: UIImage(named: "fenpei"))
         
         let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
         
         self.navigationController?.navigationBar.barTintColor = bgColor
-        addDoneButtonOnKeyboard()
-        
+         addDoneButtonOnKeyboard()
         // Do any additional setup after loading the view.
     }
     
-    //在键盘上添加“完成“按钮
+    func customSetup() {
+        let revealViewController: SWRevealViewController? = self.revealViewController()
+        if revealViewController != nil {
+            //            revealViewController?.rightViewRevealWidth = 50
+            MenuItem.target = self.revealViewController()
+            MenuItem.action = #selector(SWRevealViewController.revealToggle(_:))
+            //            navigationController?.navigationBar.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer)
+            self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
+        }
+    }
+    
+    
     func addDoneButtonOnKeyboard() {
         let doneToolbar = UIToolbar()
         
@@ -82,8 +86,6 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
         print("您输入的是：\(search.text!)")
     }
     
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         if search.text == ""
         {
@@ -103,14 +105,14 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "baoxiusearchcell", for: indexPath) as! BaoxiuSearchTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "baoxiusearchcell", for: indexPath) as! BaoxiuSearchTableViewCell
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
@@ -122,7 +124,7 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let shouli = UITableViewRowAction(style: .normal, title: "受理"){
             actionm, index in
-    }
+        }
         let fenpei = UITableViewRowAction(style: .normal, title: "分配"){
             actionm, index in
         }
@@ -130,6 +132,7 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
         fenpei.backgroundColor = UIColor.orange
         return [shouli]
     }
+    
     /*
     // MARK: - Navigation
 
@@ -141,7 +144,8 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
     */
 
 }
-extension ZhidaoViewController {
+
+extension JieXiuViewController {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         
@@ -170,3 +174,4 @@ extension ZhidaoViewController {
     
     
 }
+
