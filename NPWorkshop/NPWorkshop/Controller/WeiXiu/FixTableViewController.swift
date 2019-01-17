@@ -77,6 +77,7 @@ class FixTableViewController: UITableViewController {
         cell.weixiuzhuangtai.text = weixiuModel.wxlist[indexPath.row].FixState
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let start = UITableViewRowAction(style: .normal, title: "开始检修") {
             action , index in
