@@ -16,7 +16,7 @@ func Baoxiudetail()
 {
     baoxiulist.loadData()
     let parameters :[String : Any] = [
-        "RepairID": baoxiulist.bxlist[0].RepairID//左边是接口
+        "RepairID": "20190116151028083"//左边是接口
     ]
     
     

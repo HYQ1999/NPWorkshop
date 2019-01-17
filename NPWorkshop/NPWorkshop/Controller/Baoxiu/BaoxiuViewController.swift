@@ -123,9 +123,9 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: CheXiaoViewController())))
-            as! CheXiaoViewController
-        self.navigationController?.pushViewController(controller, animated: true)
+          baoxiulist.loadData()
+        let requesting :  Models_BaoxiuSearch.Requesting =  Models_BaoxiuSearch.Requesting(EqpName: baoxiulist.bxlist[indexPath.row].EqptName)
+        BaoxiuSearchResposity().Search(requesting: requesting)
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
