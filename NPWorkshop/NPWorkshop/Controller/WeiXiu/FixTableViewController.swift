@@ -77,6 +77,52 @@ class FixTableViewController: UITableViewController {
         cell.weixiuzhuangtai.text = weixiuModel.wxlist[indexPath.row].FixState
         return cell
     }
+   override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    let start = UITableViewRowAction(style: .normal, title: "开始检修") {
+        action , index in
+        if self.weixiuModel.wxlist[indexPath.row].FixState == "检修中"
+        {
+            let alerttController = UIAlertController(title: "Error！", message: "此维修单已开始检修", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+        }
+        else if(self.weixiuModel.wxlist[indexPath.row].FixState == "待检修")
+        {
+            let alertController = UIAlertController(title: "提示",
+                                                    message: "操作成功！", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                self.weixiuModel.loadData()
+                let requesting : Models_Start.Requesting = Models_Start.Requesting(RepairID: self.weixiuModel.wxlist[indexPath.row].FixID, operation: "开始检修")
+                StartReposity().Start(requesting: requesting)
+                {(response, error) in
+                    if error == nil, let response = response
+                    {
+                        self.weixiuModel.wxlist[indexPath.row] = WeixiuList(FixID: self.weixiuModel.wxlist[indexPath.row].FixID,EqptName: self.weixiuModel.wxlist[indexPath.row].EqptName,FixState:"检修中")
+                        self.weixiuModel.saveData()
+                        
+                        tableView.reloadData()
+                    }
+                    
+                }
+                
+            })
+            alertController.addAction(cancelAction)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    start.backgroundColor = UIColor.orange
+    
+//    let look = UITableViewRowAction(style: .normal, title: "查看详细") {
+//        action , index in
+//    }
+//    look.backgroundColor = UIColor.blue
+    
+    return [start]
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
