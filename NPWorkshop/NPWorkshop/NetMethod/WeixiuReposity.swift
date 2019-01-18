@@ -21,7 +21,7 @@ class WeixiuReposity: NSObject {
         
         Response?.removeAll()
         let parameters :[String : Any] = [
-            "RepairUser": weixiuuserModel.userlist[0].userid //左边是接口
+            "RepairUser": "" //左边是接口
         ]
         Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepairList", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON {
             response in

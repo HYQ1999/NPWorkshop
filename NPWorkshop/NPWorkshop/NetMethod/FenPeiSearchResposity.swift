@@ -31,7 +31,7 @@ class FenPeiSearchResposity: NSObject {
                 Response = nil
             }
             
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_ZhiDaoSearch"), object: Response)
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_FenPeiSearch"), object: Response)
             
             
         }

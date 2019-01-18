@@ -11,4 +11,29 @@ import SwiftyJSON
 
 class Models_PeiJianSearch: NSObject {
 
+    class Requesting: NSObject {
+        var EqpName:String
+        init(EqpName:String) {
+            self.EqpName = EqpName
+        }
+    }
+    
+    
+    class Response: NSObject {
+        var RepairID:String?
+        var EqptName:String?
+        var RepairState:String?
+        
+        init(
+            RepairID: String?,
+            EqptName: String?,
+            RepairState: String?
+            ){
+            self.RepairID = RepairID
+            self.EqptName = EqptName
+            self.RepairState = RepairState
+            
+        }
+    }
+    
 }

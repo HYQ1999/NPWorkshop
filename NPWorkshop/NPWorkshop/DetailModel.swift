@@ -1,15 +1,16 @@
 //
-//  WeixiuSearchModel.swift
+//  DetailModel.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/17.
+//  Created by 周旭 on 2019/1/18.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class WeixiuSearchModel: NSObject {
-    var wxsearchlist = [WeixiuSearchList]()
+class DetailModel: NSObject {
+
+    var detail = [DetailList]()
     
     override init(){
         super.init()
@@ -24,7 +25,7 @@ class WeixiuSearchModel: NSObject {
         //申明一个归档处理对象
         let archiver = NSKeyedArchiver(forWritingWith: data)
         //将lists以对应Checklist关键字进行编码
-        archiver.encode(wxsearchlist, forKey: "wxsearchlist")
+        archiver.encode(detail, forKey: "detail")
         //编码结束
         archiver.finishEncoding()
         //数据写入
@@ -45,7 +46,7 @@ class WeixiuSearchModel: NSObject {
             //解码器
             let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
             //通过归档时设置的关键字Checklist还原lists
-            wxsearchlist = unarchiver.decodeObject(forKey: "wxsearchlist") as! Array
+            detail = unarchiver.decodeObject(forKey: "detail") as! Array
             //结束解码
             unarchiver.finishDecoding()
         }
@@ -61,6 +62,8 @@ class WeixiuSearchModel: NSObject {
     
     //获取数据文件地址
     func dataFilePath ()->String{
-        return self.documentsDirectory().appendingFormat("/WxSearchList.plist")
+        return self.documentsDirectory().appendingFormat("/Detail.plist")
     }
+    
+    
 }
