@@ -21,7 +21,9 @@ class WeixiuReposity: NSObject {
         
         Response?.removeAll()
         let parameters :[String : Any] = [
-            "RepairUser": "" //左边是接口
+            "RepairUser": weixiuuserModel.userlist[0].userid,
+            "role": weixiuuserModel.userlist[0].userrole,
+            "rights": weixiuuserModel.userlist[0].quanxian
         ]
         Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepairList", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON {
             response in
@@ -31,6 +33,13 @@ class WeixiuReposity: NSObject {
                         let repvm = json?["repvm"] as?[[String: AnyObject]]{
                         count = repvm.count
                         print(count)
+                        if count == 0
+                        {
+                            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_Baoxiu"), object: Response)
+                            return
+                        }
+                        else
+                        {
                         for i in 0..<count-1 {
                             print(repvm[i]["RepairID"] as! String)
                             weixiuModel.loadData()
@@ -38,7 +47,7 @@ class WeixiuReposity: NSObject {
                             weixiuModel.saveData()
                             //                                        print(i)
                         }
-                        
+                        }
                     }
                 }
                 catch{}
