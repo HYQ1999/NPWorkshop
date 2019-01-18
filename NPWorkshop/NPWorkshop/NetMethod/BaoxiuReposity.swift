@@ -28,7 +28,7 @@ class BaoxiuReposity: NSObject {
         
         Response?.removeAll()
         let parameters :[String : Any] = [
-            "UserId": userlist.userlist[0].userid //左边是接口
+            "UserID": userlist.userlist[0].userid //左边是接口
         ]
         
         Alamofire.request("http://172.16.101.66:8083/api/RepAPI/PostRepLists", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
