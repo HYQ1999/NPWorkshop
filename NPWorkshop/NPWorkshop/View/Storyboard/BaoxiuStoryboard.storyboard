@@ -1284,7 +1284,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" id="lJ0-rB-mBi" customClass="PeiJianTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="peijianusecell" rowHeight="51" id="lJ0-rB-mBi" customClass="PeiJianUseCell" customModule="NPWorkshop" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="318" height="51"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lJ0-rB-mBi" id="PfC-n8-jRr">
@@ -1322,9 +1322,11 @@
                                                             </subviews>
                                                         </tableViewCellContentView>
                                                         <connections>
+                                                            <outlet property="peijiandanjia" destination="oRf-yX-r01" id="UTw-HZ-piV"/>
                                                             <outlet property="peijianmoney" destination="oRf-yX-r01" id="KX1-T9-fvV"/>
-                                                            <outlet property="peijianname" destination="nra-Wr-P05" id="9o4-x4-pZp"/>
-                                                            <outlet property="peijiannum" destination="KH7-6r-pqg" id="fa3-IT-7nY"/>
+                                                            <outlet property="peijianname" destination="nra-Wr-P05" id="CE0-D5-Kyx"/>
+                                                            <outlet property="peijianshuliang" destination="KH7-6r-pqg" id="y3H-s3-pog"/>
+                                                            <outlet property="peijiantotal" destination="Y59-hT-P6D" id="WyO-eE-Xd5"/>
                                                             <outlet property="total" destination="Y59-hT-P6D" id="vRY-lI-7Ih"/>
                                                         </connections>
                                                     </tableViewCell>
@@ -1380,7 +1382,7 @@
                         <outlet property="jiexiuren" destination="ZAK-VS-iK6" id="Bah-uM-6GM"/>
                         <outlet property="lianxifangshi" destination="8MH-gM-doK" id="6VS-Mi-Qty"/>
                         <outlet property="peijianshengouyuan" destination="DmF-qd-YQO" id="Cc5-H7-PZv"/>
-                        <outlet property="peijiantableview" destination="KBO-E1-FVi" id="1m3-BY-Ouq"/>
+                        <outlet property="peijiantableview" destination="KBO-E1-FVi" id="vBD-iV-aXL"/>
                         <outlet property="rengongfei" destination="daz-x3-0KT" id="84B-Zd-lVG"/>
                         <outlet property="shebeiname" destination="h8s-Le-8po" id="VDZ-Fc-qFv"/>
                         <outlet property="wanxiushijian" destination="UkS-Ig-8fy" id="sj7-Pj-76x"/>
