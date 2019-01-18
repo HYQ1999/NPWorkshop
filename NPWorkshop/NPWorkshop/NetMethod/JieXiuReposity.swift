@@ -33,6 +33,13 @@ class JieXiuReposity: NSObject {
                         let repvm = json?["repvm"] as?[[String: AnyObject]]{
                         count = repvm.count
                         print(count)
+                        if count == 0
+                        {
+                            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_Baoxiu"), object: Response)
+                            return
+                        }
+                        else
+                        {
                         for i in 0...count - 1 {
                             print(repvm[i]["RepairID"] as! String)
                             baoxiulist.loadData()
@@ -40,7 +47,7 @@ class JieXiuReposity: NSObject {
                             baoxiulist.saveData()
                             //                                        print(i)
                         }
-                        
+                        }
                         
                     }
                     

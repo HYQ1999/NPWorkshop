@@ -32,6 +32,8 @@
 		5A1ED93921EEF9530097A950 /* FixTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED93821EEF9530097A950 /* FixTableViewController.swift */; };
 		5A250BC521F01323004F7445 /* StartReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A250BC421F01323004F7445 /* StartReposity.swift */; };
 		5A250BC721F0133F004F7445 /* Models_Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A250BC621F0133F004F7445 /* Models_Start.swift */; };
+		5A250BFD21F1722A004F7445 /* WeixiuMyMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A250BFC21F1722A004F7445 /* WeixiuMyMessage.storyboard */; };
+		5A250BFF21F17285004F7445 /* MyMessgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A250BFE21F17285004F7445 /* MyMessgeTableViewController.swift */; };
 		5A26DCAF21EC1B90003C2A4C /* MenuPeiJian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26DCAE21EC1B90003C2A4C /* MenuPeiJian.swift */; };
 		5A26DCC421EC7AB6003C2A4C /* JieXiuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26DCC321EC7AB6003C2A4C /* JieXiuTableViewController.swift */; };
 		5A26DCC621EC80F9003C2A4C /* QianHeWeiXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A26DCC521EC80F9003C2A4C /* QianHeWeiXiu.storyboard */; };
@@ -185,6 +187,8 @@
 		5A1ED93821EEF9530097A950 /* FixTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTableViewController.swift; sourceTree = "<group>"; };
 		5A250BC421F01323004F7445 /* StartReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartReposity.swift; sourceTree = "<group>"; };
 		5A250BC621F0133F004F7445 /* Models_Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_Start.swift; sourceTree = "<group>"; };
+		5A250BFC21F1722A004F7445 /* WeixiuMyMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeixiuMyMessage.storyboard; sourceTree = "<group>"; };
+		5A250BFE21F17285004F7445 /* MyMessgeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessgeTableViewController.swift; sourceTree = "<group>"; };
 		5A26DCAE21EC1B90003C2A4C /* MenuPeiJian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPeiJian.swift; sourceTree = "<group>"; };
 		5A26DCC321EC7AB6003C2A4C /* JieXiuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JieXiuTableViewController.swift; sourceTree = "<group>"; };
 		5A26DCC521EC80F9003C2A4C /* QianHeWeiXiu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QianHeWeiXiu.storyboard; sourceTree = "<group>"; };
@@ -469,6 +473,7 @@
 				5A2FB8CE21E6CBB900E5C1D7 /* WeiXiu.storyboard */,
 				5A26DCC521EC80F9003C2A4C /* QianHeWeiXiu.storyboard */,
 				5A26DCC921EC8434003C2A4C /* GeRenWeiXiu.storyboard */,
+				5A250BFC21F1722A004F7445 /* WeixiuMyMessage.storyboard */,
 			);
 			path = weixiu;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 				923BC0BA21F0A80E00311005 /* PeiJianSearchTableViewController.swift */,
 				923BC0BC21F0A9DF00311005 /* PeiJianShenGouTableViewCell.swift */,
 				923BC0BE21F0A9F400311005 /* PeiJianShenGouSearchTableViewController.swift */,
+				5A250BFE21F17285004F7445 /* MyMessgeTableViewController.swift */,
 			);
 			path = WeiXiu;
 			sourceTree = "<group>";
@@ -768,6 +774,7 @@
 				0D95266821D6150A00367ADE /* Assets.xcassets in Resources */,
 				5A2FB8DB21E6D5BF00E5C1D7 /* QianHeJieXiu.storyboard in Resources */,
 				0D95266321D614FB00367ADE /* Main.storyboard in Resources */,
+				5A250BFD21F1722A004F7445 /* WeixiuMyMessage.storyboard in Resources */,
 				921836C521E5F727009D841B /* ZhidaoJiaoshiStoryboard.storyboard in Resources */,
 				5A2FB8DD21E6D66F00E5C1D7 /* GeRenJieXiu.storyboard in Resources */,
 				9228695E21E740980077813A /* Weixiudanxiangxi.storyboard in Resources */,
@@ -935,6 +942,7 @@
 				0D95266621D614FB00367ADE /* NPWorkshop.xcdatamodeld in Sources */,
 				923BC08D21F019C500311005 /* BaoxiuSearchTableViewCell.swift in Sources */,
 				923FC89D21EEB64F004A758C /* Models_BaoxiuDetail.swift in Sources */,
+				5A250BFF21F17285004F7445 /* MyMessgeTableViewController.swift in Sources */,
 				923BC0A121F0973400311005 /* Models_JieXiuSearch.swift in Sources */,
 				9221294E21F152D600A8EE0D /* PeiJianViewController.swift in Sources */,
 				922C78E721EC298A0056E09F /* Search.swift in Sources */,
