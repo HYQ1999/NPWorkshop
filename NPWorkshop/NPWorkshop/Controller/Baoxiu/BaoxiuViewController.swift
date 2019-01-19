@@ -122,6 +122,34 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrder(_:)), name: NSNotification.Name(rawValue: "Models_BaoxiuSearch"), object: nil)
             Messages().showNow(code: 0x2004)
              baoxiulist.loadData()
+            
+            if baoxiulist.bxlist.isEmpty
+            {
+                let alertController = UIAlertController(title: "提示!",
+                                                        message: "查无此报修单(请填写正确的设备名称)！", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "返回", style: .default,handler:
+                {
+                    action in
+                    NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Baoxiu"), object: nil)
+                    
+                    Messages().showNow(code: 0x2004)
+                    self.search.text = ""
+                    self.baoxiulist.loadData()
+                    self.baoxiulist.bxlist.removeAll()
+                    self.baoxiulist.saveData()
+                    self.baoxiulistableview.isHidden = false
+                    self.baoxiusearchtableview.isHidden = true
+                    
+                    
+                    BaoxiuReposity().Baoxiulist()
+                })
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+
+            }
+            else
+            {
+            
             for i in 0...baoxiulist.bxlist.count - 1
             {
                 if baoxiulist.bxlist[i].EqptName.hasPrefix(search.text!)
@@ -163,6 +191,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             self.present(alertController, animated: true, completion: nil)
             
             
+        }
         }
         
         
@@ -291,7 +320,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
                 self.navigationController?.pushViewController(controller, animated: true)
                  return
             }
-            if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已撤回"
+            if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已撤销"
             {
                 let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
                 BaoxiuDetail().Baoxiudetail(requesting: requesting)
@@ -317,6 +346,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             if baoxiulist.bxlist[indexPath.row].RepairState == "已完修"
             {
                 let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+                print(baoxiulist.bxlist[indexPath.row].RepairID)
                 BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: YiWanXiuViewController())))
@@ -327,6 +357,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             if baoxiulist.bxlist[indexPath.row].RepairState == "已上报"
             {
                 let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+                print(baoxiulist.bxlist[indexPath.row].RepairID)
                 BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: YiShangBaoDetailController())))
@@ -337,6 +368,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             if baoxiulist.bxlist[indexPath.row].RepairState == "弃修"
             {
                 let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+                print(baoxiulist.bxlist[indexPath.row].RepairID)
                 BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: QiXIuViewController())))
@@ -344,9 +376,10 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
                 self.navigationController?.pushViewController(controller, animated: true)
                 return
             }
-            if baoxiulist.bxlist[indexPath.row].RepairState == "已撤回"
+            if baoxiulist.bxlist[indexPath.row].RepairState == "已撤销"
             {
                 let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+                print(baoxiulist.bxlist[indexPath.row].RepairID)
                 BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: CheXiaoViewController())))
@@ -357,6 +390,7 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             else
             {
                 let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+                print(baoxiulist.bxlist[indexPath.row].RepairID)
                 BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: QiTaStateViewController())))

@@ -18,15 +18,14 @@ class JieXiuSearchResposity: NSObject {
         userlist.loadData()
         
         let parameters :[String : Any] = [
-            "UserID": userlist.userlist[0].userid,//左边是接口
-            "EqpName": requesting.EqpName
+            "EqptName": requesting.EqpName
         ]
         
         var Response: [Models_JieXiuSearch.Response]? = [Models_JieXiuSearch.Response(RepairID: nil, EqptName: nil, RepairState: nil)]
         
         Response?.removeAll()
         
-        Alamofire.request("http://172.16.101.66:8083/api/RepAPI/PostRepLists", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+        Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepairList", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             if response.result.value != nil {
                 do{
                     if let json = try? JSONSerialization.jsonObject(with: response.data! as Data, options: .allowFragments) as? [String:AnyObject],

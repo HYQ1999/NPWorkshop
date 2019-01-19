@@ -108,6 +108,27 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
               NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrder(_:)), name: NSNotification.Name(rawValue: "Models_WeixiuSearch"), object: nil)
               Messages().showNow(code: 0x2004)
               weixiuModel.loadData()
+            if weixiuModel.wxlist.isEmpty
+            {
+                let alertController = UIAlertController(title: "提示!",
+                                                        message: "查无此报修单(请填写正确的设备名称)！", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "返回", style: .default,handler:
+                {
+                    action in
+                    NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Weixiu"), object: nil)
+                    Messages().showNow(code: 0x2004)
+                    self.weixiuModel.loadData()
+                    self.weixiuModel.wxlist.removeAll()
+                    self.weixiuModel.saveData()
+                    self.FixTableview.isHidden = false
+                    self.FixSearchtableview.isHidden = true
+                    WeixiuReposity().Weixiulist()
+                })
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+            else
+            {
             for i in 0...weixiuModel.wxlist.count - 1
             {
                 if weixiuModel.wxlist[i].EqptName.hasPrefix(search.text!)
@@ -135,6 +156,7 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
             })
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
+            }
             
         }
     }
