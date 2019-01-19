@@ -1,25 +1,21 @@
 //
-//  FendanController.swift
+//  FendanTableViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/8.
+//  Created by 周旭 on 2019/1/19.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
-import ProgressHUD
-class FendanController: UITableViewController {
-    
-    var weixiurenlist = WeiXiuRenModel()
+
+class FendanTableViewController: UITableViewController {
+
+    var weixiussskj = WeiXiuRenModel()
+    var repairid : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        
-        
-        
-        let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
-        
-        self.navigationController?.navigationBar.barTintColor = bgColor
+     weixiussskj.loadData()
+        print(weixiussskj.weixiulist.count)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,31 +32,50 @@ class FendanController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        weixiurenlist.loadData()
-        return weixiurenlist.weixiulist.count
+        return weixiussskj.weixiulist.count
     }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+
+   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        weixiussskj.loadData()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fendancell", for: indexPath) as! Fendancell
+      
+        cell.UserId.text = weixiussskj.weixiulist[indexPath.row].userid
+        cell.username.text = weixiussskj.weixiulist[indexPath.row].username
+        cell.userquanxian.text = weixiussskj.weixiulist[indexPath.row].userqx
+        // Configure the cell...
+
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let sure = UITableViewRowAction(style: .normal, title: "确定"){
+        
+        let sure = UITableViewRowAction(style: .normal, title: "确认"){
             actionm, index in
+            self.weixiussskj.loadData()
+            print(String(self.repairid))
+            print(self.weixiussskj.weixiulist[indexPath.row].userid)
+            let requesting : Models_FenPei.Requesting = Models_FenPei.Requesting(repairaID: String(self.repairid), RepairUserID: self.weixiussskj.weixiulist[indexPath.row].userid)
+            FenPeiResposity().FenPei(requesting: requesting){(response, error) in
+                if error == nil, let response = response{
+                    let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler:{
+                        action in
+                        self.tableView.reloadData()
+                    })
+                    alerttController.addAction(okkAction)
+                    self.present( alerttController, animated:  true, completion: nil)
+                }
+            }
             
             
         }
         sure.backgroundColor = UIColor.red
         return [sure]
     }
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
 
     /*
     // Override to support conditional editing of the table view.

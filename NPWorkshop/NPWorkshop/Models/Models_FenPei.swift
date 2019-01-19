@@ -1,8 +1,8 @@
 //
-//  Models_ShouLi.swift
+//  Models_FenPei.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/18.
+//  Created by 周旭 on 2019/1/19.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class Models_ShouLi: NSObject {
+class Models_FenPei: NSObject {
 
     class Requesting: NSObject {
-        var RepairID:String
-        var operation:String
-        init(RepairID:String,operation:String) {
-            self.RepairID = RepairID
-            self.operation = operation
+        var repairaID:String
+        var  RepairUserID:String
+        init(repairaID:String,RepairUserID:String) {
+            self.repairaID = repairaID
+            self.RepairUserID = RepairUserID
         }
     }
     
@@ -31,5 +31,6 @@ class Models_ShouLi: NSObject {
             print("ts: ", self.ts ?? "没有值")
         }
     }
+    
     
 }

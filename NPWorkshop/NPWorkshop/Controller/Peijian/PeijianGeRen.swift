@@ -22,6 +22,12 @@ class PeijianGeRen: UIViewController {
     @IBOutlet weak var yuanmimatxt: UITextField!
     @IBOutlet weak var fenxian: UIImageView!
     @IBOutlet weak var MenuItem: UIButton!
+    @IBOutlet weak var bumen: UILabel!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var userqq: UILabel!
+    @IBOutlet weak var telphone: UILabel!
+    
+    var userdetaillist = GerenDetailModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.selectedIndex = 1
@@ -44,6 +50,14 @@ class PeijianGeRen: UIViewController {
         fenxian.isHidden = true
         self.revealViewController().rearViewRevealWidth = 250
         customSetup()
+        
+        GeRenDetailResposity().UserDetail()
+        
+        userdetaillist.loadData()
+        bumen.text = userdetaillist.userdetail[0].userbumen
+        username.text = userdetaillist.userdetail[0].username
+        userqq.text = userdetaillist.userdetail[0].userqq
+        telphone.text = userdetaillist.userdetail[0].userdianhua
         // Do any additional setup after loading the view.
     }
     func customSetup() {
