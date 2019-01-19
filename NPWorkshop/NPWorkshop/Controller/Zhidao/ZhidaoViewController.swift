@@ -367,7 +367,7 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
             actionm, index in
             if self.bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已上报"
             {
-                let requesting : Models_ShouLi.Requesting = Models_ShouLi.Requesting(RepairID: self.bxsearchlist.bxsearchlist[indexPath.row].RepairID, operation: "受理",RepairState: self.bxsearchlist.bxsearchlist[indexPath.row].RepairState)
+                let requesting : Models_ShouLi.Requesting = Models_ShouLi.Requesting(RepairID: self.bxsearchlist.bxsearchlist[indexPath.row].RepairID, operation: "受理")
                 ShouLiReposity().ShouLi(requesting: requesting){(response, error) in
                     if error == nil, let response = response{
                         self.bxsearchlist.bxsearchlist[indexPath.row] = BaoxiuSearchList(RepairID:  self.bxsearchlist.bxsearchlist[indexPath.row].RepairID,EqptName: self.bxsearchlist.bxsearchlist[indexPath.row].EqptName,RepairState:"待分配")
@@ -401,7 +401,7 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
         let fenpei = UITableViewRowAction(style: .normal, title: "分配"){
             actionm, index in
-            if self.bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已上报" || self.bxsearchlist.bxsearchlist[indexPath.row].RepairState == "待检修" || self.bxsearchlist.bxsearchlist[indexPath.row].RepairState == "检修中"
+            if self.bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已上报" || self.bxsearchlist.bxsearchlist[indexPath.row].RepairState == "检修中"
             {
                 let alerttController = UIAlertController(title: "提示！", message: "此维修单无法分配！", preferredStyle: .alert)
                 let okkAction =  UIAlertAction(title: "好的" , style: .default , handler:{
@@ -414,8 +414,10 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
             }
             else
             {
-                let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: FendanController())))
-                    as! FendanController
+                FenPeiSearchResposity().Search()
+                let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: FendanTableViewController())))
+                    as! FendanTableViewController
+                controller.repairid = self.bxsearchlist.bxsearchlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
             }
             
@@ -432,7 +434,7 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
                 
                 if self.baoxiulist.bxlist[indexPath.row].RepairState == "已上报"
                 {
-                    let requesting : Models_ShouLi.Requesting = Models_ShouLi.Requesting(RepairID: self.baoxiulist.bxlist[indexPath.row].RepairID, operation: "受理",RepairState: self.baoxiulist.bxlist[indexPath.row].RepairState)
+                    let requesting : Models_ShouLi.Requesting = Models_ShouLi.Requesting(RepairID: self.baoxiulist.bxlist[indexPath.row].RepairID, operation: "受理")
                     ShouLiReposity().ShouLi(requesting: requesting){(response, error) in
                         if error == nil, let response = response{
                             self.baoxiulist.bxlist[indexPath.row] = BaoxiuList(RepairID:  self.baoxiulist.bxlist[indexPath.row].RepairID,EqptName: self.baoxiulist.bxlist[indexPath.row].EqptName,RepairState:"待分配")
@@ -466,7 +468,7 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
             let fenpei = UITableViewRowAction(style: .normal, title: "分配"){
                 actionm, index in
                 
-                if self.baoxiulist.bxlist[indexPath.row].RepairState == "已上报" || self.baoxiulist.bxlist[indexPath.row].RepairState == "待检修" || self.baoxiulist.bxlist[indexPath.row].RepairState == "检修中"
+                if self.baoxiulist.bxlist[indexPath.row].RepairState == "已上报" || self.baoxiulist.bxlist[indexPath.row].RepairState == "检修中"
                 {
                     let alerttController = UIAlertController(title: "提示！", message: "此维修单无法分配！", preferredStyle: .alert)
                     let okkAction =  UIAlertAction(title: "好的" , style: .default , handler:{
@@ -480,6 +482,12 @@ class ZhidaoViewController: UIViewController,UITableViewDelegate,UITableViewData
                 else
                 {
                     
+                    FenPeiSearchResposity().Search()
+                    let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: FendanTableViewController())))
+                        as! FendanTableViewController
+                    
+                    controller.repairid = self.baoxiulist.bxlist[indexPath.row].RepairID
+                    self.navigationController?.pushViewController(controller, animated: true)
                 }
                 
             }

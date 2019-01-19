@@ -19,8 +19,14 @@ class RightBaritemController: UIViewController {
     @IBOutlet weak var yuanmima: UIImageView!
     @IBOutlet weak var yuanmimatxt: UITextField!
     @IBOutlet weak var fenxian: UIImageView!
+    
+    @IBOutlet weak var bumen: UILabel!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var userqq: UILabel!
+    @IBOutlet weak var telphone: UILabel!
     var userlist = UserModel()
     var baoxiulist = BaoxiuModel()
+    var userdetaillist = GerenDetailModel()
     //    @IBOutlet weak var MenuItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +49,13 @@ class RightBaritemController: UIViewController {
         yuanmimatxt.isHidden = true
         fenxian.isHidden = true
 
+        GeRenDetailResposity().UserDetail()
+        
+        userdetaillist.loadData()
+        bumen.text = userdetaillist.userdetail[0].userbumen
+        username.text = userdetaillist.userdetail[0].username
+        userqq.text = userdetaillist.userdetail[0].userqq
+         telphone.text = userdetaillist.userdetail[0].userdianhua
         // Do any additional setup after loading the view.
     }
     

@@ -45,79 +45,6 @@
             </objects>
             <point key="canvasLocation" x="-1586" y="2185"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="reN-xi-wpt">
-            <objects>
-                <navigationController id="kuk-51-tVl" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qjV-SJ-kej">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gRO-bN-n4v" kind="relationship" relationship="rootViewController" id="A9m-b0-y22"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ej6-sX-gZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2797" y="3640"/>
-        </scene>
-        <!--维修人-->
-        <scene sceneID="l1s-k0-rym">
-            <objects>
-                <tableViewController storyboardIdentifier="FendanController" id="gRO-bN-n4v" customClass="FendanController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dof-U4-Bvf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feipeirencell" rowHeight="73" id="L7D-e2-sJM" customClass="FeiPeiRenTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="73"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L7D-e2-sJM" id="T31-We-7UJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72.666666666666671"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqF-Lc-jvm">
-                                            <rect key="frame" x="20" y="11" width="183" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUo-1w-5X4">
-                                            <rect key="frame" x="20" y="40" width="183" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHi-dl-Cfe">
-                                            <rect key="frame" x="291" y="26" width="123" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="userid" destination="bqF-Lc-jvm" id="i9p-Yq-rjU"/>
-                                    <outlet property="username" destination="hUo-1w-5X4" id="RJl-ih-Bos"/>
-                                    <outlet property="userqx" destination="MHi-dl-Cfe" id="mmE-cO-rgd"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="gRO-bN-n4v" id="a93-bC-SB7"/>
-                            <outlet property="delegate" destination="gRO-bN-n4v" id="s5q-Kp-LZE"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="维修人" id="iMr-6R-UeG"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KzI-3z-TgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1972.4637681159422" y="3639.9456521739135"/>
-        </scene>
         <!--个人中心-->
         <scene sceneID="r81-VT-gzg">
             <objects>
@@ -298,12 +225,16 @@
                     <tabBarItem key="tabBarItem" title="我" image="wo1" id="p30-DZ-oR1"/>
                     <navigationItem key="navigationItem" title="个人中心" id="jhh-sf-abK"/>
                     <connections>
+                        <outlet property="bumen" destination="B9U-Vb-TCC" id="az5-2j-ACN"/>
                         <outlet property="fengexian" destination="CQ9-ov-I2a" id="k2q-fK-R4t"/>
                         <outlet property="fenxian" destination="Jsl-P1-jG9" id="wAi-RQ-akq"/>
                         <outlet property="querenmima" destination="YRH-pe-3oM" id="LGf-3V-vqK"/>
                         <outlet property="querenmimatxt" destination="vv5-mb-Nl7" id="9ei-3P-RjQ"/>
                         <outlet property="surebtn" destination="5CW-NN-nHG" id="PPJ-ZM-dKg"/>
+                        <outlet property="telphone" destination="sVp-u3-9u9" id="oYT-tf-oMv"/>
                         <outlet property="userimg" destination="kwT-yb-4kO" id="w2h-NY-cHl"/>
+                        <outlet property="username" destination="tY4-bo-97C" id="vtM-EJ-QJr"/>
+                        <outlet property="userqq" destination="tY3-kZ-zVE" id="wYW-pq-her"/>
                         <outlet property="xinmima" destination="laO-x7-XqC" id="5Xr-wt-PHQ"/>
                         <outlet property="xinmimatxt" destination="6cI-PT-yZg" id="nkd-b4-s00"/>
                         <outlet property="xiugaimima" destination="1Im-Dd-0Fc" id="GiW-BY-NF5"/>
@@ -314,6 +245,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UR-4x-avy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2365.217391304348" y="2907.880434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6UK-Df-guC">
+            <objects>
+                <navigationController id="mbH-jY-uPh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Vl-CR-AMA">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fqq-WH-e5v" kind="relationship" relationship="rootViewController" id="CNa-PT-yHQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kge-bh-1HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2820" y="3717"/>
+        </scene>
+        <!--维修人-->
+        <scene sceneID="Lze-gw-DGg">
+            <objects>
+                <tableViewController storyboardIdentifier="FendanTableViewController" id="fqq-WH-e5v" customClass="FendanTableViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="E4V-Cz-bcD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fendancell" rowHeight="96" id="hNX-oa-INX" customClass="Fendancell" customModule="NPWorkshop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hNX-oa-INX" id="JAA-ed-Hud">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiV-bL-Vfm">
+                                            <rect key="frame" x="20" y="17" width="283" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1n-r0-R8S">
+                                            <rect key="frame" x="20" y="58" width="283" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6D-Rw-Sdq">
+                                            <rect key="frame" x="337" y="37" width="77" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="UserId" destination="ZiV-bL-Vfm" id="89X-Nd-JXC"/>
+                                    <outlet property="username" destination="w1n-r0-R8S" id="1c9-R0-LJ1"/>
+                                    <outlet property="userquanxian" destination="Q6D-Rw-Sdq" id="3FP-Ra-ItH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fqq-WH-e5v" id="umC-Pb-9ZR"/>
+                            <outlet property="delegate" destination="fqq-WH-e5v" id="Ve3-72-xC7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="维修人" id="mvi-EE-8g6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODq-wS-HG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071.0144927536235" y="3624.4565217391305"/>
         </scene>
         <!--Zhidao View Controller-->
         <scene sceneID="8Wi-dK-Fjd">

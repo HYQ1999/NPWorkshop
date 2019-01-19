@@ -667,12 +667,16 @@
                     <tabBarItem key="tabBarItem" title="我" image="wo1" id="NDY-0i-hcJ"/>
                     <navigationItem key="navigationItem" title="个人中心" id="G9V-jS-Yzc"/>
                     <connections>
+                        <outlet property="bumen" destination="0hZ-2w-4kr" id="T9K-DA-J6Q"/>
                         <outlet property="fengexian" destination="0Yt-jv-TGq" id="x67-qp-OP5"/>
                         <outlet property="fenxian" destination="gcv-3T-9J2" id="0xg-aZ-8SM"/>
                         <outlet property="querenmima" destination="kiC-jo-ZEq" id="gLc-bx-j6f"/>
                         <outlet property="querenmimatxt" destination="Mii-pU-mG6" id="llz-wL-oU7"/>
                         <outlet property="surebtn" destination="xWd-sP-4fQ" id="jsE-1L-YCx"/>
+                        <outlet property="telphone" destination="4g5-9p-7n7" id="ieS-1J-2oM"/>
                         <outlet property="userimg" destination="ygq-ml-yzS" id="3tI-dT-b3v"/>
+                        <outlet property="username" destination="KH2-05-kQD" id="hG9-CX-sEs"/>
+                        <outlet property="userqq" destination="v5L-qh-PAZ" id="NNu-Gz-cCN"/>
                         <outlet property="xinmima" destination="6wy-Pp-aTP" id="hTx-EU-tcD"/>
                         <outlet property="xinmimatxt" destination="CnY-iK-O5J" id="Qer-s3-gBi"/>
                         <outlet property="xiugaimima" destination="m66-YJ-VKj" id="aDO-gG-wWD"/>

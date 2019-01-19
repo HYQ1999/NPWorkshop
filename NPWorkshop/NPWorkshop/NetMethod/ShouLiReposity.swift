@@ -16,8 +16,7 @@ class ShouLiReposity: NSObject {
     {
         let parameters :[String : Any] = [
             "RepairID": requesting.RepairID,//左边是接口
-            "operation": requesting.operation,
-            "RepairState":requesting.RepairState,
+            "operation": requesting.operation
         ]
         
         Alamofire.request("http://172.16.101.66:8083/api/RepAPI/Cancel_Rep", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in

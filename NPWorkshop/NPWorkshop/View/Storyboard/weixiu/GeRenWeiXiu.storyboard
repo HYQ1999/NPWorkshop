@@ -293,12 +293,16 @@
                     <navigationItem key="navigationItem" title="个人中心" id="OOn-wx-m1R"/>
                     <connections>
                         <outlet property="MenuItem" destination="g8F-J5-uGM" id="ovi-57-hk1"/>
+                        <outlet property="bumen" destination="6mu-0S-dDT" id="yhs-RH-JVc"/>
                         <outlet property="fengexian" destination="6wq-oq-JSI" id="T54-dN-JNg"/>
                         <outlet property="fenxian" destination="YUI-wH-aAG" id="ZHg-up-pMG"/>
                         <outlet property="querenmima" destination="Ddx-xf-6IW" id="Vkd-6m-pqW"/>
                         <outlet property="querenmimatxt" destination="7P8-Gy-5n6" id="NUb-39-GNq"/>
                         <outlet property="surebtn" destination="guE-GD-QVv" id="7lR-dB-rrq"/>
+                        <outlet property="telphone" destination="ehz-Ig-cvJ" id="8lK-FG-cox"/>
                         <outlet property="userimg" destination="Kkd-CD-zk0" id="R5F-le-yEE"/>
+                        <outlet property="username" destination="Saz-FJ-Bgv" id="9qI-Bs-yQl"/>
+                        <outlet property="userqq" destination="LCa-gP-KTb" id="yL1-E6-ZKE"/>
                         <outlet property="xinmima" destination="vMo-No-byZ" id="169-mK-r4N"/>
                         <outlet property="xinmimatxt" destination="70T-7o-tHG" id="Q7a-wS-s6g"/>
                         <outlet property="xiugaimima" destination="9bL-8J-U0h" id="KHj-sy-xdR"/>

@@ -1,18 +1,18 @@
 //
-//  FeiPeiRenTableViewCell.swift
+//  Fendancell.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/17.
+//  Created by 周旭 on 2019/1/19.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class FeiPeiRenTableViewCell: UITableViewCell {
+class Fendancell: UITableViewCell {
 
-    @IBOutlet weak var userid: UILabel!
+    @IBOutlet weak var UserId: UILabel!
     @IBOutlet weak var username: UILabel!
-    @IBOutlet weak var userqx: UILabel!
+    @IBOutlet weak var userquanxian: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

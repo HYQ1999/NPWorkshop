@@ -97,6 +97,9 @@ class LoginViewController: UIViewController {
                                 let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
                             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
                                 action in
+                                self.usermodel.loadData()
+                                self.usermodel.userlist.append(UserList(userid:response.id!,userrole:response.roel!,quanxian:response.qx!))
+                                self.usermodel.saveData()
                                 let destinationStoryboard = UIStoryboard(name:"JieXiu",bundle:nil)
                                 let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
                                     as! SWRevealViewController
@@ -144,6 +147,10 @@ class LoginViewController: UIViewController {
                                 let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
                                 let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
                                     action in
+                                    self.usermodel.loadData()
+                                    self.usermodel.userlist.append(UserList(userid:response.id!,userrole:response.roel!,quanxian:response.qx!))
+                                    self.usermodel.saveData()
+                                    
                                     let destinationStoryboard = UIStoryboard(name:"PeiJian",bundle:nil)
                                     let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
                                         as! SWRevealViewController
@@ -180,6 +187,10 @@ class LoginViewController: UIViewController {
                             let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
                             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
                                 action in
+                                self.usermodel.loadData()
+                                self.usermodel.userlist.append(UserList(userid:response.id!,userrole:response.roel!,quanxian:response.qx!))
+                                self.usermodel.saveData()
+                                
                                 let destinationStoryboard = UIStoryboard(name:"ZhidaoJiaoshiStoryboard",bundle:nil)
                                 let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: ZhidaoTabBarController())))
                                     as! ZhidaoTabBarController

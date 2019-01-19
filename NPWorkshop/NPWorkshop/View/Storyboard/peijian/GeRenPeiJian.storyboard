@@ -456,12 +456,16 @@
                     <navigationItem key="navigationItem" title="个人中心" id="nWG-0I-nxw"/>
                     <connections>
                         <outlet property="MenuItem" destination="1qQ-LH-bhY" id="RxA-cS-dqu"/>
+                        <outlet property="bumen" destination="zar-0z-ocz" id="Oai-Dv-r5M"/>
                         <outlet property="fengexian" destination="BWm-yv-dZw" id="U5r-dx-MJp"/>
                         <outlet property="fenxian" destination="f9y-9F-sWG" id="Q11-Hp-vPe"/>
                         <outlet property="querenmima" destination="rCu-c8-1K9" id="mQd-Wm-8hx"/>
                         <outlet property="querenmimatxt" destination="Ami-AJ-4h8" id="gDf-Jr-fY3"/>
                         <outlet property="surebtn" destination="CeU-BR-YeD" id="dwM-6V-Q2Q"/>
+                        <outlet property="telphone" destination="iuK-uH-fv1" id="3nM-O5-JaE"/>
                         <outlet property="userimg" destination="vu8-0m-EjB" id="nke-wd-1Dk"/>
+                        <outlet property="username" destination="SOU-hs-WlZ" id="yh1-yG-kvH"/>
+                        <outlet property="userqq" destination="fpf-Lo-ZO1" id="lSa-w6-4nQ"/>
                         <outlet property="xinmima" destination="fUq-LS-hjY" id="ZZ0-YN-pX1"/>
                         <outlet property="xinmimatxt" destination="YA9-yw-rR7" id="DaX-8z-kvH"/>
                         <outlet property="xiugaimima" destination="nEe-qD-yQg" id="k8g-OK-XdP"/>
