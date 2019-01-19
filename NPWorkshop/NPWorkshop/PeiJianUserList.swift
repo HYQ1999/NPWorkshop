@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PeiJianUserList: NSObject {
+class PeiJianUserList: NSObject,NSCoding {
     var peijianminchen:String
     var peijiannum:String
     var peijianmoney:String

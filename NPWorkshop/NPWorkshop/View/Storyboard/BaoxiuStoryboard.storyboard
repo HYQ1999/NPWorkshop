@@ -332,11 +332,11 @@
                                         <color key="textColor" red="0.70445352159999997" green="0.70445352159999997" blue="0.70445352159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="2222" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-As-JZa">
-                                        <rect key="frame" x="97" y="189" width="240" height="358"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-As-JZa">
+                                        <rect key="frame" x="136" y="189" width="201" height="358"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="BRK-kr-hzH"/>
+                                            <constraint firstAttribute="width" constant="201" id="BRK-kr-hzH"/>
                                             <constraint firstAttribute="height" constant="358" id="iAJ-hu-If6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -372,7 +372,7 @@
                                     <constraint firstItem="C2O-id-AoD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Ht-H7-7mp" secondAttribute="trailing" constant="8" symbolic="YES" id="kEA-QB-J2x"/>
                                     <constraint firstItem="BMK-C2-fJ7" firstAttribute="top" secondItem="FLt-Hq-dYk" secondAttribute="top" constant="186" id="ndl-te-bLd"/>
                                     <constraint firstItem="ozU-Ct-x7a" firstAttribute="top" secondItem="Oz5-dP-amh" secondAttribute="bottom" constant="14" id="pur-Jh-UbA"/>
-                                    <constraint firstItem="mhn-As-JZa" firstAttribute="leading" secondItem="FLt-Hq-dYk" secondAttribute="leading" constant="97" id="q8o-1G-8R5"/>
+                                    <constraint firstItem="mhn-As-JZa" firstAttribute="leading" secondItem="FLt-Hq-dYk" secondAttribute="leading" constant="136" id="q8o-1G-8R5"/>
                                     <constraint firstItem="BMK-C2-fJ7" firstAttribute="trailing" secondItem="qMr-S7-1cS" secondAttribute="trailing" id="saj-iQ-Wiv"/>
                                     <constraint firstItem="3Ht-H7-7mp" firstAttribute="centerY" secondItem="C2O-id-AoD" secondAttribute="centerY" id="uxD-0K-Qwi"/>
                                     <constraint firstAttribute="trailing" secondItem="mhn-As-JZa" secondAttribute="trailing" constant="17" id="vcL-QY-fxf"/>
@@ -421,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djq-pB-Tai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="1401"/>
+            <point key="canvasLocation" x="200.00000000000003" y="1400.5434782608697"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E3E-3F-5aN">
@@ -1142,7 +1142,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-hf-Msm">
-                                                <rect key="frame" x="131" y="1086" width="207" height="128"/>
+                                                <rect key="frame" x="131" y="1080" width="207" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1322,12 +1322,10 @@
                                                             </subviews>
                                                         </tableViewCellContentView>
                                                         <connections>
-                                                            <outlet property="peijiandanjia" destination="oRf-yX-r01" id="UTw-HZ-piV"/>
-                                                            <outlet property="peijianmoney" destination="oRf-yX-r01" id="KX1-T9-fvV"/>
-                                                            <outlet property="peijianname" destination="nra-Wr-P05" id="CE0-D5-Kyx"/>
-                                                            <outlet property="peijianshuliang" destination="KH7-6r-pqg" id="y3H-s3-pog"/>
-                                                            <outlet property="peijiantotal" destination="Y59-hT-P6D" id="WyO-eE-Xd5"/>
-                                                            <outlet property="total" destination="Y59-hT-P6D" id="vRY-lI-7Ih"/>
+                                                            <outlet property="peijiandanjia" destination="oRf-yX-r01" id="z1M-no-IzM"/>
+                                                            <outlet property="peijianname" destination="nra-Wr-P05" id="I6y-7s-vtz"/>
+                                                            <outlet property="peijianshuliang" destination="KH7-6r-pqg" id="Hs1-KF-7c9"/>
+                                                            <outlet property="peijiantotal" destination="Y59-hT-P6D" id="CNR-Pp-Hgi"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -1382,11 +1380,11 @@
                         <outlet property="jiexiuren" destination="ZAK-VS-iK6" id="Bah-uM-6GM"/>
                         <outlet property="lianxifangshi" destination="8MH-gM-doK" id="6VS-Mi-Qty"/>
                         <outlet property="peijianshengouyuan" destination="DmF-qd-YQO" id="Cc5-H7-PZv"/>
-                        <outlet property="peijiantableview" destination="KBO-E1-FVi" id="vBD-iV-aXL"/>
-                        <outlet property="rengongfei" destination="daz-x3-0KT" id="84B-Zd-lVG"/>
+                        <outlet property="peijiantableview" destination="KBO-E1-FVi" id="Jgd-Mb-iHx"/>
+                        <outlet property="rengongfei" destination="daz-x3-0KT" id="bSy-OR-1sV"/>
                         <outlet property="shebeiname" destination="h8s-Le-8po" id="VDZ-Fc-qFv"/>
                         <outlet property="wanxiushijian" destination="UkS-Ig-8fy" id="sj7-Pj-76x"/>
-                        <outlet property="weixiujine" destination="NgR-JH-J6D" id="Ixr-L0-0zG"/>
+                        <outlet property="weixiujine" destination="NgR-JH-J6D" id="5Yz-1J-WmG"/>
                         <outlet property="weixiuren" destination="KS5-nc-6PE" id="OYu-RA-R0F"/>
                         <outlet property="xinghaocanshu" destination="gnB-KB-LDB" id="KEA-zw-59C"/>
                         <outlet property="zichanxuhao" destination="77R-JQ-XMx" id="ZS8-vs-3p8"/>
@@ -1394,7 +1392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCL-b8-r7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3251" y="1838"/>
+            <point key="canvasLocation" x="3250.7246376811595" y="1837.5000000000002"/>
         </scene>
         <!--报修单详细(弃修)-->
         <scene sceneID="eFG-Cp-SEQ">

@@ -19,11 +19,11 @@ class JieXiuReposity: NSObject {
         
         Response?.removeAll()
         let parameters :[String : Any] = [
-            "UserId": userlist.userlist[0].userid //左边是接口
+            "RepairUser": ""//左边是接口
         ]
         
         
-        Alamofire.request("http://172.16.101.66:8083/api/RepAPI/PostRepLists", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+        Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepairList", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             if response.result.value != nil {
                 do{
                     //当收到JSON相应时
@@ -33,9 +33,14 @@ class JieXiuReposity: NSObject {
                         let repvm = json?["repvm"] as?[[String: AnyObject]]{
                         count = repvm.count
                         print(count)
+                        for x in repvm
+                        {
+                            print(x)
+                        }
+                        
                         if count == 0
                         {
-                            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_Baoxiu"), object: Response)
+                            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_JieXiu"), object: Response)
                             return
                         }
                         else

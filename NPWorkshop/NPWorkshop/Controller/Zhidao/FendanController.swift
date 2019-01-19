@@ -9,11 +9,13 @@
 import UIKit
 import ProgressHUD
 class FendanController: UITableViewController {
+    
+    var weixiurenlist = WeiXiuRenModel()
     override func viewDidLoad() {
         super.viewDidLoad()
       
         
-       
+        
         
         let bgColor = UIColor(red:250/255, green:250/255, blue: 250/255, alpha: 0)
         
@@ -29,12 +31,13 @@ class FendanController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        weixiurenlist.loadData()
+        return weixiurenlist.weixiulist.count
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
@@ -43,8 +46,10 @@ class FendanController: UITableViewController {
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let sure = UITableViewRowAction(style: .normal, title: "确定"){
             actionm, index in
+            
+            
         }
-        sure.backgroundColor = UIColor.blue
+        sure.backgroundColor = UIColor.red
         return [sure]
     }
     /*

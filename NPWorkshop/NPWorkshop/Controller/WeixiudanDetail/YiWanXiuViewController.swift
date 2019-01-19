@@ -48,17 +48,21 @@ class YiWanXiuViewController: UIViewController,UITableViewDataSource,UITableView
         zichanxuhao.text = detaillist.detail[0].AssetsNumber
         xinghaocanshu.text = detaillist.detail[0].Parameter
         baoxiuzhuangtai.text = detaillist.detail[0].RepairState
-         guzhangxianxiang.text = detaillist.detail[0].Appearance
-        guzhangyuanyin.text = detaillist.detail[0].Reason
+        let index1 = detaillist.detail[0].Appearance.index(detaillist.detail[0].Appearance.startIndex, offsetBy: 3)
+        let index2 = detaillist.detail[0].Appearance.index(detaillist.detail[0].Appearance.endIndex, offsetBy: -4)
+        guzhangxianxiang.text = String(detaillist.detail[0].Appearance[index1 ..< index2])
+        let index3 = detaillist.detail[0].Reason.index(detaillist.detail[0].Reason.startIndex, offsetBy: 3)
+        let index4 = detaillist.detail[0].Reason.index(detaillist.detail[0].Reason.endIndex, offsetBy: -4)
+        guzhangyuanyin.text = String(detaillist.detail[0].Reason[index3 ..< index4])
         baoxiuren.text = detaillist.detail[0].BXUser
         baoxiubumen.text = detaillist.detail[0].DeptName
         lianxifangshi.text = detaillist.detail[0].Telphone
-        jiexiuren.text = detaillist.detail[0].TotalCost
+        jiexiuren.text = detaillist.detail[0].Accepter
         weixiuren.text = detaillist.detail[0].RepairUser
         peijianshengouyuan.text = detaillist.detail[0].ApplyUser
         rengongfei.text = detaillist.detail[0].Laborcost
         weixiujine.text = detaillist.detail[0].Total
-        baoxiushijian.text = detaillist.detail[0].TotalCost
+        baoxiushijian.text = detaillist.detail[0].RepairTime
         wanxiushijian.text = detaillist.detail[0].FinishTime
         
         // Do any additional setup after loading the view.
@@ -81,8 +85,8 @@ class YiWanXiuViewController: UIViewController,UITableViewDataSource,UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "peijianusecell", for: indexPath) as! PeiJianUseCell
         cell.peijianname.text = peijianuselist.pjuselist[indexPath.row].peijianminchen
         cell.peijianshuliang.text = peijianuselist.pjuselist[indexPath.row].peijiannum
-        cell.peijiandanjia.text = peijianuselist.pjuselist[indexPath.row].peijianmoney
-        cell.peijiantotal.text = peijianuselist.pjuselist[indexPath.row].peijiantotal
+        cell.peijiandanjia.text = "¥" + peijianuselist.pjuselist[indexPath.row].peijianmoney
+        cell.peijiantotal.text = "¥" + peijianuselist.pjuselist[indexPath.row].peijiantotal
         return cell
     }
     /*
