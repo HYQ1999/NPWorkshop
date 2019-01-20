@@ -64,6 +64,18 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
         selectLabel.isHidden = true
         peijianSelect.isHidden = true
         weixiuPeijian.isHidden = true
+        self.guzhangSee.layer.borderColor = UIColor(red: 206/255, green: 205/255, blue: 205/255, alpha: 1).cgColor
+        
+        self.guzhangSee.layer.borderWidth = 2
+        
+        self.guzhangSee.layer.cornerRadius = 16
+        self.guzhangReason.layer.borderColor = UIColor(red: 206/255, green: 205/255, blue: 205/255, alpha: 1).cgColor
+        
+        self.guzhangReason.layer.borderWidth = 2
+        
+        self.guzhangReason.layer.cornerRadius = 16
+      
+   
         // Do any additional setup after loading the view.
     }
     

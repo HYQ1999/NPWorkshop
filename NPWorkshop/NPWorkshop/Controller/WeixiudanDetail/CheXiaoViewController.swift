@@ -28,6 +28,11 @@ class CheXiaoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //
+        self.guzhangxianxiang.layer.borderColor = UIColor(red: 206/255, green: 205/255, blue: 205/255, alpha: 1).cgColor
+        
+        self.guzhangxianxiang.layer.borderWidth = 2
+        
+        self.guzhangxianxiang.layer.cornerRadius = 16
         let parameters :[String : Any] = [
             "RepairID": String(repairid)//左边是接口
         ]
