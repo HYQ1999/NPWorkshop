@@ -291,52 +291,59 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
         {
           if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已完修"
           {
-             let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
-            BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//             let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
+//            BaoxiuDetail().Baoxiudetail(requesting: requesting)
             
             let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: YiWanXiuViewController())))
                 as! YiWanXiuViewController
+            controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
+            
             self.navigationController?.pushViewController(controller, animated: true)
             return
             
           }
           if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已上报"
           {
-            let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
-            BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//            let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
+//            BaoxiuDetail().Baoxiudetail(requesting: requesting)
             
             let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: YiShangBaoDetailController())))
                 as! YiShangBaoDetailController
+            
+             controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
             self.navigationController?.pushViewController(controller, animated: true)
              return
             }
             if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "弃修"
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: QiXIuViewController())))
                     as! QiXIuViewController
+                 controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                  return
             }
             if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "已撤销"
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: CheXiaoViewController())))
                     as! CheXiaoViewController
+                 controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                  return
             }
             else
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: bxsearchlist.bxsearchlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: QiTaStateViewController())))
                     as! QiTaStateViewController
+                 controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                  return
             }
@@ -345,56 +352,61 @@ class BaoxiuViewController: UIViewController,UITableViewDelegate,UITableViewData
         {
             if baoxiulist.bxlist[indexPath.row].RepairState == "已完修"
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
-                print(baoxiulist.bxlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+//                print(baoxiulist.bxlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: YiWanXiuViewController())))
                     as! YiWanXiuViewController
+                 controller.repairid = baoxiulist.bxlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                 return
             }
             if baoxiulist.bxlist[indexPath.row].RepairState == "已上报"
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
-                print(baoxiulist.bxlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+//                print(baoxiulist.bxlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: YiShangBaoDetailController())))
                     as! YiShangBaoDetailController
+                 controller.repairid = baoxiulist.bxlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                 return
             }
             if baoxiulist.bxlist[indexPath.row].RepairState == "弃修"
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
-                print(baoxiulist.bxlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+//                print(baoxiulist.bxlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: QiXIuViewController())))
                     as! QiXIuViewController
+                 controller.repairid = baoxiulist.bxlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                 return
             }
             if baoxiulist.bxlist[indexPath.row].RepairState == "已撤销"
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
-                print(baoxiulist.bxlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+//                print(baoxiulist.bxlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: CheXiaoViewController())))
                     as! CheXiaoViewController
+                 controller.repairid = baoxiulist.bxlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                 return
             }
             else
             {
-                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
-                print(baoxiulist.bxlist[indexPath.row].RepairID)
-                BaoxiuDetail().Baoxiudetail(requesting: requesting)
+//                let requesting : Models_BaoxiuDetail.Requesting = Models_BaoxiuDetail.Requesting(RepairID: baoxiulist.bxlist[indexPath.row].RepairID)
+//                print(baoxiulist.bxlist[indexPath.row].RepairID)
+//                BaoxiuDetail().Baoxiudetail(requesting: requesting)
                 
                 let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: QiTaStateViewController())))
                     as! QiTaStateViewController
+                 controller.repairid = baoxiulist.bxlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
                 return
             }
