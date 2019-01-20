@@ -16,15 +16,17 @@ class WeixiuSearchResposity: NSObject {
                 weixiuuserModel.loadData()
        
         let parameters :[String : Any] = [
-           "UserID": weixiuuserModel.userlist[0].userid,//左边是接口
-            "EqpName": requesting.EqpName
+            "RepairUser": weixiuuserModel.userlist[0].userid,
+            "role": weixiuuserModel.userlist[0].userrole,
+            "rights": weixiuuserModel.userlist[0].quanxian,
+            "EqptName": requesting.EqpName
         ]
         
         var Response: [Models_WeixiuSearch.Response]? = [Models_WeixiuSearch.Response(RepairID: nil, EqptName: nil, RepairState: nil)]
         
         Response?.removeAll()
         
-          Alamofire.request("http://172.16.101.66:8083/api/RepAPI/PostRepLists", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+          Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepairList", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             if response.result.value != nil {
                 do{
                     if let json = try? JSONSerialization.jsonObject(with: response.data! as Data, options: .allowFragments) as? [String:AnyObject],
