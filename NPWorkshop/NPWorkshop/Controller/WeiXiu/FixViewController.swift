@@ -228,7 +228,15 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+          let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
+        let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: tianxieViewController())))
+            as! tianxieViewController
+//        let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: tianxieViewController())))
+//            as! tianxieViewController
+//        controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
         
+                   self.navigationController?.pushViewController(controller, animated: true)
+        return
         //          baoxiulist.loadData()
         //        let requesting :  Models_BaoxiuSearch.Requesting =  Models_BaoxiuSearch.Requesting(EqpName: baoxiulist.bxlist[indexPath.row].EqptName)
         //        BaoxiuSearchResposity().Search(requesting: requesting)

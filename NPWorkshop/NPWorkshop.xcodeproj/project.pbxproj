@@ -49,6 +49,8 @@
 		5A2FB8DD21E6D66F00E5C1D7 /* GeRenJieXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8DC21E6D66F00E5C1D7 /* GeRenJieXiu.storyboard */; };
 		5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */; };
 		5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A421E579010061361C /* RightMenuViewController.swift */; };
+		5AC3EE0721F45863002AE59D /* tianxieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC3EE0621F45863002AE59D /* tianxieViewController.swift */; };
+		5AC3EE0921F46B9F002AE59D /* tianxiePeiJianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC3EE0821F46B9E002AE59D /* tianxiePeiJianTableViewCell.swift */; };
 		9201F3D521EB067D007E3CA4 /* Pods_NPWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */; };
 		9201F3DF21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */; };
 		9201F3E121EB2917007E3CA4 /* BaoxiuReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F3E021EB2917007E3CA4 /* BaoxiuReposity.swift */; };
@@ -220,6 +222,8 @@
 		5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5A529F1C21DDDD73000F7AE6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		5A7369A421E579010061361C /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		5AC3EE0621F45863002AE59D /* tianxieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tianxieViewController.swift; sourceTree = "<group>"; };
+		5AC3EE0821F46B9E002AE59D /* tianxiePeiJianTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tianxiePeiJianTableViewCell.swift; sourceTree = "<group>"; };
 		842874A5F0BAA391DA986BFD /* Pods-NPWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPWorkshop/Pods-NPWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		9201F3D421EB067D007E3CA4 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9201F3DE21EB1B8D007E3CA4 /* ZhidaoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhidaoTabBarController.swift; sourceTree = "<group>"; };
@@ -543,6 +547,8 @@
 				923BC0BC21F0A9DF00311005 /* PeiJianShenGouTableViewCell.swift */,
 				923BC0BE21F0A9F400311005 /* PeiJianShenGouSearchTableViewController.swift */,
 				5A250BFE21F17285004F7445 /* MyMessgeTableViewController.swift */,
+				5AC3EE0621F45863002AE59D /* tianxieViewController.swift */,
+				5AC3EE0821F46B9E002AE59D /* tianxiePeiJianTableViewCell.swift */,
 			);
 			path = WeiXiu;
 			sourceTree = "<group>";
@@ -908,6 +914,7 @@
 				9239258D21D6FDFC00803D85 /* LoginViewController.swift in Sources */,
 				92450AA921F4672E009E96C8 /* Models_WeiXiuMImaEdit.swift in Sources */,
 				5A1ED92F21EEDD3F0097A950 /* WeixiuModel.swift in Sources */,
+				5AC3EE0721F45863002AE59D /* tianxieViewController.swift in Sources */,
 				923FC8BE21EF407C004A758C /* QiXIuNaviGation.swift in Sources */,
 				92309DF321F0AFFB0023D971 /* ShenGouReposity.swift in Sources */,
 				923FC89B21EEB636004A758C /* BaoxiuDetail.swift in Sources */,
@@ -981,6 +988,7 @@
 				5A26DCC821EC822C003C2A4C /* WeixiuMoneyBox.swift in Sources */,
 				923FC8CA21EF47C2004A758C /* QiTaStateViewController.swift in Sources */,
 				5A1ED93121EEDD590097A950 /* WeixiuList.swift in Sources */,
+				5AC3EE0921F46B9F002AE59D /* tianxiePeiJianTableViewCell.swift in Sources */,
 				92309DF721F0B16E0023D971 /* PeiJianListResposity.swift in Sources */,
 				9221295A21F1C30500A8EE0D /* ShouLiReposity.swift in Sources */,
 				9201F3E121EB2917007E3CA4 /* BaoxiuReposity.swift in Sources */,
