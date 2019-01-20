@@ -12,18 +12,23 @@ class LoginViewController: UIViewController {
 
     var weixiuModel = WeixiuModel()
     var weixiuUserModel = WeiXiuUserModel()
+    var userlist = UserModel()
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PassWordTextField: UITextField!
     var usermodel = UserModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.weixiuUserModel.loadData()
-//        self.weixiuUserModel.userlist.removeAll()
-//        self.weixiuUserModel.saveData()
-////
-//        self.weixiuModel.loadData()
-//        self.weixiuModel.wxlist.removeAll()
-//        self.weixiuModel.saveData()
+        self.weixiuUserModel.loadData()
+        self.weixiuUserModel.userlist.removeAll()
+        self.weixiuUserModel.saveData()
+//
+        self.weixiuModel.loadData()
+        self.weixiuModel.wxlist.removeAll()
+        self.weixiuModel.saveData()
+        
+        userlist.loadData()
+        userlist.userlist.removeAll()
+        userlist.saveData()
         UserNameTextField.borderStyle = UITextField.BorderStyle.none
         UserNameTextField.clearButtonMode = .always
         PassWordTextField.borderStyle = UITextField.BorderStyle.none

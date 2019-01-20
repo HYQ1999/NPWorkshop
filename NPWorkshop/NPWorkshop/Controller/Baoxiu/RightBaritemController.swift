@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 class RightBaritemController: UIViewController {
     @IBOutlet weak var userimg: UIImageView!
     @IBOutlet weak var xinmima: UIImageView!
@@ -49,15 +51,21 @@ class RightBaritemController: UIViewController {
         yuanmimatxt.isHidden = true
         fenxian.isHidden = true
 
-        GeRenDetailResposity().UserDetail()
         
-        userdetaillist.loadData()
-        bumen.text = userdetaillist.userdetail[0].userbumen
-        username.text = userdetaillist.userdetail[0].username
-        userqq.text = userdetaillist.userdetail[0].userqq
-         telphone.text = userdetaillist.userdetail[0].userdianhua
+        GeRenDetailResposity().UserDetail(){ (response, error) in
+            if error == nil, let response = response{
+                self.bumen.text = response.role
+                self.username.text = response.username
+                self.userqq.text = response.userqq
+                self.telphone.text = response.userdianhua
+            }
+        }
+        
         // Do any additional setup after loading the view.
     }
+    
+ 
+    
     
     @IBAction func xiugaimimaclick(_ sender: Any) {
         xiugaimima.isHidden = true
@@ -73,16 +81,92 @@ class RightBaritemController: UIViewController {
     }
     
     @IBAction func sureclick(_ sender: Any) {
-        xiugaimima.isHidden = false
-        xinmima.isHidden = true
-        xinmimatxt.isHidden = true
-        fengexian.isHidden = true
-        querenmima.isHidden = true
-        querenmimatxt.isHidden = true
-        surebtn.isHidden = true
-        yuanmima.isHidden = true
-        yuanmimatxt.isHidden = true
-        fenxian.isHidden = true
+        
+        if yuanmimatxt.text == ""
+        {
+            let alerttController = UIAlertController(title: "Error！", message: "请填写原密码", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+            return
+        }
+        if xinmimatxt.text == ""
+        {
+            let alerttController = UIAlertController(title: "Error！", message: "请填写新密码", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+            return
+        }
+        if querenmimatxt.text == ""
+        {
+            let alerttController = UIAlertController(title: "Error！", message: "请确认密码", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+            return
+        }
+        
+        let expression2 = "^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,18}"
+        let regex2 = try! NSRegularExpression(pattern: expression2, options: .allowCommentsAndWhitespace)//生成NSRegularExpression实例
+        
+        let numberOfMatches2 = regex2.numberOfMatches(in: xinmimatxt.text!, options:.reportProgress, range: NSMakeRange(0, (xinmimatxt.text! as NSString).length))//获取匹配的个数
+        if numberOfMatches2 == 0
+        {
+            let alertController = UIAlertController(title: "提示!", message: "密码格式有误", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "确认", style: .default,handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+            if querenmimatxt.text != xinmimatxt.text
+            {
+                let alerttController = UIAlertController(title: "Error！", message: "两次密码不同，请重新输入", preferredStyle: .alert)
+                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                alerttController.addAction(okkAction)
+                self.present( alerttController, animated:  true, completion: nil)
+                return
+            }
+                
+                
+                
+        else
+        {
+            GeRenDetailResposity().UserDetail(){ (response, error) in
+                if error == nil, let response = response{
+                    if  self.yuanmimatxt.text == response.password
+                  {
+                    self.userlist.loadData()
+                    let requesting : Models_MiMaEdit.Requesting = Models_MiMaEdit.Requesting(UserID: self.userlist.userlist[0].userid, NewPassWord: self.xinmimatxt.text!)
+                    MiMaEditResposity().Edit(requesting: requesting){ (response, error) in
+                        if error == nil, let response = response{
+                            let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                                action in
+                                
+                                let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
+                                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: LoginViewController())))
+                                    as! LoginViewController
+                                self.present(controller, animated: true, completion: nil)
+                                
+                            })
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                            
+                        }
+                    }
+                    }
+                    else
+                    {
+                        let alerttController = UIAlertController(title: "Error！", message: "原密码不符", preferredStyle: .alert)
+                        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                        alerttController.addAction(okkAction)
+                        self.present( alerttController, animated:  true, completion: nil)
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func zhuxiao(_ sender: Any) {

@@ -1,8 +1,8 @@
 //
-//  GeRenDetailResposity.swift
+//  WeiXiuGeRenResposity.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/19.
+//  Created by 周旭 on 2019/1/20.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GeRenDetailResposity: NSObject {
 
-    var userdetaillist = GerenDetailModel()
-    func UserDetail(handler:  @escaping(_ response: Models_GeRenDetail.Response?, _ error: String?) -> Void)
+class WeiXiuGeRenResposity: NSObject {
+
+    func UserDetail(handler:  @escaping(_ response: Models_WeiXiuGeRenDetail.Response?, _ error: String?) -> Void)
     {
-        userlist.loadData()
+        weixiuuserModel.loadData()
         let parameters :[String : Any] = [
-            "UserID" : userlist.userlist[0].userid 
+            "UserID" : weixiuuserModel.userlist[0].userid
         ]
         
         
@@ -27,7 +27,7 @@ class GeRenDetailResposity: NSObject {
                 if let data = response.data{
                     do{
                         let jsonData: JSON = try JSON(data: data)
-                        let response : Models_GeRenDetail.Response = Models_GeRenDetail.Response(jsonData: jsonData)
+                        let response : Models_WeiXiuGeRenDetail.Response = Models_WeiXiuGeRenDetail.Response(jsonData: jsonData)
                         handler(response, nil)
                     }
                     catch{}
@@ -39,8 +39,7 @@ class GeRenDetailResposity: NSObject {
             
             
             
-            }
         }
     }
     
-
+}

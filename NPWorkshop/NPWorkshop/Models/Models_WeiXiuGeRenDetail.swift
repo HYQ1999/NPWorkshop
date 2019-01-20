@@ -1,18 +1,16 @@
 //
-//  Models_GeRenDetail.swift
+//  Models_WeiXiuGeRenDetail.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/19.
+//  Created by 周旭 on 2019/1/20.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
-
 import Foundation
 import Alamofire
 import SwiftyJSON
 
-class Models_GeRenDetail: NSObject {
+class Models_WeiXiuGeRenDetail: NSObject {
 
-    
     class Response: NSObject {
         var username:String?
         var role:String?

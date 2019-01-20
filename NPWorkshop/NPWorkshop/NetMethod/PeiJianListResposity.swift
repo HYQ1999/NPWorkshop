@@ -36,7 +36,7 @@ class PeiJianListResposity: NSObject {
                         print(count)
                         if count == 0
                         {
-                            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_Baoxiu"), object: Response)
+                            NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_PeiJianList"), object: Response)
                             return
                         }
                         else
