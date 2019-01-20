@@ -2196,8 +2196,8 @@
                                                 <color key="textColor" red="0.70445352159999997" green="0.70445352159999997" blue="0.70445352159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="故障原因" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21J-fV-qD7">
-                                                <rect key="frame" x="20" y="731" width="70" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 撤销原因" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21J-fV-qD7">
+                                                <rect key="frame" x="20" y="731" width="74" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.70445352159999997" green="0.70445352159999997" blue="0.70445352159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2344,8 +2344,8 @@
                         <outlet property="baoxiuren" destination="Gjf-1R-U49" id="JSG-z3-pZJ"/>
                         <outlet property="baoxiushijian" destination="5pS-US-5uQ" id="nQo-O1-uAc"/>
                         <outlet property="baoxiuzhuangtai" destination="IYe-rm-iGX" id="SCY-uW-KYo"/>
+                        <outlet property="chexiaoyuanyin" destination="WRQ-Hr-Eg9" id="B4K-wt-GIM"/>
                         <outlet property="guzhangxianxiang" destination="KVN-dK-tXf" id="jIi-Ag-Grq"/>
-                        <outlet property="guzhangyuanyin" destination="WRQ-Hr-Eg9" id="Zfg-CJ-mod"/>
                         <outlet property="lianxifangshi" destination="0cd-aw-x1Y" id="Cke-6Y-nus"/>
                         <outlet property="shebeimingcheng" destination="qnK-Ub-EEm" id="qhr-OW-9Ym"/>
                         <outlet property="xinhaocanshu" destination="II0-61-dTr" id="WAR-Ge-PGq"/>

@@ -16,7 +16,22 @@ class Models_BaoxiuDetail: NSObject {
             self.RepairID = RepairID
         }
     }
-    
+    class Response: NSObject {
+        var RepairID:String?
+        var EqptName:String?
+        var RepairState:String?
+        
+        init(
+            RepairID: String?,
+            EqptName: String?,
+            RepairState: String?
+            ){
+            self.RepairID = RepairID
+            self.EqptName = EqptName
+            self.RepairState = RepairState
+            
+        }
+    }
     
     
 }
