@@ -10,9 +10,11 @@ import UIKit
 
 class PeiJianSearchTableViewController: UITableViewController {
 
+    var peijianlist = PeiJianModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        peijianlist.loadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,17 +26,26 @@ class PeiJianSearchTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return peijianlist.pjlist.count
     }
      override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        peijianlist.loadData()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weixiupeijiancell", for: indexPath) as! WeiXiuPeiJianTableViewCell
+        cell.peijiandanjia.text = peijianlist.pjlist[indexPath.row].peijiandanjia
+        cell.peijianleibie.text = peijianlist.pjlist[indexPath.row].peijianleibie
+        cell.peijianminchen.text = peijianlist.pjlist[indexPath.row].peijianminchen
+         cell.peijianshuliang.text = peijianlist.pjlist[indexPath.row].peijiankucun
+        return cell
+    }
      override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let sure = UITableViewRowAction(style: .normal, title: "确定"){
             actionm, index in
