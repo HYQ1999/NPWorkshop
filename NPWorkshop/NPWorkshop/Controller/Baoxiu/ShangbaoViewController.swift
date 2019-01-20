@@ -24,6 +24,12 @@ class ShangbaoViewController: UIViewController {
         zichannum.clearButtonMode = .always
         xinhaocanshu.borderStyle = UITextField.BorderStyle.none
         xinhaocanshu.clearButtonMode = .always
+        
+        self.guzhangxianxiang.layer.borderColor = UIColor(red: 206/255, green: 205/255, blue: 205/255, alpha: 1).cgColor
+        
+        self.guzhangxianxiang.layer.borderWidth = 2
+        
+        self.guzhangxianxiang.layer.cornerRadius = 16
         // Do any additional setup after loading the view.
     }
     
