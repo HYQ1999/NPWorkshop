@@ -1,20 +1,19 @@
 //
-//  PeiJianList.swift
+//  Peijianllist.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/17.
+//  Created by 周旭 on 2019/1/20.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class PeiJianList: NSObject,NSCoding {
-    
+class Peijianllist: NSObject,NSCoding {
     var peijianminchen:String
     var peijiankucun:String
     var peijianleibie:String
     var peijiandanjia:String
-    var peijianid:String
+     var peijianid:String
     required init(peijianminchen:String = "", peijiankucun:String = "", peijianleibie: String = "", peijiandanjia: String = "",peijianid: String = ""){
         self.peijianminchen = peijianminchen
         self.peijiankucun = peijiankucun
@@ -30,7 +29,7 @@ class PeiJianList: NSObject,NSCoding {
         self.peijiankucun = decoder.decodeObject(forKey: "peijiankucun") as! String
         self.peijianleibie = decoder.decodeObject(forKey: "peijianleibie")as! String
         self.peijiandanjia = decoder.decodeObject(forKey: "peijiandanjia")as! String
-         self.peijianid = decoder.decodeObject(forKey: "peijianid")as! String
+        self.peijianid = decoder.decodeObject(forKey: "peijianid")as! String
     }
     
     //编码成object
@@ -39,6 +38,6 @@ class PeiJianList: NSObject,NSCoding {
         coder.encode(peijiankucun,forKey:"peijiankucun")
         coder.encode(peijianleibie, forKey: "peijianleibie")
         coder.encode(peijiandanjia, forKey: "peijiandanjia")
-          coder.encode(peijianid, forKey: "peijianid")
+         coder.encode(peijianid, forKey: "peijianid")
     }
 }

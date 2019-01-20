@@ -9,7 +9,8 @@
 import UIKit
 
 class PeiJianModel: NSObject {
-    var pjlist = [PeiJianList]()
+    
+    var pjlist = [Peijianllist]()
     
     override init(){
         super.init()
@@ -61,6 +62,6 @@ class PeiJianModel: NSObject {
     
     //获取数据文件地址
     func dataFilePath ()->String{
-        return self.documentsDirectory().appendingFormat("/Bxlist.plist")
+        return self.documentsDirectory().appendingFormat("/Peijianlist.plist")
     }
 }

@@ -128,6 +128,7 @@
 		92450AA521F45B13009E96C8 /* Models_MiMaEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92450AA421F45B13009E96C8 /* Models_MiMaEdit.swift */; };
 		92450AA721F46717009E96C8 /* WeiXiuMimaEditResposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92450AA621F46717009E96C8 /* WeiXiuMimaEditResposity.swift */; };
 		92450AA921F4672E009E96C8 /* Models_WeiXiuMImaEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92450AA821F4672E009E96C8 /* Models_WeiXiuMImaEdit.swift */; };
+		92450AAB21F47B79009E96C8 /* Peijianllist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92450AAA21F47B79009E96C8 /* Peijianllist.swift */; };
 		924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8EE21ED73D900ADD1D4 /* Messages.swift */; };
 		924BA8F221ED9DB100ADD1D4 /* BaoxiuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */; };
 		924BA8F421ED9DC300ADD1D4 /* BaoxiuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */; };
@@ -300,6 +301,7 @@
 		92450AA421F45B13009E96C8 /* Models_MiMaEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_MiMaEdit.swift; sourceTree = "<group>"; };
 		92450AA621F46717009E96C8 /* WeiXiuMimaEditResposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiXiuMimaEditResposity.swift; sourceTree = "<group>"; };
 		92450AA821F4672E009E96C8 /* Models_WeiXiuMImaEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_WeiXiuMImaEdit.swift; sourceTree = "<group>"; };
+		92450AAA21F47B79009E96C8 /* Peijianllist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peijianllist.swift; sourceTree = "<group>"; };
 		924BA8EE21ED73D900ADD1D4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		924BA8F121ED9DB100ADD1D4 /* BaoxiuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuList.swift; sourceTree = "<group>"; };
 		924BA8F321ED9DC300ADD1D4 /* BaoxiuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuModel.swift; sourceTree = "<group>"; };
@@ -681,6 +683,7 @@
 				926BB1C421F2E84700F7C785 /* WeiXiuRenModel.swift */,
 				92AA206A21F3289A001D055D /* GerenDetailList.swift */,
 				92AA206C21F328AF001D055D /* GerenDetailModel.swift */,
+				92450AAA21F47B79009E96C8 /* Peijianllist.swift */,
 			);
 			name = ShaHe;
 			path = ..;
@@ -957,6 +960,7 @@
 				923BC0BF21F0A9F400311005 /* PeiJianShenGouSearchTableViewController.swift in Sources */,
 				9221295221F15FD300A8EE0D /* DetailList.swift in Sources */,
 				9297B44821F31B8C00733684 /* Models_FenPei.swift in Sources */,
+				92450AAB21F47B79009E96C8 /* Peijianllist.swift in Sources */,
 				9228695A21E71F290077813A /* JieXiuGeRen.swift in Sources */,
 				5A1ED92D21EEDD020097A950 /* Models_WeiXiu.swift in Sources */,
 				5A2FB8D121E6CDC300E5C1D7 /* MenuWeiXiu.swift in Sources */,
