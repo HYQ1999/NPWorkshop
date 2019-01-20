@@ -351,7 +351,7 @@
                                         <rect key="frame" x="74" y="312" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="untitled85" translatesAutoresizingMaskIntoConstraints="NO" id="YXl-Lu-pkd">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Id" translatesAutoresizingMaskIntoConstraints="NO" id="YXl-Lu-pkd">
                                         <rect key="frame" x="66" y="-3" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -480,11 +480,11 @@
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
+        <image name="Id" width="40" height="40"/>
         <image name="lianxifangshi" width="48" height="48"/>
         <image name="mima666" width="32" height="32"/>
         <image name="qq" width="48" height="48"/>
         <image name="querenmima" width="48" height="48"/>
-        <image name="untitled85" width="48" height="48"/>
         <image name="wo1" width="32" height="32"/>
         <image name="xinmima" width="48" height="48"/>
         <image name="个人中心" width="50" height="50"/>
