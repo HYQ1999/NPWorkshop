@@ -14,6 +14,7 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
      var peijianlist = PeiJianModel()
      var peijianuselist = PeiJianUserModel()
     var sum:String! = "0"
+    var repairid: String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -106,16 +107,37 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
                 }
                 else
                 {
-                 self.peijianuselist.loadData()
+                    let requesting : Models_PartsAdd.Requesting = Models_PartsAdd.Requesting(PartsAmount: newpw.text!, PartsID: self.peijianlist.pjlist[indexPath.row].peijianid, RepairID: self.repairid)
+                    PartsAddResposity().PartsAdd(requesting: requesting) { (response, error) in
+                        if error == nil, let response = response{
+                            if response.ts == "配件添加成功！"
+                            {
+                                self.peijianuselist.loadData()
+                                
+                                let total = Int(newpw.text!)! * Int(self.peijianlist.pjlist[indexPath.row].peijiandanjia)!
+                                self.peijianuselist.pjuselist.append(PeiJianUserList(peijianminchen: self.peijianlist.pjlist[indexPath.row].peijianminchen, peijiannum: newpw.text!, peijianmoney: self.peijianlist.pjlist[indexPath.row].peijiandanjia, peijiantotal: String(total)))
+                                self.peijianuselist.saveData()
+                                let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                                    action in
+                                    self.viewWillAppear(true)
+                                })
+                                alerttController.addAction(okkAction)
+                                self.present( alerttController, animated:  true, completion: nil)
+                                return
+                            }
+                            else
+                            {
+                                let alerttController = UIAlertController(title: "Error！", message: response.ts, preferredStyle: .alert)
+                                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                                alerttController.addAction(okkAction)
+                                self.present( alerttController, animated:  true, completion: nil)
+                                return
+                            }
+                            
+                        }
+                    }
                     
-                let total = Int(newpw.text!)! * Int(self.peijianlist.pjlist[indexPath.row].peijiandanjia)!
-                self.peijianuselist.pjuselist.append(PeiJianUserList(peijianminchen: self.peijianlist.pjlist[indexPath.row].peijianminchen, peijiannum: newpw.text!, peijianmoney: self.peijianlist.pjlist[indexPath.row].peijiandanjia, peijiantotal: String(total)))
-                    self.peijianuselist.saveData()
-                    let alerttController = UIAlertController(title: "提示！", message: "添加成功！", preferredStyle: .alert)
-                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
-                    alerttController.addAction(okkAction)
-                    self.present( alerttController, animated:  true, completion: nil)
-                    return
                 }
                 
             })
