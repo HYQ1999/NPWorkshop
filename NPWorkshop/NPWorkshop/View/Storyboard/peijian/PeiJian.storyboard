@@ -435,8 +435,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="MenuItem" destination="QqR-Ib-D4n" id="EaO-uX-QEN"/>
-                        <outlet property="PeiJianSearchTabelview" destination="apS-4n-yRe" id="sG9-OX-vXF"/>
-                        <outlet property="PeiJianTableview" destination="s4Q-9z-hs9" id="MRv-bw-BW4"/>
+                        <outlet property="PeiJianSearchTabelview" destination="s4Q-9z-hs9" id="CBi-nS-kRD"/>
+                        <outlet property="PeiJianTableview" destination="apS-4n-yRe" id="W0g-mX-RlU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zI-Xr-N29" userLabel="First Responder" sceneMemberID="firstResponder"/>

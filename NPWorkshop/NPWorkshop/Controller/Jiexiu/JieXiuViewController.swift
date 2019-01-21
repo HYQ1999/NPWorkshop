@@ -143,14 +143,6 @@ class JieXiuViewController: UIViewController,UITableViewDelegate,UITableViewData
                         JieXiuSearchTableview.isHidden = false
                         return
                     }
-                    //                else
-                    //                {
-                    //                    let alertController = UIAlertController(title: "提示!",
-                    //                                                            message: "查无此报修单(请填写正确的设备名称)！", preferredStyle: .alert)
-                    //                    let okAction = UIAlertAction(title: "返回", style: .default,handler: nil)
-                    //                    alertController.addAction(okAction)
-                    //                    self.present(alertController, animated: true, completion: nil)
-                    //                }
                 }
                 let alertController = UIAlertController(title: "提示!",
                                                         message: "查无此报修单(请填写正确的设备名称)！", preferredStyle: .alert)

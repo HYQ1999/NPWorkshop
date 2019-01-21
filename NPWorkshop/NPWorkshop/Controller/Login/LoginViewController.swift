@@ -133,20 +133,6 @@ class LoginViewController: UIViewController {
                                 self.present( alerttController, animated:  true, completion: nil)
                                 return
                             }
-//                            if response.id != "" && response.qx == Models_Login.WeiXiuQuanXian.zuzhang.rawValue
-//                            {
-//                                let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)
-//                                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
-//                                    action in
-//                                    let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
-//                                    let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
-//                                        as! SWRevealViewController
-//                                    self.present(controller, animated: true, completion: nil)
-//                                })
-//                                alerttController.addAction(okkAction)
-//                                self.present( alerttController, animated:  true, completion: nil)
-//                                return
-//                            }
                             if response.id != "" && response.qx == Models_Login.WeiXiuQuanXian.peijian.rawValue
                             {
                                 let alerttController = UIAlertController(title: "提示!", message: response.ts, preferredStyle: .alert)

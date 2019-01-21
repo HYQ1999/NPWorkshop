@@ -108,8 +108,6 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
                 {
                  self.peijianuselist.loadData()
                     
-                    if self.peijianuselist.pjuselist.isEmpty
-                    {
                 let total = Int(newpw.text!)! * Int(self.peijianlist.pjlist[indexPath.row].peijiandanjia)!
                 self.peijianuselist.pjuselist.append(PeiJianUserList(peijianminchen: self.peijianlist.pjlist[indexPath.row].peijianminchen, peijiannum: newpw.text!, peijianmoney: self.peijianlist.pjlist[indexPath.row].peijiandanjia, peijiantotal: String(total)))
                     self.peijianuselist.saveData()
@@ -118,11 +116,6 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
                     alerttController.addAction(okkAction)
                     self.present( alerttController, animated:  true, completion: nil)
                     return
-                    }
-                    else
-                    {
-                        
-                    }
                 }
                 
             })

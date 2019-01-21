@@ -49,9 +49,6 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         self.navigationController?.navigationBar.barTintColor = bgColor
         addDoneButtonOnKeyboard()
         
-        peijianuselist.loadData()
-        peijianuselist.pjuselist.removeAll()
-        peijianuselist.saveData()
         // Do any additional setup after loading the view.
     }
     
@@ -96,6 +93,9 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        peijianuselist.loadData()
+        peijianuselist.pjuselist.removeAll()
+        peijianuselist.saveData()
         if search.text == ""
         {
             NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_Weixiu"), object: nil)

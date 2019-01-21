@@ -102,6 +102,13 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        weixiuPeijian.dataSource = self
+        weixiuPeijian.delegate = self
+        weixiuPeijian.reloadData()
+
+    }
+    
     @IBAction func viewclick(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -146,6 +153,63 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
     
     
     @IBAction func saveWeixiu(_ sender: Any) {
+        
+        if rengongMoney.text == ""
+        {
+            let alerttController = UIAlertController(title: "Error！", message: "请填写人工费！", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+            return
+        }
+        if guzhangReason.text == ""
+        {
+            
+            let alerttController = UIAlertController(title: "Error！", message: "请填写故障原因！", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+            return
+        }
+        let expression2 = "[0-9]{1,1000}"
+        let regex2 = try! NSRegularExpression.init(pattern: expression2, options: .allowCommentsAndWhitespace)
+        let numberOfMatches2 = regex2.numberOfMatches(in: rengongMoney.text!, options: .reportProgress, range: NSMakeRange(0, (rengongMoney.text! as NSString).length))
+        if numberOfMatches2 == 0
+        {
+            let alerttController = UIAlertController(title: "Error！", message: "人工费填写错误！", preferredStyle: .alert)
+            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+            alerttController.addAction(okkAction)
+            self.present( alerttController, animated:  true, completion: nil)
+            return
+        }
+        else
+        {
+            if selectLabel.isHidden == true
+            {
+                let requesting : Models_QiXiu.Requesting = Models_QiXiu.Requesting(RenGonfei: rengongMoney.text!, QiXiuReason: guzhangReason.text!)
+                QiXiuReposity().QiXiu(requesting: requesting) { (response, error) in
+                    if error == nil, let response = response{
+                        let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                        alerttController.addAction(okkAction)
+                        self.present( alerttController, animated:  true, completion: nil)
+                        return
+                        
+                    }
+                }
+            }
+            else
+            {
+                
+                
+                
+                
+            }
+            
+            
+        }
+        
+        
     }
     @IBAction func peijianChose(_ sender: Any) {
         let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
@@ -191,10 +255,10 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          peijianuselist.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "tianxiePiejianCell", for: indexPath) as! tianxiePeiJianTableViewCell
-        cell.peijiandanjia.text = peijianuselist.pjuselist[indexPath.row].peijianmoney
+        cell.peijiandanjia.text = "单价:" + peijianuselist.pjuselist[indexPath.row].peijianmoney
         cell.peijianname.text = peijianuselist.pjuselist[indexPath.row].peijianminchen
-        cell.peijianshuliang.text = peijianuselist.pjuselist[indexPath.row].peijiannum
-        cell.peijiantotal.text = peijianuselist.pjuselist[indexPath.row].peijiantotal
+        cell.peijianshuliang.text = "数量:" + peijianuselist.pjuselist[indexPath.row].peijiannum
+        cell.peijiantotal.text = "小计:" + peijianuselist.pjuselist[indexPath.row].peijiantotal
         return cell
     }
     /*
