@@ -40,7 +40,7 @@ class WeixiuReposity: NSObject {
                         }
                         else
                         {
-                        for i in 0..<count-1 {
+                         for i in 0...count - 1 {
                             print(repvm[i]["RepairID"] as! String)
                             weixiuModel.loadData()
                             weixiuModel.wxlist.append(WeixiuList(FixID: repvm[i]["RepairID"] as! String, EqptName: repvm[i]["EqptName"] as! String, FixState: repvm[i]["RepairState"] as! String))

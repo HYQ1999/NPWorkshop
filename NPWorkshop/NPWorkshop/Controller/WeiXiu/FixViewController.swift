@@ -20,7 +20,7 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
      var tablelists: [Models_WeixiuSearch.Response] = []
     
       var bxsearchlist = BaoxiuSearchModel()
-    
+      var peijianuselist = PeiJianUserModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +48,10 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         
         self.navigationController?.navigationBar.barTintColor = bgColor
         addDoneButtonOnKeyboard()
+        
+        peijianuselist.loadData()
+        peijianuselist.pjuselist.removeAll()
+        peijianuselist.saveData()
         // Do any additional setup after loading the view.
     }
     
@@ -227,16 +231,50 @@ class FixViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        bxsearchlist.loadData()
+        weixiuModel.loadData()
+        if FixSearchtableview == tableView
+        {
+            if bxsearchlist.bxsearchlist[indexPath.row].RepairState == "待检修"
+            {
+                let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
+                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: QiTaStateViewController())))
+                    as! QiTaStateViewController
+                controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
+                self.navigationController?.pushViewController(controller, animated: true)
+                return
+            }
+            else
+            {
+            let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
+            let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: tianxieViewController())))
+                as! tianxieViewController
+            controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
+            self.navigationController?.pushViewController(controller, animated: true)
+            return
+            }
+        }
+        else
+        {
+            if weixiuModel.wxlist[indexPath.row].FixState == "待检修"
+            {
+                let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
+                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: QiTaStateViewController())))
+                    as! QiTaStateViewController
+                controller.repairid = weixiuModel.wxlist[indexPath.row].FixID
+                self.navigationController?.pushViewController(controller, animated: true)
+                return
+            }
+            else
+            {
           let destinationStoryboard = UIStoryboard(name:"BaoxiuStoryboard",bundle:nil)
         let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: tianxieViewController())))
             as! tianxieViewController
-//        let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: tianxieViewController())))
-//            as! tianxieViewController
-//        controller.repairid = bxsearchlist.bxsearchlist[indexPath.row].RepairID
-        
+             controller.repairid = weixiuModel.wxlist[indexPath.row].FixID
                    self.navigationController?.pushViewController(controller, animated: true)
         return
+            }
+        }
         //          baoxiulist.loadData()
         //        let requesting :  Models_BaoxiuSearch.Requesting =  Models_BaoxiuSearch.Requesting(EqpName: baoxiulist.bxlist[indexPath.row].EqptName)
         //        BaoxiuSearchResposity().Search(requesting: requesting)

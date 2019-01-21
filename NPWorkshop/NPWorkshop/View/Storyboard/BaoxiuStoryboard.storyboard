@@ -2377,7 +2377,7 @@
         <scene sceneID="4Vd-9b-DdS">
             <objects>
                 <viewController storyboardIdentifier="tianxieViewController" id="XaA-FD-3Dc" customClass="tianxieViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eg8-I2-AR5">
+                    <view key="view" contentMode="scaleToFill" id="eg8-I2-AR5" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -2679,6 +2679,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="returnback:" destination="XaA-FD-3Dc" eventType="editingDidEnd" id="1Op-8i-LMC"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khn-AN-vPP">
                                                 <rect key="frame" x="171" y="1075" width="62" height="30"/>
@@ -2776,6 +2779,9 @@
                             <constraint firstItem="dfS-Fv-ega" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="et1-HY-IGS" secondAttribute="trailing" symbolic="YES" id="tFt-wh-vzt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dfS-Fv-ega"/>
+                        <connections>
+                            <action selector="viewclick:" destination="XaA-FD-3Dc" eventType="touchUpInside" id="QwD-ow-n0o"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="报修单详细(填写维修单)" id="Aym-kV-s7Y">
                         <barButtonItem key="rightBarButtonItem" title="上传" id="Ek4-NQ-4Ca">

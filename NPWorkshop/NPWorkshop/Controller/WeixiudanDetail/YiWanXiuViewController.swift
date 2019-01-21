@@ -51,7 +51,8 @@ class YiWanXiuViewController: UIViewController,UITableViewDataSource,UITableView
         self.guzhangyuanyin.layer.cornerRadius = 16
         peijiantableview.delegate = self
         peijiantableview.dataSource = self
-        
+        guzhangxianxiang.isEditable = false
+        guzhangyuanyin.isEditable = false
         let parameters :[String : Any] = [
             "RepairID": String(repairid)//左边是接口
         ]

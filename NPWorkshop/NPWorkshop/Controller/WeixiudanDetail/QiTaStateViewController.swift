@@ -35,7 +35,7 @@ class QiTaStateViewController: UIViewController {
         let parameters :[String : Any] = [
             "RepairID": String(repairid)//左边是接口
         ]
-        
+        guzhangxianxiang.isEditable = false
         
         Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepDetail", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             if response.result.value != nil {
