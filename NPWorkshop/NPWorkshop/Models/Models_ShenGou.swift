@@ -6,10 +6,14 @@
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
-import UIKit
+
+import Foundation
+import Alamofire
+import SwiftyJSON
 
 class Models_ShenGou: NSObject {
 
+   
     class Response: NSObject {
         var RepairID:String?
         var EqptName:String?

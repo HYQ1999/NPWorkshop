@@ -148,6 +148,8 @@
 		929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */; };
 		92AA206B21F3289A001D055D /* GerenDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA206A21F3289A001D055D /* GerenDetailList.swift */; };
 		92AA206D21F328AF001D055D /* GerenDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA206C21F328AF001D055D /* GerenDetailModel.swift */; };
+		92BC4EC421F5A7A300B295A5 /* Models_QiXiu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC4EC321F5A7A300B295A5 /* Models_QiXiu.swift */; };
+		92BC4EC621F5A7BF00B295A5 /* QiXiuReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC4EC521F5A7BF00B295A5 /* QiXiuReposity.swift */; };
 		92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */; };
 		92CA052B21DC6AAB00D354E8 /* RightBaritemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */; };
 		92CA052F21DC7D4000D354E8 /* ShangbaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */; };
@@ -323,6 +325,8 @@
 		929CABD021DC4FF80072B2F1 /* BaoxiuTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoxiuTabViewController.swift; sourceTree = "<group>"; };
 		92AA206A21F3289A001D055D /* GerenDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GerenDetailList.swift; sourceTree = "<group>"; };
 		92AA206C21F328AF001D055D /* GerenDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GerenDetailModel.swift; sourceTree = "<group>"; };
+		92BC4EC321F5A7A300B295A5 /* Models_QiXiu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_QiXiu.swift; sourceTree = "<group>"; };
+		92BC4EC521F5A7BF00B295A5 /* QiXiuReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiXiuReposity.swift; sourceTree = "<group>"; };
 		92CA052821DC6A8700D354E8 /* LeftBaritemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBaritemController.swift; sourceTree = "<group>"; };
 		92CA052A21DC6AAB00D354E8 /* RightBaritemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBaritemController.swift; sourceTree = "<group>"; };
 		92CA052E21DC7D4000D354E8 /* ShangbaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShangbaoViewController.swift; sourceTree = "<group>"; };
@@ -406,6 +410,7 @@
 				92450A9E21F4590D009E96C8 /* WeiXiuGeRenResposity.swift */,
 				92450AA221F45B02009E96C8 /* MiMaEditResposity.swift */,
 				92450AA621F46717009E96C8 /* WeiXiuMimaEditResposity.swift */,
+				92BC4EC521F5A7BF00B295A5 /* QiXiuReposity.swift */,
 			);
 			path = NetMethod;
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				92450AA021F4593F009E96C8 /* Models_WeiXiuGeRenDetail.swift */,
 				92450AA421F45B13009E96C8 /* Models_MiMaEdit.swift */,
 				92450AA821F4672E009E96C8 /* Models_WeiXiuMImaEdit.swift */,
+				92BC4EC321F5A7A300B295A5 /* Models_QiXiu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -949,6 +955,7 @@
 				923BC0C521F0ACAE00311005 /* JieXiuReposity.swift in Sources */,
 				923BC0A321F097C300311005 /* ZhiDaoSearchResposity.swift in Sources */,
 				924BA8F421ED9DC300ADD1D4 /* BaoxiuModel.swift in Sources */,
+				92BC4EC421F5A7A300B295A5 /* Models_QiXiu.swift in Sources */,
 				92AA206B21F3289A001D055D /* GerenDetailList.swift in Sources */,
 				923FC8C421EF40A6004A758C /* CheXiaoNavigation.swift in Sources */,
 				923BC0AB21F0A0A900311005 /* WeiXiuTableViewController.swift in Sources */,
@@ -961,6 +968,7 @@
 				923FC8A421EECBED004A758C /* ShangBaoReposity.swift in Sources */,
 				923BC0C321F0AAFB00311005 /* Models_ZhiDao.swift in Sources */,
 				9297B44A21F3256A00733684 /* GeRenDetailResposity.swift in Sources */,
+				92BC4EC621F5A7BF00B295A5 /* QiXiuReposity.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				92309DF521F0B0100023D971 /* Models_ShenGou.swift in Sources */,
 				5A1ED92B21EEDCC10097A950 /* WeixiuReposity.swift in Sources */,
