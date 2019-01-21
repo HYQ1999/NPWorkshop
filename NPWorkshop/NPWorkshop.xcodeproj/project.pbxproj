@@ -48,6 +48,11 @@
 		5A2FB8DB21E6D5BF00E5C1D7 /* QianHeJieXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8DA21E6D5BF00E5C1D7 /* QianHeJieXiu.storyboard */; };
 		5A2FB8DD21E6D66F00E5C1D7 /* GeRenJieXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FB8DC21E6D66F00E5C1D7 /* GeRenJieXiu.storyboard */; };
 		5A529F1D21DDDD73000F7AE6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */; };
+		5A5DDF8021F5B66000BF9750 /* ManShengouResposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DDF7F21F5B66000BF9750 /* ManShengouResposity.swift */; };
+		5A5DDF8221F5B69100BF9750 /* Model_ManShengou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DDF8121F5B69100BF9750 /* Model_ManShengou.swift */; };
+		5A5DDF8421F5B93600BF9750 /* ManShengouModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DDF8321F5B93600BF9750 /* ManShengouModel.swift */; };
+		5A5DDF8621F5B95200BF9750 /* ManshengouList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DDF8521F5B95200BF9750 /* ManshengouList.swift */; };
+		5A5DDF8821F5BD0000BF9750 /* ManShengouTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DDF8721F5BD0000BF9750 /* ManShengouTableViewController.swift */; };
 		5A7369A521E579010061361C /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7369A421E579010061361C /* RightMenuViewController.swift */; };
 		5AC3EE0721F45863002AE59D /* tianxieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC3EE0621F45863002AE59D /* tianxieViewController.swift */; };
 		5AC3EE0921F46B9F002AE59D /* tianxiePeiJianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC3EE0821F46B9E002AE59D /* tianxiePeiJianTableViewCell.swift */; };
@@ -224,6 +229,11 @@
 		5A529F1A21DDDD72000F7AE6 /* NPWorkshop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPWorkshop-Bridging-Header.h"; sourceTree = "<group>"; };
 		5A529F1B21DDDD73000F7AE6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5A529F1C21DDDD73000F7AE6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		5A5DDF7F21F5B66000BF9750 /* ManShengouResposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManShengouResposity.swift; sourceTree = "<group>"; };
+		5A5DDF8121F5B69100BF9750 /* Model_ManShengou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_ManShengou.swift; sourceTree = "<group>"; };
+		5A5DDF8321F5B93600BF9750 /* ManShengouModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManShengouModel.swift; sourceTree = "<group>"; };
+		5A5DDF8521F5B95200BF9750 /* ManshengouList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManshengouList.swift; sourceTree = "<group>"; };
+		5A5DDF8721F5BD0000BF9750 /* ManShengouTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManShengouTableViewController.swift; sourceTree = "<group>"; };
 		5A7369A421E579010061361C /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		5AC3EE0621F45863002AE59D /* tianxieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tianxieViewController.swift; sourceTree = "<group>"; };
 		5AC3EE0821F46B9E002AE59D /* tianxiePeiJianTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tianxiePeiJianTableViewCell.swift; sourceTree = "<group>"; };
@@ -411,6 +421,7 @@
 				92450AA221F45B02009E96C8 /* MiMaEditResposity.swift */,
 				92450AA621F46717009E96C8 /* WeiXiuMimaEditResposity.swift */,
 				92BC4EC521F5A7BF00B295A5 /* QiXiuReposity.swift */,
+				5A5DDF7F21F5B66000BF9750 /* ManShengouResposity.swift */,
 			);
 			path = NetMethod;
 			sourceTree = "<group>";
@@ -443,6 +454,7 @@
 				92450AA421F45B13009E96C8 /* Models_MiMaEdit.swift */,
 				92450AA821F4672E009E96C8 /* Models_WeiXiuMImaEdit.swift */,
 				92BC4EC321F5A7A300B295A5 /* Models_QiXiu.swift */,
+				5A5DDF8121F5B69100BF9750 /* Model_ManShengou.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -557,6 +569,7 @@
 				5A250BFE21F17285004F7445 /* MyMessgeTableViewController.swift */,
 				5AC3EE0621F45863002AE59D /* tianxieViewController.swift */,
 				5AC3EE0821F46B9E002AE59D /* tianxiePeiJianTableViewCell.swift */,
+				5A5DDF8721F5BD0000BF9750 /* ManShengouTableViewController.swift */,
 			);
 			path = WeiXiu;
 			sourceTree = "<group>";
@@ -696,6 +709,8 @@
 				92AA206A21F3289A001D055D /* GerenDetailList.swift */,
 				92AA206C21F328AF001D055D /* GerenDetailModel.swift */,
 				92450AAA21F47B79009E96C8 /* Peijianllist.swift */,
+				5A5DDF8321F5B93600BF9750 /* ManShengouModel.swift */,
+				5A5DDF8521F5B95200BF9750 /* ManshengouList.swift */,
 			);
 			name = ShaHe;
 			path = ..;
@@ -948,6 +963,7 @@
 				929CABD121DC4FF80072B2F1 /* BaoxiuTabViewController.swift in Sources */,
 				923BC09721F079C100311005 /* JieXiuViewController.swift in Sources */,
 				92450AA121F4593F009E96C8 /* Models_WeiXiuGeRenDetail.swift in Sources */,
+				5A5DDF8021F5B66000BF9750 /* ManShengouResposity.swift in Sources */,
 				923BC0A521F097D600311005 /* Models_ZhiDaoSearch.swift in Sources */,
 				923BC0AD21F0A16A00311005 /* PeiJianModel.swift in Sources */,
 				923BC0B321F0A32B00311005 /* Models_PeiJianSearch.swift in Sources */,
@@ -968,6 +984,7 @@
 				923FC8A421EECBED004A758C /* ShangBaoReposity.swift in Sources */,
 				923BC0C321F0AAFB00311005 /* Models_ZhiDao.swift in Sources */,
 				9297B44A21F3256A00733684 /* GeRenDetailResposity.swift in Sources */,
+				5A5DDF8221F5B69100BF9750 /* Model_ManShengou.swift in Sources */,
 				92BC4EC621F5A7BF00B295A5 /* QiXiuReposity.swift in Sources */,
 				0D95265E21D614FB00367ADE /* AppDelegate.swift in Sources */,
 				92309DF521F0B0100023D971 /* Models_ShenGou.swift in Sources */,
@@ -1013,6 +1030,8 @@
 				5A250BFF21F17285004F7445 /* MyMessgeTableViewController.swift in Sources */,
 				923BC0A121F0973400311005 /* Models_JieXiuSearch.swift in Sources */,
 				9221294E21F152D600A8EE0D /* PeiJianViewController.swift in Sources */,
+				5A5DDF8821F5BD0000BF9750 /* ManShengouTableViewController.swift in Sources */,
+				5A5DDF8621F5B95200BF9750 /* ManshengouList.swift in Sources */,
 				923FC8BC21EF4058004A758C /* YiWanXiuNavigation.swift in Sources */,
 				926BB1C521F2E84700F7C785 /* WeiXiuRenModel.swift in Sources */,
 				923BC0C721F0ACBD00311005 /* Models_JieXiu.swift in Sources */,
@@ -1027,6 +1046,7 @@
 				92450AA721F46717009E96C8 /* WeiXiuMimaEditResposity.swift in Sources */,
 				9239259F21D71D4100803D85 /* LeftViewController.swift in Sources */,
 				5A1ED91421ED64950097A950 /* PeijianMoneyBox.swift in Sources */,
+				5A5DDF8421F5B93600BF9750 /* ManShengouModel.swift in Sources */,
 				923BC08B21F0092000311005 /* Models_BaoxiuSearch.swift in Sources */,
 				923BC0B121F0A31200311005 /* PeiJianSearchResposity.swift in Sources */,
 				9239259121D7017C00803D85 /* BaoxiuViewController.swift in Sources */,
