@@ -13,11 +13,15 @@ import SwiftyJSON
 class Models_QiXiu: NSObject {
 
     class Requesting: NSObject {
+         var type:String
         var RenGonfei:String
         var QiXiuReason:String
-        init(RenGonfei:String,QiXiuReason:String) {
+        var RepairId: String
+        init(type:String,RenGonfei:String,QiXiuReason:String,RepairId:String) {
+            self.type = type
             self.RenGonfei = RenGonfei
             self.QiXiuReason = QiXiuReason
+              self.RepairId = RepairId
         }
     }
     
