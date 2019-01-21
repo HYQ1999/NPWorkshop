@@ -215,6 +215,7 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
         let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
         let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: PeiJianSearchTableViewController())))
             as! PeiJianSearchTableViewController
+        controller.repairid = repairid
         self.navigationController?.pushViewController(controller, animated: true)
         return
         

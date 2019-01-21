@@ -14,6 +14,8 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
      var peijianlist = PeiJianModel()
      var peijianuselist = PeiJianUserModel()
     var sum:String! = "0"
+    var repairid : String!
+    var peijianID: String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -129,6 +131,8 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
             let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
             let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: ManShengouTableViewController())))
                 as! ManShengouTableViewController
+            controller.repairid = self.repairid
+            controller.peijianID = self.peijianlist.pjlist[indexPath.row].peijianid
             self.navigationController?.pushViewController(controller, animated: true)
             return
         }
