@@ -153,7 +153,7 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
     
     
     @IBAction func saveWeixiu(_ sender: Any) {
-        
+          peijianuselist.loadData()
         if rengongMoney.text == ""
         {
             let alerttController = UIAlertController(title: "Error！", message: "请填写人工费！", preferredStyle: .alert)
@@ -182,6 +182,15 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
             self.present( alerttController, animated:  true, completion: nil)
             return
         }
+            if peijianuselist.pjuselist.isEmpty
+            {
+                
+                let alerttController = UIAlertController(title: "Error！", message: "请选择配件！", preferredStyle: .alert)
+                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                alerttController.addAction(okkAction)
+                self.present( alerttController, animated:  true, completion: nil)
+                return
+            }
         else
         {
             if selectLabel.isHidden == true
@@ -190,7 +199,13 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
                 QiXiuReposity().QiXiu(requesting: requesting) { (response, error) in
                     if error == nil, let response = response{
                         let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
-                        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                            action in
+                            let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
+                            let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
+                                as! SWRevealViewController
+                            self.present(controller, animated: true, completion: nil)
+                        })
                         alerttController.addAction(okkAction)
                         self.present( alerttController, animated:  true, completion: nil)
                         return
@@ -201,7 +216,23 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
             else
             {
                 
-                
+                let requesting : Models_QiXiu.Requesting = Models_QiXiu.Requesting(type:"完修" ,RenGonfei: rengongMoney.text!, QiXiuReason: guzhangReason.text!, RepairId: baoxiudanID.text!)
+                QiXiuReposity().QiXiu(requesting: requesting) { (response, error) in
+                    if error == nil, let response = response{
+                        let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                        let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                            action in
+                            let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
+                            let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
+                                as! SWRevealViewController
+                            self.present(controller, animated: true, completion: nil)
+                        })
+                        alerttController.addAction(okkAction)
+                        self.present( alerttController, animated:  true, completion: nil)
+                        return
+                        
+                    }
+                }
                 
                 
             }
@@ -215,6 +246,7 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
         let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
         let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: PeiJianSearchTableViewController())))
             as! PeiJianSearchTableViewController
+        controller.repairid = baoxiudanID.text
         self.navigationController?.pushViewController(controller, animated: true)
         return
         

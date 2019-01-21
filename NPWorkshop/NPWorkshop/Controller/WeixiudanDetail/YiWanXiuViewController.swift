@@ -178,7 +178,7 @@ class YiWanXiuViewController: UIViewController,UITableViewDataSource,UITableView
         baoxiushijian.text = detaillist.detail[0].RepairTime
         wanxiushijian.text = detaillist.detail[0].FinishTime
         
-        
+        peijiantableview.reloadData()
         
     }
 
