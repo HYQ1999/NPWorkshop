@@ -150,8 +150,40 @@
                                             <segue destination="oso-w2-e0w" kind="modal" id="FK9-q6-O1b"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="tL1-pi-JAI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="bWc-Dg-eaa">
                                         <rect key="frame" x="0.0" y="60" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bWc-Dg-eaa" id="J4r-Hn-Ott">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shengou" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-b3-A4K">
+                                                    <rect key="frame" x="35" y="21" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="MF9-9g-HLi"/>
+                                                        <constraint firstAttribute="width" constant="30" id="blv-hM-DRN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配件申购" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXJ-qv-MqV">
+                                                    <rect key="frame" x="80" y="26" width="69.333333333333314" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bXJ-qv-MqV" firstAttribute="top" secondItem="J4r-Hn-Ott" secondAttribute="topMargin" constant="15" id="8oj-Q9-gOa"/>
+                                                <constraint firstItem="DtN-b3-A4K" firstAttribute="leading" secondItem="J4r-Hn-Ott" secondAttribute="leadingMargin" constant="15" id="RtD-uc-bP5"/>
+                                                <constraint firstItem="bXJ-qv-MqV" firstAttribute="leading" secondItem="DtN-b3-A4K" secondAttribute="trailing" constant="15" id="jav-BW-bMP"/>
+                                                <constraint firstItem="DtN-b3-A4K" firstAttribute="top" secondItem="J4r-Hn-Ott" secondAttribute="topMargin" constant="10" id="ysJ-nd-GaV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rEp-sn-ibu" kind="modal" id="TMT-Ub-gKL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="tL1-pi-JAI">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tL1-pi-JAI" id="dzL-66-MMH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -183,7 +215,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="yub-yF-jec">
-                                        <rect key="frame" x="0.0" y="120" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="180" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yub-yF-jec" id="Wkd-PC-voG">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -215,7 +247,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Gsi-pn-lV1">
-                                        <rect key="frame" x="0.0" y="180" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="240" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gsi-pn-lV1" id="fYP-ph-bZp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -297,6 +329,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVM-fA-SGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="920" y="-423"/>
+        </scene>
+        <!--PeiJianShenGou-->
+        <scene sceneID="kMR-AX-LB6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PeiJianShenGou" id="rEp-sn-ibu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pe-eR-TB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="-1813"/>
         </scene>
         <!--PeiJian-->
         <scene sceneID="5Sl-pL-WIq">
@@ -446,6 +486,7 @@
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
+        <image name="shengou" width="32" height="32"/>
         <image name="个人中心" width="50" height="50"/>
         <image name="侧滑" width="32" height="32"/>
         <image name="我的消息" width="50" height="50"/>

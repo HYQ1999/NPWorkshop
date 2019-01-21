@@ -186,7 +186,7 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
         {
             if selectLabel.isHidden == true
             {
-                let requesting : Models_QiXiu.Requesting = Models_QiXiu.Requesting(RenGonfei: rengongMoney.text!, QiXiuReason: guzhangReason.text!)
+                let requesting : Models_QiXiu.Requesting = Models_QiXiu.Requesting(type:"弃修" ,RenGonfei: rengongMoney.text!, QiXiuReason: guzhangReason.text!, RepairId: baoxiudanID.text!)
                 QiXiuReposity().QiXiu(requesting: requesting) { (response, error) in
                     if error == nil, let response = response{
                         let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)

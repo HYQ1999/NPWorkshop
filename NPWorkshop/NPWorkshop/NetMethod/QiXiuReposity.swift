@@ -16,8 +16,10 @@ class QiXiuReposity: NSObject {
     func QiXiu(requesting: Models_QiXiu.Requesting, handler:  @escaping(_ response: Models_QiXiu.Response?, _ error: String?) -> Void)
     {
         let parameters :[String : Any] = [
+            "type": requesting.type,
             "Laborcost": requesting.RenGonfei,
-            "Reason": requesting.QiXiuReason
+            "Reason": requesting.QiXiuReason,
+              "RepairID": requesting.RepairId
         ]
         
         Alamofire.request("http://172.16.101.66:8083/api/RepAPI/RepairFinish", method: .post, parameters:parameters,encoding: JSONEncoding.default, headers: nil).responseJSON { response in
