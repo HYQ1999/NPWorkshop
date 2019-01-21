@@ -30,6 +30,11 @@ class PeiJianListResposity: NSObject {
                     if let json = try? JSONSerialization.jsonObject(with: response.data! as Data, options: .allowFragments) as? [String:AnyObject],
                         let repvm = json?["partsvm"] as?[[String: AnyObject]]{
                         count = repvm.count
+                        
+                        for x in repvm
+                        {
+                            print(x)
+                        }
                         print(count)
                         if count == 0
                         {
@@ -40,7 +45,7 @@ class PeiJianListResposity: NSObject {
                         {
                         for i in 0...count - 1 {
                             peijianlist.loadData()
-                            peijianlist.pjlist.append(Peijianllist(peijianminchen: repvm[i]["PartsName"] as! String, peijiankucun: repvm[i]["PartsStock"] as! String, peijianleibie: repvm[i]["PartsTypeName"] as! String, peijiandanjia: repvm[i][""] as! String, peijianid: repvm[i]["PartsID"] as! String))
+                            peijianlist.pjlist.append(Peijianllist(peijianminchen: repvm[i]["PartsName"] as! String, peijiankucun: ((repvm[i]["PartsStock"] as? NSNumber)?.stringValue)!, peijianleibie: repvm[i]["PartsTypeName"] as! String, peijiandanjia: ((repvm[i]["PartsPrice"] as? NSNumber)?.stringValue)!, peijianid: repvm[i]["PartsID"] as! String))
                             peijianlist.saveData()
                             //                                        print(i)
                         }
