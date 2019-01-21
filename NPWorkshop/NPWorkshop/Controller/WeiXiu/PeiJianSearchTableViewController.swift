@@ -126,6 +126,11 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
         }
         let shengou = UITableViewRowAction(style: .normal, title: "申购"){
             actionm, index in
+            let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
+            let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: ManShengouTableViewController())))
+                as! ManShengouTableViewController
+            self.navigationController?.pushViewController(controller, animated: true)
+            return
         }
         sure.backgroundColor = UIColor.red
          shengou.backgroundColor = UIColor.orange

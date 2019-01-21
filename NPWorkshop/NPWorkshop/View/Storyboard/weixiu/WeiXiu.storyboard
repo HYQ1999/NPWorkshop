@@ -362,7 +362,7 @@
         <!--配件申购员选择-->
         <scene sceneID="aD3-ng-C3w">
             <objects>
-                <tableViewController id="Kuc-te-21B" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ManShengouTableViewController" id="Kuc-te-21B" customClass="ManShengouTableViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="foI-Iw-KkB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
