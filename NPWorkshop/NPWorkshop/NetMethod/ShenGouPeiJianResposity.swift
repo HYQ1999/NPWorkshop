@@ -14,6 +14,7 @@ class ShenGouPeiJianResposity: NSObject {
     func ShenGouPeiJian(requesting: Models_ShenGouPeiJian.Requesting, handler:  @escaping(_ response: Models_ShenGouPeiJian.Response?, _ error: String?) -> Void)
     {
         let parameters :[String : Any] = [
+            "RepairID":requesting.RepairID,
             "PartsAmount": requesting.PartsAmount,
             "PartsID": requesting.PartsID,
             "ReplyUser": requesting.ReplyUser,

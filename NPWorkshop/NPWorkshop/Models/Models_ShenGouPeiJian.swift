@@ -12,11 +12,13 @@ import SwiftyJSON
 
 class Models_ShenGouPeiJian: NSObject {
     class Requesting: NSObject {
+        var RepairID:String
         var PartsAmount:String
         var PartsID:String
         var ReplyUser:String
         var ApplyUser:String
-        init(PartsAmount:String,PartsID:String,ReplyUser:String,ApplyUser:String) {
+        init(RepairID:String,PartsAmount:String,PartsID:String,ReplyUser:String,ApplyUser:String) {
+             self.RepairID = RepairID
             self.PartsAmount = PartsAmount
             self.PartsID = PartsID
             self.ReplyUser = ReplyUser
