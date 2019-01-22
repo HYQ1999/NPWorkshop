@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-790" y="-1657"/>
         </scene>
-        <!--Wode Pei Jian Shen Gou Table View Controller-->
+        <!--配件申购-->
         <scene sceneID="H1y-vq-YEr">
             <objects>
                 <tableViewController storyboardIdentifier="WodePeiJianShenGouTableViewController" id="xMX-Bu-IAz" customClass="WodePeiJianShenGouTableViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,13 +32,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wodepeijianshengoucell" id="JlY-j3-h6z" customClass="WodePeiJianShenGouTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wodepeijianshengoucell" rowHeight="112" id="JlY-j3-h6z" customClass="WodePeiJianShenGouTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JlY-j3-h6z" id="7av-FY-Plw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="配件申报编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-3z-46S">
+                                            <rect key="frame" x="16" y="11" width="106" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55796586166178508" green="0.55796586166178508" blue="0.55796586166178508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="配件名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaZ-Dr-DNI">
+                                            <rect key="frame" x="16" y="80" width="194" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55796586169999995" green="0.55796586169999995" blue="0.55796586169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="配件申报人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBj-E1-wug">
+                                            <rect key="frame" x="16" y="45" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55796586166178508" green="0.55796586166178508" blue="0.55796586166178508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="申购状态：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0do-Wz-E9B">
+                                            <rect key="frame" x="231" y="11" width="144" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55796586169999995" green="0.55796586169999995" blue="0.55796586169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="申报时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lh-f8-9Aa">
+                                            <rect key="frame" x="231" y="80" width="144" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55796586169999995" green="0.55796586169999995" blue="0.55796586169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="申购数量：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttj-gp-6AL">
+                                            <rect key="frame" x="231" y="45" width="144" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55796586169999995" green="0.55796586169999995" blue="0.55796586169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="peijianname" destination="AaZ-Dr-DNI" id="mWZ-Aw-pJT"/>
+                                    <outlet property="shenbaobianhao" destination="Br6-3z-46S" id="J3Q-Gw-Lec"/>
+                                    <outlet property="shenbaoren" destination="bBj-E1-wug" id="hfG-sg-iWq"/>
+                                    <outlet property="shengoushuliang" destination="Ttj-gp-6AL" id="hIl-n8-NmG"/>
+                                    <outlet property="shengoutime" destination="6lh-f8-9Aa" id="ecw-5J-uOk"/>
+                                    <outlet property="shengouzhuangtai" destination="0do-Wz-E9B" id="kwu-Wn-hGD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,7 +98,7 @@
                             <outlet property="delegate" destination="xMX-Bu-IAz" id="z2X-pj-mGg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="HUB-fb-aIk">
+                    <navigationItem key="navigationItem" title="配件申购" id="HUB-fb-aIk">
                         <barButtonItem key="leftBarButtonItem" image="侧滑" id="yuG-2s-gGX">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
@@ -57,7 +109,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys3-RC-UJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="-903"/>
+            <point key="canvasLocation" x="-287.19999999999999" y="-903.59820089955031"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WPf-Vk-Lfk">

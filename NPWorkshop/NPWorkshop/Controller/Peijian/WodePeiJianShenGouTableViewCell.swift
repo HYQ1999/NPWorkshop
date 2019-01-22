@@ -10,6 +10,12 @@ import UIKit
 
 class WodePeiJianShenGouTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var shenbaobianhao: UILabel!
+    @IBOutlet weak var shenbaoren: UILabel!
+    @IBOutlet weak var peijianname: UILabel!
+    @IBOutlet weak var shengouzhuangtai: UILabel!
+    @IBOutlet weak var shengoushuliang: UILabel!
+    @IBOutlet weak var shengoutime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
