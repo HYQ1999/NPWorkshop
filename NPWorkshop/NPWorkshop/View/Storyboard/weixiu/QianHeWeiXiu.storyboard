@@ -377,10 +377,10 @@
             </objects>
             <point key="canvasLocation" x="1578" y="-1686"/>
         </scene>
-        <!--Main-->
+        <!--WeixiuMyMessage-->
         <scene sceneID="AoZ-cg-oRu">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="sDh-Dc-KcR" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="WeixiuMyMessage" id="sDh-Dc-KcR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wt9-Ie-E0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-1634"/>

@@ -1,20 +1,21 @@
 //
-//  FendanTableViewController.swift
+//  JieXiuFendanTableViewController.swift
 //  NPWorkshop
 //
-//  Created by 周旭 on 2019/1/19.
+//  Created by 周旭 on 2019/1/22.
 //  Copyright © 2019年 韩意谦. All rights reserved.
 //
 
 import UIKit
 
-class FendanTableViewController: UITableViewController {
+class JieXiuFendanTableViewController: UITableViewController {
 
     var weixiussskj = WeiXiuRenModel()
     var repairid : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-     weixiussskj.loadData()
+
+        weixiussskj.loadData()
         print(weixiussskj.weixiulist.count)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -23,37 +24,39 @@ class FendanTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    
+    // MARK: - Table view data source
+
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
     
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         weixiussskj.loadData()
         return weixiussskj.weixiulist.count
     }
-
-   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         weixiussskj.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "fendancell", for: indexPath) as! Fendancell
-      
+        
         cell.UserId.text = weixiussskj.weixiulist[indexPath.row].userid
         cell.username.text = weixiussskj.weixiulist[indexPath.row].username
         cell.userquanxian.text = weixiussskj.weixiulist[indexPath.row].userqx
         // Configure the cell...
-
+        
         return cell
     }
     
@@ -70,8 +73,9 @@ class FendanTableViewController: UITableViewController {
                     let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
                     let okkAction =  UIAlertAction(title: "好的" , style: .default , handler:{
                         action in
-                        let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: ZhidaoTabBarController())))
-                            as! ZhidaoTabBarController
+                        let destinationStoryboard = UIStoryboard(name:"JieXiu",bundle:nil)
+                        let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: SWRevealViewController())))
+                            as! SWRevealViewController
                         self.present(controller, animated: true, completion: nil)
                     })
                     alerttController.addAction(okkAction)
@@ -84,6 +88,16 @@ class FendanTableViewController: UITableViewController {
         sure.backgroundColor = UIColor.red
         return [sure]
     }
+    
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

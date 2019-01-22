@@ -151,6 +151,8 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
             let destinationStoryboard = UIStoryboard(name:"WeiXiu",bundle:nil)
             let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: ManShengouTableViewController())))
                 as! ManShengouTableViewController
+            controller.repairid = String(self.repairid)
+            controller.peijianid = String(self.peijianlist.pjlist[indexPath.row].peijianid)
             self.navigationController?.pushViewController(controller, animated: true)
             return
         }

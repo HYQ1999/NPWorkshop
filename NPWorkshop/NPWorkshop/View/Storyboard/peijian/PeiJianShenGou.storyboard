@@ -23,16 +23,16 @@
             </objects>
             <point key="canvasLocation" x="-790" y="-1657"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Wode Pei Jian Shen Gou Table View Controller-->
         <scene sceneID="H1y-vq-YEr">
             <objects>
-                <tableViewController id="xMX-Bu-IAz" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="WodePeiJianShenGouTableViewController" id="xMX-Bu-IAz" customClass="WodePeiJianShenGouTableViewController" customModule="NPWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WRs-3R-Let">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JlY-j3-h6z">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wodepeijianshengoucell" id="JlY-j3-h6z" customClass="WodePeiJianShenGouTableViewCell" customModule="NPWorkshop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JlY-j3-h6z" id="7av-FY-Plw">
@@ -46,7 +46,14 @@
                             <outlet property="delegate" destination="xMX-Bu-IAz" id="z2X-pj-mGg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="HUB-fb-aIk"/>
+                    <navigationItem key="navigationItem" id="HUB-fb-aIk">
+                        <barButtonItem key="leftBarButtonItem" image="侧滑" id="yuG-2s-gGX">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MenuItem" destination="yuG-2s-gGX" id="coZ-yV-7T6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys3-RC-UJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="1694" y="-1582"/>
         </scene>
-        <!--Main-->
+        <!--JieXiuMyMessage-->
         <scene sceneID="r8N-DN-QwK">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="0Ga-00-dgN" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="JieXiuMyMessage" id="0Ga-00-dgN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGj-Xr-JUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="-1499"/>
@@ -368,6 +375,7 @@
         <image name=" 登录图片" width="1920" height="925"/>
         <image name="shengou" width="32" height="32"/>
         <image name="个人中心" width="50" height="50"/>
+        <image name="侧滑" width="32" height="32"/>
         <image name="我的消息" width="50" height="50"/>
         <image name="我的钱盒" width="50" height="50"/>
         <image name="退出登陆大" width="334" height="40"/>

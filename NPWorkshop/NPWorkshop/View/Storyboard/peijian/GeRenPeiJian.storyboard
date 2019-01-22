@@ -302,10 +302,10 @@
             </objects>
             <point key="canvasLocation" x="1578" y="-1686"/>
         </scene>
-        <!--Main-->
+        <!--JieXiuMyMessage-->
         <scene sceneID="aHw-9j-uBR">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="XnD-Vc-37e" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="JieXiuMyMessage" id="XnD-Vc-37e" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZ5-NY-eJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-1634"/>

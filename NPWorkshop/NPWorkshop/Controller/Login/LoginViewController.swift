@@ -12,10 +12,19 @@ class LoginViewController: UIViewController {
 
     var weixiuModel = WeixiuModel()
     var weixiuUserModel = WeiXiuUserModel()
-    var userlist = UserModel()
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PassWordTextField: UITextField!
     var usermodel = UserModel()
+    
+    
+    var baoxiulist = BaoxiuModel()
+    var baoxiusearch = BaoxiuSearchModel()
+    var peijianlist = PeiJianModel()
+    var detaillist = DetailModel()
+    var peijianuselist = PeiJianUserModel()
+    var weixiurenlist = WeiXiuRenModel()
+    var gerendetaillist = GerenDetailModel()
+    var manshengoulist = ManShengouModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.weixiuUserModel.loadData()
@@ -26,9 +35,41 @@ class LoginViewController: UIViewController {
         self.weixiuModel.wxlist.removeAll()
         self.weixiuModel.saveData()
         
-        userlist.loadData()
-        userlist.userlist.removeAll()
-        userlist.saveData()
+        usermodel.loadData()
+        usermodel.userlist.removeAll()
+        usermodel.saveData()
+        
+        baoxiulist.loadData()
+        baoxiulist.bxlist.removeAll()
+        baoxiulist.saveData()
+        
+        baoxiusearch.loadData()
+        baoxiusearch.bxsearchlist.removeAll()
+        baoxiusearch.saveData()
+        
+        peijianlist.loadData()
+        peijianlist.pjlist.removeAll()
+        peijianlist.saveData()
+        
+        detaillist.loadData()
+        detaillist.detail.removeAll()
+        detaillist.saveData()
+        
+        peijianuselist.loadData()
+        peijianuselist.pjuselist.removeAll()
+        peijianuselist.saveData()
+        
+        
+        gerendetaillist.loadData()
+        gerendetaillist.userdetail.removeAll()
+        gerendetaillist.saveData()
+        
+        manshengoulist.loadData()
+        manshengoulist.Manpeijianlist.removeAll()
+        manshengoulist.saveData()
+        
+        
+        
         UserNameTextField.borderStyle = UITextField.BorderStyle.none
         UserNameTextField.clearButtonMode = .always
         PassWordTextField.borderStyle = UITextField.BorderStyle.none
