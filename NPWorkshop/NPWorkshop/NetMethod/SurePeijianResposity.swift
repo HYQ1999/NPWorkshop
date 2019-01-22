@@ -15,7 +15,7 @@ class SurePeijianResposity: NSObject {
     func SurePeijian(requesting: Models_SurePeijian.Requesting, handler:  @escaping(_ response: Models_SurePeijian.Response?, _ error: String?) -> Void)
     {
         let parameters :[String : Any] = [
-            "RepairID":requesting.RepairID,
+            "ApplyID":requesting.RepairID
  
         ]
         
