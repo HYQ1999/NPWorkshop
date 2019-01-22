@@ -104,7 +104,7 @@ manshengouList.loadData()
                     let requesting : Models_ShenGouPeiJian.Requesting = Models_ShenGouPeiJian.Requesting(RepairID: String(self.repairid), PartsAmount:newpw.text!, PartsID:String(self.peijianid), ReplyUser:self.weixiuuser.userlist[0].userid , ApplyUser: self.manshengouList.Manpeijianlist[indexPath.row].userid)
                     ShenGouPeiJianResposity().ShenGouPeiJian(requesting: requesting) { (response, error) in
                         if error == nil, let response = response{
-                            let alerttController = UIAlertController(title: "Error！", message: response.ts, preferredStyle: .alert)
+                            let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
                             let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
                             alerttController.addAction(okkAction)
                             self.present( alerttController, animated:  true, completion: nil)
