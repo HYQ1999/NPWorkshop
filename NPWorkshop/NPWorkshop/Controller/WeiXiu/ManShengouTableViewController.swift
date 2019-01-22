@@ -100,7 +100,8 @@ manshengouList.loadData()
                     print(String(self.peijianid))
                      print(self.weixiuuser.userlist[0].userid)
                     print(self.manshengouList.Manpeijianlist[indexPath.row].userid)
-                    let requesting : Models_ShenGouPeiJian.Requesting = Models_ShenGouPeiJian.Requesting(PartsAmount: newpw.text!, PartsID: String(self.peijianid), ReplyUser:self.weixiuuser.userlist[0].userid , ApplyUser: self.manshengouList.Manpeijianlist[indexPath.row].userid)
+                    print(String(self.repairid))
+                    let requesting : Models_ShenGouPeiJian.Requesting = Models_ShenGouPeiJian.Requesting(RepairID: String(self.repairid), PartsAmount:newpw.text!, PartsID:String(self.peijianid), ReplyUser:self.weixiuuser.userlist[0].userid , ApplyUser: self.manshengouList.Manpeijianlist[indexPath.row].userid)
                     ShenGouPeiJianResposity().ShenGouPeiJian(requesting: requesting) { (response, error) in
                         if error == nil, let response = response{
                             let alerttController = UIAlertController(title: "Error！", message: response.ts, preferredStyle: .alert)
