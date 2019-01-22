@@ -485,6 +485,7 @@
                             <constraint firstItem="ex7-3x-l9k" firstAttribute="top" secondItem="2rr-kP-cBl" secondAttribute="top" id="NTm-2L-MR8"/>
                             <constraint firstAttribute="bottom" secondItem="ex7-3x-l9k" secondAttribute="bottom" id="b9n-jn-mpO"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="1fm-bZ-Fzl"/>
                     </view>
                     <connections>
                         <outlet property="daohuotableview" destination="ex7-3x-l9k" id="zqm-Wt-M61"/>
@@ -557,7 +558,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="配件不足，请立即购买" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-0q-ZKK">
-                                                    <rect key="frame" x="20" y="48" width="264" height="32"/>
+                                                    <rect key="frame" x="20" y="48" width="317" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
@@ -576,6 +577,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5hp-jw-LMa"/>
                     </view>
                     <connections>
                         <outlet property="shengoutableview" destination="6IU-gY-6E0" id="zrq-TL-wen"/>
@@ -583,7 +585,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbl-c1-UYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-683"/>
+            <point key="canvasLocation" x="893.60000000000002" y="-683.65817091454278"/>
         </scene>
     </scenes>
     <resources>

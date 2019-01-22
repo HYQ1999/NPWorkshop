@@ -8,6 +8,24 @@
 
 import UIKit
 
-class Models_ShenGouMsg: NSObject {
 
+class Models_ShenGouMsg: NSObject {
+    
+    class Response: NSObject {
+        var message:String?
+        var repairid:String?
+        var shengouren:String?
+        var shijian:String?
+        init(
+            message: String?,
+            repairid: String?,
+            shengouren: String?,
+            shijian: String?
+            ){
+            self.message = message
+            self.repairid = repairid
+            self.shengouren = shengouren
+            self.shijian = shijian
+        }
+    }
 }

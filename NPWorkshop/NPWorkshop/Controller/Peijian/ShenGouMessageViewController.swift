@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ShenGouMessageViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var shengoutableview: UITableView!
+    var tablelist: [Models_ShenGouMsg.Response] = []
+    var shengoulist = ShenGouMessageModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,9 +21,25 @@ class ShenGouMessageViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_ShenGouMsg"), object: nil)
+        Messages().showNow(code: 0x2004)
         shengoutableview.delegate = self
         shengoutableview.dataSource = self
         shengoutableview.reloadData()
+        shengoulist.loadData()
+        shengoulist.shengoumsg.removeAll()
+        shengoulist.saveData()
+        ShenGouMsgResposity().shengouMesage()
+    }
+    @objc func TakeOrders(_ notification:Notification) {
+        if let Response: [Models_ShenGouMsg.Response] = notification.object as! [Models_ShenGouMsg.Response]?{
+            tablelist = Response
+            shengoutableview.reloadData()
+            ProgressHUD.dismiss()
+        }
+        else {
+            Messages().showError(code: 0x1002)
+        }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -29,12 +48,18 @@ class ShenGouMessageViewController: UIViewController,UITableViewDelegate,UITable
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        shengoulist.loadData()
+        return shengoulist.shengoumsg.count
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shengoumsg", for: indexPath) as! ShenGouTableViewCell
-        
+        cell.message.text = shengoulist.shengoumsg[indexPath.row].message
+        cell.repairid.text = shengoulist.shengoumsg[indexPath.row].repairid
+        cell.shengouren.text = shengoulist.shengoumsg[indexPath.row].shengouren
+        cell.shijian.text = shengoulist.shengoumsg[indexPath.row].shijian
         
         return cell
     }

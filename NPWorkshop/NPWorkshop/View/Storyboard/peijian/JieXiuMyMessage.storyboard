@@ -486,6 +486,7 @@
                             <constraint firstItem="VuJ-x9-ct3" firstAttribute="top" secondItem="Zje-6B-grp" secondAttribute="top" id="dxK-6y-578"/>
                             <constraint firstAttribute="bottom" secondItem="VuJ-x9-ct3" secondAttribute="bottom" id="v7R-Fw-zCV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="3lA-DT-JZu"/>
                     </view>
                     <connections>
                         <outlet property="daohuotableview" destination="VuJ-x9-ct3" id="bJI-qS-ei3"/>
@@ -557,7 +558,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="配件不足，请立即购买" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icw-pR-clc">
-                                                    <rect key="frame" x="20" y="48" width="264" height="32"/>
+                                                    <rect key="frame" x="20" y="48" width="317" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
@@ -582,6 +583,7 @@
                             <constraint firstAttribute="bottom" secondItem="cZd-vU-WZ1" secondAttribute="bottom" id="Lpf-u7-EKK"/>
                             <constraint firstItem="cZd-vU-WZ1" firstAttribute="leading" secondItem="eE5-4B-SKL" secondAttribute="leading" id="y7R-6Q-f5m"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="aof-c8-szU"/>
                     </view>
                     <connections>
                         <outlet property="shengoutableview" destination="cZd-vU-WZ1" id="psq-6e-Ug4"/>
