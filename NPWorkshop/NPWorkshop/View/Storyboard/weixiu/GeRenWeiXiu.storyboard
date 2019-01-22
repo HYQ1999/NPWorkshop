@@ -501,10 +501,10 @@
             </objects>
             <point key="canvasLocation" x="1578" y="-1686"/>
         </scene>
-        <!--Main-->
+        <!--WeixiuMyMessage-->
         <scene sceneID="2AA-Ge-p2y">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="NCR-Bd-mdU" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="WeixiuMyMessage" id="NCR-Bd-mdU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xvz-Pq-b6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-1634"/>

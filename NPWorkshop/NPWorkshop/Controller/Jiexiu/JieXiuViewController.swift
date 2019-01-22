@@ -424,9 +424,8 @@ class JieXiuViewController: UIViewController,UITableViewDelegate,UITableViewData
             else
             {
                 FenPeiSearchResposity().Search()
-                 let destinationStoryboard = UIStoryboard(name:"ZhidaoJiaoshiStoryboard",bundle:nil)
-                let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: FendanTableViewController())))
-                    as! FendanTableViewController
+                let controller =  self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: JieXiuFendanTableViewController())))
+                    as! JieXiuFendanTableViewController
                   controller.repairid = self.bxsearchlist.bxsearchlist[indexPath.row].RepairID
                 self.navigationController?.pushViewController(controller, animated: true)
             }
@@ -492,9 +491,8 @@ class JieXiuViewController: UIViewController,UITableViewDelegate,UITableViewData
                 else
                 {
                     FenPeiSearchResposity().Search()
-                      let destinationStoryboard = UIStoryboard(name:"ZhidaoJiaoshiStoryboard",bundle:nil)
-                    let controller = destinationStoryboard.instantiateViewController(withIdentifier: String(describing: type(of: FendanTableViewController())))
-                        as! FendanTableViewController
+                    let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: JieXiuFendanTableViewController())))
+                        as! JieXiuFendanTableViewController
                      controller.repairid = self.baoxiulist.bxlist[indexPath.row].RepairID
                     self.navigationController?.pushViewController(controller, animated: true)
                 }

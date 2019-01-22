@@ -182,15 +182,6 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
             self.present( alerttController, animated:  true, completion: nil)
             return
         }
-            if peijianuselist.pjuselist.isEmpty
-            {
-                
-                let alerttController = UIAlertController(title: "Error！", message: "请选择配件！", preferredStyle: .alert)
-                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
-                alerttController.addAction(okkAction)
-                self.present( alerttController, animated:  true, completion: nil)
-                return
-            }
         else
         {
             if selectLabel.isHidden == true
@@ -215,7 +206,18 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
             }
             else
             {
-                
+             
+                if peijianuselist.pjuselist.isEmpty
+                {
+                    
+                    let alerttController = UIAlertController(title: "Error！", message: "请选择配件！", preferredStyle: .alert)
+                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                    alerttController.addAction(okkAction)
+                    self.present( alerttController, animated:  true, completion: nil)
+                    return
+                }
+                else
+                {
                 let requesting : Models_QiXiu.Requesting = Models_QiXiu.Requesting(type:"完修" ,RenGonfei: rengongMoney.text!, QiXiuReason: guzhangReason.text!, RepairId: baoxiudanID.text!)
                 QiXiuReposity().QiXiu(requesting: requesting) { (response, error) in
                     if error == nil, let response = response{
@@ -232,6 +234,7 @@ class tianxieViewController: UIViewController,UITableViewDataSource,UITableViewD
                         return
                         
                     }
+                }
                 }
                 
                 

@@ -13,6 +13,9 @@ class ManShengouTableViewController: UITableViewController,UITextFieldDelegate {
 
         var tablelist: [Model_ManShengou.Response] = []
     var manshengouList = ManShengouModel()
+    var repairid : String!
+    var peijianid :String!
+    var weixiuuser = WeiXiuUserModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 manshengouList.loadData()
@@ -64,6 +67,61 @@ manshengouList.loadData()
        cell.userqx.text =  manshengouList.Manpeijianlist[indexPath.row].userqx
         return cell
     }
+     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+          manshengouList.loadData()
+        weixiuuser.loadData()
+        let sure = UITableViewRowAction(style: .normal, title: "确定"){
+            actionm, index in
+            
+            let alertController = UIAlertController(title: "提示！",message: "请填写申购数量", preferredStyle: .alert)
+            alertController.addTextField {
+                (textField: UITextField!) -> Void in
+                textField.placeholder = "数量"
+            }
+            
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            let okAction = UIAlertAction(title: "确定", style: .default, handler: {
+                action in
+                let newpw = alertController.textFields!.first!
+                let expression2 = "[0-9]{1,1000}"
+                let regex2 = try! NSRegularExpression.init(pattern: expression2, options: .allowCommentsAndWhitespace)
+                let numberOfMatches2 = regex2.numberOfMatches(in: newpw.text!, options: .reportProgress, range: NSMakeRange(0, (newpw.text! as NSString).length))
+                print(newpw.text!)
+                if numberOfMatches2 == 0
+                {
+                    let alerttController = UIAlertController(title: "Error！", message: "请填写正确的申购数量！", preferredStyle: .alert)
+                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                    alerttController.addAction(okkAction)
+                    self.present( alerttController, animated:  true, completion: nil)
+                    return
+                }
+                else
+                {
+                    print(String(self.peijianid))
+                     print(self.weixiuuser.userlist[0].userid)
+                    print(self.manshengouList.Manpeijianlist[indexPath.row].userid)
+                    let requesting : Models_ShenGouPeiJian.Requesting = Models_ShenGouPeiJian.Requesting(PartsAmount: newpw.text!, PartsID: String(self.peijianid), ReplyUser:self.weixiuuser.userlist[0].userid , ApplyUser: self.manshengouList.Manpeijianlist[indexPath.row].userid)
+                    ShenGouPeiJianResposity().ShenGouPeiJian(requesting: requesting) { (response, error) in
+                        if error == nil, let response = response{
+                            let alerttController = UIAlertController(title: "Error！", message: response.ts, preferredStyle: .alert)
+                            let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                            alerttController.addAction(okkAction)
+                            self.present( alerttController, animated:  true, completion: nil)
+                            return
+                        }
+                    }
+                }
+                
+                
+            })
+            alertController.addAction(cancelAction)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+          sure.backgroundColor = UIColor.red
+         return [sure]
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

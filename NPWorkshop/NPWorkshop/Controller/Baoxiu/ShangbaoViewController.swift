@@ -84,7 +84,12 @@ class ShangbaoViewController: UIViewController {
             ShangBaoReposity().ShangBao(requesting: requesting) { (response, error) in
                 if error == nil, let response = response{
                     let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
-                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                    let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                        action in
+                        let controller = self.storyboard!.instantiateViewController(withIdentifier: String(describing: type(of: BaoxiuTabViewController())))
+                            as! BaoxiuTabViewController
+                        self.present(controller, animated: true, completion: nil)
+                    })
                     alerttController.addAction(okkAction)
                     self.present( alerttController, animated:  true, completion: nil)
                 }

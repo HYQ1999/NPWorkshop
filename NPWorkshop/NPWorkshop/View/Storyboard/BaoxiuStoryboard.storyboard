@@ -711,7 +711,7 @@
                                 <rect key="frame" x="30" y="143" width="354" height="563"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taC-WQ-0qv">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="732"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="788.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="报修单号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh9-e7-lR6">
                                                 <rect key="frame" x="20" y="18" width="70" height="21"/>
@@ -897,7 +897,7 @@
                                     <constraint firstAttribute="bottom" secondItem="taC-WQ-0qv" secondAttribute="bottom" id="4hD-DM-gAm"/>
                                     <constraint firstItem="taC-WQ-0qv" firstAttribute="width" secondItem="NZP-nV-O7C" secondAttribute="width" id="EB6-Fp-wXR"/>
                                     <constraint firstItem="taC-WQ-0qv" firstAttribute="top" secondItem="NZP-nV-O7C" secondAttribute="top" id="UGJ-ZO-oi5"/>
-                                    <constraint firstItem="taC-WQ-0qv" firstAttribute="height" secondItem="NZP-nV-O7C" secondAttribute="height" multiplier="1.3" id="eF4-Tf-Rhc"/>
+                                    <constraint firstItem="taC-WQ-0qv" firstAttribute="height" secondItem="NZP-nV-O7C" secondAttribute="height" multiplier="1.4" id="eF4-Tf-Rhc"/>
                                     <constraint firstAttribute="trailing" secondItem="taC-WQ-0qv" secondAttribute="trailing" id="h6N-MA-7jX"/>
                                     <constraint firstItem="taC-WQ-0qv" firstAttribute="leading" secondItem="NZP-nV-O7C" secondAttribute="leading" id="uM9-qg-cIW"/>
                                 </constraints>
