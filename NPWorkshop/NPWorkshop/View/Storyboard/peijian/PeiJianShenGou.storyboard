@@ -40,7 +40,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="配件申报编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-3z-46S">
-                                            <rect key="frame" x="16" y="11" width="106" height="21"/>
+                                            <rect key="frame" x="16" y="11" width="293" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.55796586166178508" green="0.55796586166178508" blue="0.55796586166178508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
