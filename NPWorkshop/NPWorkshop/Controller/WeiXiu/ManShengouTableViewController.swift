@@ -62,9 +62,9 @@ manshengouList.loadData()
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         manshengouList.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "shengoucell", for: indexPath) as! PeiJianShenGouTableViewCell
-        cell.userid.text = "用户编号" +  manshengouList.Manpeijianlist[indexPath.row].userid
-        cell.username.text = "用户姓名" + manshengouList.Manpeijianlist[indexPath.row].username
-       cell.userqx.text =  "用户权限" + manshengouList.Manpeijianlist[indexPath.row].userqx
+        cell.userid.text = "用户编号:" +  manshengouList.Manpeijianlist[indexPath.row].userid
+        cell.username.text = "用户姓名:" + manshengouList.Manpeijianlist[indexPath.row].username
+       cell.userqx.text =   manshengouList.Manpeijianlist[indexPath.row].userqx
         return cell
     }
      override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
