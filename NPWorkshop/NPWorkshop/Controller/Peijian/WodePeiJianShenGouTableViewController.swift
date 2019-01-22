@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import ProgressHUD
 class WodePeiJianShenGouTableViewController: UITableViewController {
 
     @IBOutlet weak var MenuItem: UIBarButtonItem!
+    var querendaohuolist = QueRenDaoHuoModel()
+    var tablelist: [Models_PeiJianShenGouQueRen.Response] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,24 @@ class WodePeiJianShenGouTableViewController: UITableViewController {
         customSetup()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.TakeOrders(_:)), name: NSNotification.Name(rawValue: "Models_PeiJianShenGouQueRen"), object: nil)
+        Messages().showNow(code: 0x2004)
+        querendaohuolist.loadData()
+        querendaohuolist.querendaohuo.removeAll()
+        querendaohuolist.saveData()
+        PeiJianShenGouQueRenResposity().PeiJianShenGouQueRenlist()
+    }
+    @objc func TakeOrders(_ notification:Notification) {
+        if let Response: [Models_PeiJianShenGouQueRen.Response] = notification.object as! [Models_PeiJianShenGouQueRen.Response]?{
+            tablelist = Response
+            tableView.reloadData()
+            ProgressHUD.dismiss()
+        }
+        else {
+            Messages().showError(code: 0x1002)
+        }
+    }
     
     func customSetup() {
         let revealViewController: SWRevealViewController? = self.revealViewController()
@@ -38,12 +58,22 @@ class WodePeiJianShenGouTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+       querendaohuolist.loadData()
+        return querendaohuolist.querendaohuo.count
     }
     
+     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        querendaohuolist.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "wodepeijianshengoucell", for: indexPath) as! WodePeiJianShenGouTableViewCell
-        
+        cell.shenbaobianhao.text = "配件申报编号:" + querendaohuolist.querendaohuo[indexPath.row].peijianshenbaoid
+        cell.peijianname.text =  "配件名称:" + querendaohuolist.querendaohuo[indexPath.row].peijianmingchen
+        cell.shenbaoren.text = "配件申报人:" + querendaohuolist.querendaohuo[indexPath.row].peijianshenbaoren
+        cell.shengoushuliang.text = "申报数量:" + querendaohuolist.querendaohuo[indexPath.row].shenbaoshuliang
+        cell.shengoutime.text = "申报时间:" + querendaohuolist.querendaohuo[indexPath.row].shenbaoshijian
+        cell.shengouzhuangtai.text = "申购状态:" + querendaohuolist.querendaohuo[indexPath.row].shenbaozhuangtai
         
         return cell
     }
