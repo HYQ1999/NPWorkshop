@@ -28,6 +28,7 @@ class WodePeiJianShenGouTableViewController: UITableViewController {
         querendaohuolist.saveData()
         PeiJianShenGouQueRenResposity().PeiJianShenGouQueRenlist()
     }
+    
     @objc func TakeOrders(_ notification:Notification) {
         if let Response: [Models_PeiJianShenGouQueRen.Response] = notification.object as! [Models_PeiJianShenGouQueRen.Response]?{
             tablelist = Response

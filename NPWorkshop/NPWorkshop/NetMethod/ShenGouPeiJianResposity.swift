@@ -17,7 +17,7 @@ class ShenGouPeiJianResposity: NSObject {
             "RepairID":requesting.RepairID,
             "PartsAmount": requesting.PartsAmount,
             "PartsID": requesting.PartsID,
-            "ReplyUser": requesting.ReplyUser,
+            "UserID": requesting.ReplyUser,
             "ApplyUser": requesting.ApplyUser
         ]
         

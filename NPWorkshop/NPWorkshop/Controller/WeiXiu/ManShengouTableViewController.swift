@@ -62,9 +62,9 @@ manshengouList.loadData()
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         manshengouList.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "shengoucell", for: indexPath) as! PeiJianShenGouTableViewCell
-        cell.userid.text =  manshengouList.Manpeijianlist[indexPath.row].userid
-        cell.username.text =  manshengouList.Manpeijianlist[indexPath.row].username
-       cell.userqx.text =  manshengouList.Manpeijianlist[indexPath.row].userqx
+        cell.userid.text = "用户编号" +  manshengouList.Manpeijianlist[indexPath.row].userid
+        cell.username.text = "用户姓名" + manshengouList.Manpeijianlist[indexPath.row].username
+       cell.userqx.text =  "用户权限" + manshengouList.Manpeijianlist[indexPath.row].userqx
         return cell
     }
      override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
@@ -86,7 +86,6 @@ manshengouList.loadData()
                 let expression2 = "[0-9]{1,1000}"
                 let regex2 = try! NSRegularExpression.init(pattern: expression2, options: .allowCommentsAndWhitespace)
                 let numberOfMatches2 = regex2.numberOfMatches(in: newpw.text!, options: .reportProgress, range: NSMakeRange(0, (newpw.text! as NSString).length))
-                print(newpw.text!)
                 if numberOfMatches2 == 0
                 {
                     let alerttController = UIAlertController(title: "Error！", message: "请填写正确的申购数量！", preferredStyle: .alert)
@@ -97,6 +96,7 @@ manshengouList.loadData()
                 }
                 else
                 {
+                    print(newpw.text!)
                     print(String(self.peijianid))
                      print(self.weixiuuser.userlist[0].userid)
                     print(self.manshengouList.Manpeijianlist[indexPath.row].userid)

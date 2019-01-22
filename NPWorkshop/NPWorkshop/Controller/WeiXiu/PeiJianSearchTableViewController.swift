@@ -66,8 +66,8 @@ class PeiJianSearchTableViewController: UITableViewController,UITextFieldDelegat
         peijianlist.loadData()
         let cell = tableView.dequeueReusableCell(withIdentifier: "weixiupeijiancell", for: indexPath) as! WeiXiuPeiJianTableViewCell
         cell.peijiandanjia.text = "单价：" + peijianlist.pjlist[indexPath.row].peijiandanjia
-        cell.peijianleibie.text = peijianlist.pjlist[indexPath.row].peijianleibie
-        cell.peijianminchen.text = peijianlist.pjlist[indexPath.row].peijianminchen
+        cell.peijianleibie.text = "配件类别：" + peijianlist.pjlist[indexPath.row].peijianleibie
+        cell.peijianminchen.text = "配件名称：" + peijianlist.pjlist[indexPath.row].peijianminchen
          cell.peijianshuliang.text = "库存：" + peijianlist.pjlist[indexPath.row].peijiankucun
         return cell
     }

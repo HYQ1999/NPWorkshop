@@ -31,7 +31,7 @@ class Models_ShenGouPeiJian: NSObject {
         
         init(jsonData: JSON?){
             if let jsonData = jsonData{
-                self.ts = jsonData["js"].stringValue
+                self.ts = jsonData["ts"].stringValue
             }
             print("ts: ", self.ts ?? "没有值")
         }
