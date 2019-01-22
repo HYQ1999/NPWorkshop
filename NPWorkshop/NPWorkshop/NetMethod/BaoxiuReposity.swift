@@ -69,25 +69,6 @@ class BaoxiuReposity: NSObject {
             
             
               NotificationCenter.default.post(name: Notification.Name(rawValue: "Models_Baoxiu"), object: Response)
-//                if let data = response.data{
-//                    do{
-//
-//                        let jsonData: JSON = try JSON(data: data)
-//                        let response : Models_Baoxiu.Response = Models_Baoxiu.Response(jsonData: jsonData)
-//                        handler(response, nil)
-//
-////                        print(jsonData.count)
-////                         for i in 0..<jsonData.count
-////                         {
-////                            Response?.append(Models_Baoxiu.Response(
-////                                RepairID: jsonData[i]["RepairID"].string,
-////                                EqptName: jsonData[i]["EqptName"].string,
-////                                RepairState: jsonData[i]["RepairState"].string))
-////                        }
-//                    }
-//                    catch{}
-//
-//                }
         
             
         }
