@@ -79,9 +79,19 @@ class WodePeiJianShenGouTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+         querendaohuolist.loadData()
         let sure = UITableViewRowAction(style: .normal, title: "确认到货"){
             actionm, index in
-            
+            let requesting : Models_SurePeijian.Requesting = Models_SurePeijian.Requesting(RepairID: self.querendaohuolist.querendaohuo[indexPath.row].RepairID)
+        SurePeijianResposity().SurePeijian(requesting: requesting) { (response, error) in
+            if error == nil, let response = response{
+                let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
+                alerttController.addAction(okkAction)
+                self.present( alerttController, animated:  true, completion: nil)
+                return
+            }
+            }
             
             
         }

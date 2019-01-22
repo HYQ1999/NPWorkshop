@@ -17,6 +17,8 @@
 		0D95266B21D6150A00367ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D95266921D6150A00367ADE /* LaunchScreen.storyboard */; };
 		0D95267621D6150A00367ADE /* NPWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95267521D6150A00367ADE /* NPWorkshopTests.swift */; };
 		0D95268121D6150A00367ADE /* NPWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */; };
+		5A1AF42021F70295006D66B2 /* Models_SurePeijian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AF41F21F70295006D66B2 /* Models_SurePeijian.swift */; };
+		5A1AF42221F702D5006D66B2 /* SurePeijianResposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AF42121F702D5006D66B2 /* SurePeijianResposity.swift */; };
 		5A1ED91021ED634F0097A950 /* PeiJianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED90F21ED634F0097A950 /* PeiJianTableViewController.swift */; };
 		5A1ED91221ED63F40097A950 /* QianHePeiJian.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1ED91121ED63F40097A950 /* QianHePeiJian.storyboard */; };
 		5A1ED91421ED64950097A950 /* PeijianMoneyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ED91321ED64950097A950 /* PeijianMoneyBox.swift */; };
@@ -223,6 +225,8 @@
 		0D95268021D6150A00367ADE /* NPWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPWorkshopUITests.swift; sourceTree = "<group>"; };
 		0D95268221D6150A00367ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199AC24C9F77D02E6773AE29 /* Pods_NPWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1AF41F21F70295006D66B2 /* Models_SurePeijian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models_SurePeijian.swift; sourceTree = "<group>"; };
+		5A1AF42121F702D5006D66B2 /* SurePeijianResposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurePeijianResposity.swift; sourceTree = "<group>"; };
 		5A1ED90F21ED634F0097A950 /* PeiJianTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeiJianTableViewController.swift; sourceTree = "<group>"; };
 		5A1ED91121ED63F40097A950 /* QianHePeiJian.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QianHePeiJian.storyboard; sourceTree = "<group>"; };
 		5A1ED91321ED64950097A950 /* PeijianMoneyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeijianMoneyBox.swift; sourceTree = "<group>"; };
@@ -481,6 +485,7 @@
 				92052EB021F6D5BE0027D43D /* DaoHuoMsgResposity.swift */,
 				92052EB621F6D5FA0027D43D /* ShenGouMsgResposity.swift */,
 				92052EC021F6F5710027D43D /* PeiJianShenGouQueRenResposity.swift */,
+				5A1AF42121F702D5006D66B2 /* SurePeijianResposity.swift */,
 			);
 			path = NetMethod;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				92052EB221F6D5CF0027D43D /* Models_DaoHuoMsg.swift */,
 				92052EB421F6D5E20027D43D /* Models_ShenGouMsg.swift */,
 				92052EC221F6F5990027D43D /* Models_PeiJianShenGouQueRen.swift */,
+				5A1AF41F21F70295006D66B2 /* Models_SurePeijian.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1075,6 +1081,7 @@
 				923BC09321F041E100311005 /* BaoxiuSearchModel.swift in Sources */,
 				924BA8EF21ED73D900ADD1D4 /* Messages.swift in Sources */,
 				923BC09921F07F3200311005 /* FixViewController.swift in Sources */,
+				5A1AF42221F702D5006D66B2 /* SurePeijianResposity.swift in Sources */,
 				92052EA921F6D3E90027D43D /* ShenGouMessageList.swift in Sources */,
 				923FC8A421EECBED004A758C /* ShangBaoReposity.swift in Sources */,
 				923BC0C321F0AAFB00311005 /* Models_ZhiDao.swift in Sources */,
@@ -1099,6 +1106,7 @@
 				5A1ED93521EEDDC20097A950 /* WeixiuUserModel.swift in Sources */,
 				5A1ED93721EEDF380097A950 /* WeiXiuTableViewCell.swift in Sources */,
 				923FC89F21EEBAFC004A758C /* BaoxiuPeijian.swift in Sources */,
+				5A1AF42021F70295006D66B2 /* Models_SurePeijian.swift in Sources */,
 				92052EBB21F6D99D0027D43D /* WodePeiJianShenGouTableViewCell.swift in Sources */,
 				92CA052921DC6A8700D354E8 /* LeftBaritemController.swift in Sources */,
 				92450AA521F45B13009E96C8 /* Models_MiMaEdit.swift in Sources */,
