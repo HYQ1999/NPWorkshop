@@ -83,15 +83,30 @@ class WodePeiJianShenGouTableViewController: UITableViewController {
          querendaohuolist.loadData()
         let sure = UITableViewRowAction(style: .normal, title: "确认到货"){
             actionm, index in
-            let requesting : Models_SurePeijian.Requesting = Models_SurePeijian.Requesting(RepairID: self.querendaohuolist.querendaohuo[indexPath.row].RepairID)
-        SurePeijianResposity().SurePeijian(requesting: requesting) { (response, error) in
-            if error == nil, let response = response{
-                let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+            if self.querendaohuolist.querendaohuo[indexPath.row].shenbaozhuangtai == "已完成"
+            {
+                let alerttController = UIAlertController(title: "Error！", message: "已确认到货", preferredStyle: .alert)
                 let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: nil )
                 alerttController.addAction(okkAction)
                 self.present( alerttController, animated:  true, completion: nil)
                 return
             }
+            else
+            {
+            print(self.querendaohuolist.querendaohuo[indexPath.row].peijianshenbaoid)
+            let requesting : Models_SurePeijian.Requesting = Models_SurePeijian.Requesting(RepairID: self.querendaohuolist.querendaohuo[indexPath.row].peijianshenbaoid)
+        SurePeijianResposity().SurePeijian(requesting: requesting) { (response, error) in
+            if error == nil, let response = response{
+                let alerttController = UIAlertController(title: "提示！", message: response.ts, preferredStyle: .alert)
+                let okkAction =  UIAlertAction(title: "好的" , style: .default , handler: {
+                    action in
+                    self.viewWillAppear(true)
+                })
+                alerttController.addAction(okkAction)
+                self.present( alerttController, animated:  true, completion: nil)
+                return
+            }
+                }
             }
             
             
