@@ -71,7 +71,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arj-7i-89f">
                                 <rect key="frame" x="10" y="676" width="334" height="40"/>
-                                <state key="normal" image="退出登陆大"/>
+                                <color key="backgroundColor" red="1" green="0.040438862399999997" blue="0.0132135402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="退出登陆"/>
                                 <connections>
                                     <action selector="out:" destination="DhF-54-oOo" eventType="touchUpInside" id="1JZ-0n-l8N"/>
                                 </connections>
@@ -570,6 +571,5 @@
         <image name="我的钱盒" width="50" height="50"/>
         <image name="维修人员" width="50" height="50"/>
         <image name="维修员" width="180" height="180"/>
-        <image name="退出登陆大" width="334" height="40"/>
     </resources>
 </document>
