@@ -164,7 +164,7 @@
     </scenes>
     <resources>
         <image name=" 登录图片" width="1920" height="925"/>
-        <image name="logo" width="75" height="75"/>
+        <image name="logo" width="56.25" height="56.25"/>
         <image name="mima" width="32" height="32"/>
         <image name="slogan" width="270" height="36"/>
         <image name="xingmingyonghumingnicheng" width="32" height="32"/>

@@ -49,7 +49,8 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnc-vJ-Xfu">
                                 <rect key="frame" x="10" y="676" width="334" height="40"/>
-                                <state key="normal" image="退出登陆大"/>
+                                <color key="backgroundColor" red="1" green="0.040438862399999997" blue="0.0132135402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="退出登陆"/>
                                 <connections>
                                     <action selector="out:" destination="2Ju-dC-Dxd" eventType="touchUpInside" id="ttn-Zz-p5P"/>
                                 </connections>
@@ -536,7 +537,6 @@
         <image name="我的消息" width="50" height="50"/>
         <image name="我的钱盒" width="50" height="50"/>
         <image name="确认修改" width="130" height="30"/>
-        <image name="退出登陆大" width="334" height="40"/>
         <image name="配件申购员" width="50" height="50"/>
         <image name="配件申购员人" width="180" height="180"/>
     </resources>

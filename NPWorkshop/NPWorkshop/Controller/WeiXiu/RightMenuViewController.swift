@@ -12,8 +12,10 @@ class RightMenuViewController: UIViewController {
     var weixiuUserModel = WeiXiuUserModel()
     var weixiuModel = WeixiuModel()
     @IBOutlet weak var imageview: UIImageView!
+    @IBOutlet weak var tuichu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         imageview.layer.cornerRadius = min(imageview.bounds.size.width, imageview.bounds.size.height) * 0.5
         imageview.layer.masksToBounds = true
         // Do any additional setup after loading the view.

@@ -65,7 +65,8 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6H-PL-Fjq">
                                 <rect key="frame" x="10" y="676" width="334" height="40"/>
-                                <state key="normal" image="退出登陆大"/>
+                                <color key="backgroundColor" red="1" green="0.040438862399999997" blue="0.0132135402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="退出登陆"/>
                                 <connections>
                                     <action selector="out:" destination="JZV-Ht-ml2" eventType="touchUpInside" id="JeJ-nE-6x6"/>
                                 </connections>
@@ -101,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="imageview" destination="vX3-hT-YGt" id="7ph-E4-Rhh"/>
+                        <outlet property="tuichu" destination="I6H-PL-Fjq" id="0lc-tE-pHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySz-tp-Azo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -491,7 +493,6 @@
         <image name="侧滑" width="32" height="32"/>
         <image name="我的消息" width="50" height="50"/>
         <image name="我的钱盒" width="50" height="50"/>
-        <image name="退出登陆大" width="334" height="40"/>
         <image name="配件申购员" width="50" height="50"/>
         <image name="配件申购员人" width="180" height="180"/>
     </resources>
